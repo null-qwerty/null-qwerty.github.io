@@ -82,7 +82,7 @@
 <h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><p><code>layout</code> 设置为 <code>draft</code> 新建草稿，通过 <code>publish</code> 命令可以把草稿发布 ：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></div>
 
-<p>草稿默认不会显示在页面中，您可在执行时加上 <code>--draft</code> 参数，或是在 <code>_config.yml</code> 中把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p>
+<p>草稿默认不会显示在页面中，可在执行时加上 <code>--draft</code> 参数，或是在 <code>_config.yml</code> 中把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p>
 <h2 id="redefine-语法"><a href="#redefine-语法" class="headerlink" title="redefine 语法"></a>redefine 语法</h2><h3 id="notes"><a href="#notes" class="headerlink" title="notes"></a>notes</h3><h4 id="note-large"><a href="#note-large" class="headerlink" title="note large"></a>note large</h4><p>格式：（<code>notel</code> 意思是 <code>note large</code> ，方便记，也可以写成 <code>note-large</code> ）</p>
 <div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% notel [颜色] [可选: 自定义图标] [标题] %&#125;</span><br><span class="line">内容</span><br><span class="line">支持换行</span><br><span class="line">&#123;% endnotel %&#125;</span><br></pre></td></tr></table></figure></div>
 
