@@ -71,6 +71,161 @@
       </tags>
   </entry>
   <entry>
+    <title>发表文章</title>
+    <url>/2023/10/05/%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>命令</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>用于新建文章或者页面，文章的布局（layout）默认为 <code>post</code>，可以通过修改 <code>_config.yml</code> 中的 <code>default_layout</code> 参数来指定默认布局。</p>
+<p>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code>。在创建这三种不同类型的文件时，它们将会被保存到不同的路径；自定义的其他布局和 <code>post</code> 相同，都将储存到 <code>source/_posts</code> 文件夹。</p>
+<p>新建页面文件格式为 <code>markdown</code>。</p>
+<h3 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h3><p><code>layout</code> 设置为 <code>draft</code> 新建草稿，通过 <code>publish</code> 命令可以把草稿发布 ：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>草稿默认不会显示在页面中，您可在执行时加上 <code>--draft</code> 参数，或是在 <code>_config.yml</code> 中把 <code>render_drafts</code> 参数设为 <code>true</code> 来预览草稿。</p>
+<h2 id="redefine-语法"><a href="#redefine-语法" class="headerlink" title="redefine 语法"></a>redefine 语法</h2><h3 id="notes"><a href="#notes" class="headerlink" title="notes"></a>notes</h3><h4 id="note-large"><a href="#note-large" class="headerlink" title="note large"></a>note large</h4><p>格式：（<code>notel</code> 意思是 <code>note large</code> ，方便记，也可以写成 <code>note-large</code> ）</p>
+<div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% notel [颜色] [可选: 自定义图标] [标题] %&#125;</span><br><span class="line">内容</span><br><span class="line">支持换行</span><br><span class="line">&#123;% endnotel %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">说明</th>
+<th align="center">可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">颜色</td>
+<td align="center">提示块的样式或颜色</td>
+<td align="center"><code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+</tr>
+<tr>
+<td align="center">自定义图标</td>
+<td align="center">自定义图标，选填</td>
+<td align="center"><a class="link"   href="https://fontawesome.com/search" >Fontawsome <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的图标名称后半部分，比如 <code>fa-image</code></td>
+</tr>
+</tbody></table>
+<p>例如</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% notel default fa-info 信息 %&#125;</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">&#123;% endnotel %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% notel blue 提示 %&#125;</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">&#123;% endnotel %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% notel red 自定义标题 %&#125;</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">换行测试</span><br><span class="line">&#123;% endnotel %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>效果：</p>
+<div class="note-large default"><div class="notel-title"><i class="notel-icon fa-solid fa-info"></i><p>信息</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+</div></div>
+
+<div class="note-large blue"><div class="notel-title"><p>提示</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+</div></div>
+
+<div class="note-large red"><div class="notel-title"><p>自定义标题</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+</div></div>
+
+<h4 id="note"><a href="#note" class="headerlink" title="note"></a>note</h4><p>格式：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note [样式/颜色] [可选: 自定义图标] %&#125;</span><br><span class="line">笔记内容</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">说明</th>
+<th align="center">可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">样式&#x2F;颜色</td>
+<td align="center">提示块的样式或颜色</td>
+<td align="center"><code>success</code> <code>default</code> <code>primary</code> <code>info</code> <code>warning</code> <code>danger</code> <code>tip</code> <code>question</code>以及 <code>blue</code> <code>red</code> <code>cyan</code> <code>purple</code> <code>orange</code> <code>yellow</code> <code>green</code>等颜色</td>
+</tr>
+<tr>
+<td align="center">自定义图标</td>
+<td align="center">自定义图标，选填</td>
+<td align="center"><a class="link"   href="https://fontawesome.com/search" >Fontawsome <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的图标名称后半部分，比如 <code>fa-image</code></td>
+</tr>
+</tbody></table>
+<p>具体例子如下</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note  %&#125;</span><br><span class="line">默认 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note default  %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary  %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success  %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info  %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning  %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger  %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note red fa-bolt%&#125;</span><br><span class="line">自定义提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>效果：</p>
+<div class="note default"><p>默认 提示块标签</p>
+</div>
+
+<div class="note default"><p>default 提示块标签</p>
+</div>
+
+<div class="note primary"><p>primary 提示块标签</p>
+</div>
+
+<div class="note success"><p>success 提示块标签</p>
+</div>
+
+<div class="note info"><p>info 提示块标签</p>
+</div>
+
+<div class="note warning"><p>warning 提示块标签</p>
+</div>
+
+<div class="note danger"><p>danger 提示块标签</p>
+</div>
+
+<div class="note red icon-padding"><i class="note-icon fa-solid fa-bolt"></i><p>自定义提示块标签</p>
+</div>
+
+<h3 id="buttons"><a href="#buttons" class="headerlink" title="buttons"></a>buttons</h3><h4 id="写法"><a href="#写法" class="headerlink" title="写法"></a>写法</h4><p>格式：</p>
+<div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% btn [可选大小]::[名称]::[url]::[可选图标] %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>例如：</p>
+<div class="highlight-container" data-rel="Markdown"><figure class="iseeu highlight markdown"><table><tr><td class="code"><pre><span class="line">不设置任何参数的 &#123;% btn 按钮:: / %&#125; 适合融入段落中。</span><br><span class="line"></span><br><span class="line">regular 按钮适合独立于段落之外：</span><br><span class="line"></span><br><span class="line">&#123;% btn regular::示例博客::https://www.ohevan.com::fa-solid fa-play-circle %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% btn regular::示例博客::https://www.ohevan.com::fa-solid fa-play-circle %&#125;</span><br><span class="line"></span><br><span class="line">large 按钮更具有强调作用，建议搭配 center 使用：</span><br><span class="line"></span><br><span class="line">&#123;% btn center large::开始使用::https://redefine-docs.ohevan.com::fa-solid fa-download %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>不设置任何参数的 <a class="button " href='/' title='按钮'>按钮</a> 适合融入段落中。</p>
+<p>regular 按钮适合独立于段落之外：</p>
+<a class="button  regular" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
+
+<a class="button  regular" href='https://www.ohevan.com' title='示例博客'><i class='fa-solid fa-play-circle'></i> 示例博客</a>
+
+<p>large 按钮更具有强调作用，建议搭配 center 使用：</p>
+<a class="button  center large" href='https://redefine-docs.ohevan.com' title='开始使用'><i class='fa-solid fa-download'></i> 开始使用</a>
+
+<h4 id="变量可选值"><a href="#变量可选值" class="headerlink" title="变量可选值"></a>变量可选值</h4><p><code>[可选大小]</code> :</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">center, regular, large, center large, center regular</span><br></pre></td></tr></table></figure></div>
+
+<p><code>[可选图标]</code> :</p>
+<p><a class="link"   href="https://fontawesome.com/search" >Fontawesome <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p> 图标名称，比如 <code>fa-solid fa-house</code></p>
+<h3 id="floding"><a href="#floding" class="headerlink" title="floding"></a>floding</h3><h4 id="写法-1"><a href="#写法-1" class="headerlink" title="写法"></a>写法</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% folding [颜色]::[标题] %&#125;</span><br><span class="line"></span><br><span class="line">需要写的内容</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>例子</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% folding blue::Folding 测试： 点击查看更多 %&#125;</span><br><span class="line"></span><br><span class="line">啊啊啊啊啊</span><br><span class="line"></span><br><span class="line">&#123;% note danger  %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note tip  %&#125;</span><br><span class="line">tip 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 测试： 点击查看更多 </summary>
+              <div class='content'>
+              <p>啊啊啊啊啊</p><div class="note danger"><p>danger 提示块标签</p></div><div class="note tip"><p>tip 提示块标签</p></div>
+              </div>
+            </details>
+
+<h4 id="颜色列表"><a href="#颜色列表" class="headerlink" title="颜色列表"></a>颜色列表</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">yellow, blue, green, red, orange, pink, cyan, white, black, gray</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="tabs"><a href="#tabs" class="headerlink" title="tabs"></a>tabs</h3><h4 id="写法-2"><a href="#写法-2" class="headerlink" title="写法"></a>写法</h4><p>使用 Tabs 模块需要在 markdown 中按照以下格式编写：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs 页面内不重复的ID %&#125;</span><br><span class="line">&lt;!-- tab 栏目1名称 --&gt;</span><br><span class="line">内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 栏目2名称 --&gt;</span><br><span class="line">内容</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>其中，<code>页面内不重复的ID</code> 为你为这个选项卡创建的唯一标识符，可以随便取。</p>
+<p>每个栏目内容使用 <code>&lt;!-- tab 栏目名称 --&gt;</code> 和 <code>&lt;!-- endtab --&gt;</code> 来定义。</p>
+<p>例子：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs First unique name %&#125;</span><br><span class="line">&lt;!-- tab First Tab--&gt;</span><br><span class="line">**This is Tab 1.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab Second Tab--&gt;</span><br><span class="line">**This is Tab 2.**</span><br><span class="line"></span><br><span class="line">This is Tab 2.</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab Third Tab--&gt;</span><br><span class="line">**This is Tab 3.**</span><br><span class="line"></span><br><span class="line">This is Tab 3.</span><br><span class="line"></span><br><span class="line">This is Tab 3.</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+<p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+<p>This is Tab 3.</p>
+<p>This is Tab 3.</p></div></div></div>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一篇博客</title>
     <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
