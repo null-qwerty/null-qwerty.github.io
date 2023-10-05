@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客搭建</title>
+    <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>本博客使用 <a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 博客框架，主题采用 <a class="link"   href="https://github.com/EvanNotFound/hexo-theme-redefine" >radefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 搭建，最终发布到 github pages。</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p><a class="link"   href="https://hexo.io/zh-cn/docs/" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 是一个基于 <a class="link"   href="https://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的静态页面博客框架，安装 Hexo 前需要安装 Node.js 和 <a class="link"   href="https://git-scm.com/" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 。笔者之前安装过这两个应用，在这里不详细介绍它们的安装过程。</p>
+<p>安装完上述应用后，打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<p>即可安装 Hexo 。</p>
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><p>在打算放置博客的路径下打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="string">&quot;your-blog-name&quot;</span></span><br><span class="line"><span class="built_in">cd</span> your-blog-name</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
+
+<p>执行完成后，当前文件夹的文件结构如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的配置文件。</p>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>网站所需要的程序包。</p>
+<h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><p>模板文件夹，新建文章时会根据该文件夹下的模板创建文件。</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+<h3 id="theme"><a href="#theme" class="headerlink" title="theme"></a>theme</h3><p>主题文件夹。</p>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>新建的 Hexo 博客默认使用 landscape 主题。</p>
+<p>在 <a class="link"   href="https://hexo.io/themes/" >这里 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以找到更多的 Hexo 主题，每个主题有不同的配置方法，请根据文档进行配置，此处不做赘述。</p>
+<p>在博客根目录打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>结果如下：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></div>
+
+<p>此时用浏览器访问 <code>http://localhost:4000/</code> 可预览网页。</p>
+<h2 id="申请github-pages"><a href="#申请github-pages" class="headerlink" title="申请github pages"></a>申请github pages</h2><p><a class="link"   href="https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>创建用户或组织站点，则存储库必须命名为 <code>&lt;user&gt;.github.io</code> 或 <code>&lt;organization&gt;.github.io</code> ，全小写。</p>
+<h3 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h3><p>新建站点入口文件。GitHub Pages 将查找 <code>index.html</code>、<code>index.md</code> 或 <code>README.md</code> 文件，作为站点的入口文件。</p>
+<ol>
+<li>进入仓库，找到 “settings”，打开。</li>
+<li>在边栏中找到 “pages”，打开。</li>
+<li>选择分支，点击 “save”。</li>
+</ol>
+<p>等待一段时间后点击上方 “visit site” 或通过网址访问网页。</p>
+<div class="note warning"><p>对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
+</div>
+
+<h2 id="Hexo-连接到-github-pages"><a href="#Hexo-连接到-github-pages" class="headerlink" title="Hexo 连接到 github pages"></a>Hexo 连接到 github pages</h2><p>在 <code>_config.yml</code> 文件中添加或修改下方内容：</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/&lt;user&gt;/&lt;user&gt;.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;&lt;your-branch&gt;&#x27;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清空上次生成的文件，第一次运行可不运行</span></span><br><span class="line">hexo generate <span class="comment"># 生成上传到仓库的文件，保存在 public 文件夹下</span></span><br><span class="line">hexo deploy <span class="comment"># 上传到仓库，第一次运行需要绑定 github 账号</span></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/10/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
