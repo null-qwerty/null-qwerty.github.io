@@ -71,6 +71,26 @@
       </tags>
   </entry>
   <entry>
+    <title>第一篇博客</title>
+    <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><p>笔者很早就有建个人博客的想法，但因为 <del>能力不足</del> 懒，迟迟没有上手操作。最近有点上头了，在网上找了教程，花两个小时建了一个简单的博客——就是你现在浏览的这个网站。</p>
+<p>建站的3202年，跟微博、微信朋友圈，甚至QQ空间对比，网络博客好像是一种过时的东西（大概？）。它维护起来更麻烦，内容<strong>似乎</strong>也更正式，不太能跟上越来越快的生活节奏。笔者建立这个博客的初心，是记录学习到的知识，方便以后作为资料站使用。</p>
+<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><ul>
+<li>计算机相关知识的学习经历及成果。</li>
+<li>如你所见，笔者是个 <del>沙峦</del> 二次元，大概也会发些相关内容，比如galgame的短评&#x2F;中评&#x2F;长评（虽然一篇都没写过）。</li>
+<li><del>欧皇晒卡</del></li>
+<li>其它想发的内容。</li>
+</ul>
+<p>虽然上文说博客的内容<strong>似乎</strong>更正式，但实际上挺随意的。</p>
+<h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>在这里相遇是一种缘分，所以本博客内容可随意使用。</p>
+<p><strong>转载请标明出处</strong></p>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>发表文章</title>
     <url>/2023/10/05/%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>命令</p>
@@ -220,26 +240,6 @@
 <p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
 <p>This is Tab 3.</p>
 <p>This is Tab 3.</p></div></div></div>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇博客</title>
-    <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><p>笔者很早就有建个人博客的想法，但因为 <del>能力不足</del> 懒，迟迟没有上手操作。最近有点上头了，在网上找了教程，花两个小时建了一个简单的博客——就是你现在浏览的这个网站。</p>
-<p>建站的3202年，跟微博、微信朋友圈，甚至QQ空间对比，网络博客好像是一种过时的东西（大概？）。它维护起来更麻烦，内容<strong>似乎</strong>也更正式，不太能跟上越来越快的生活节奏。笔者建立这个博客的初心，是记录学习到的知识，方便以后作为资料站使用。</p>
-<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><ul>
-<li>计算机相关知识的学习经历及成果。</li>
-<li>如你所见，笔者是个 <del>沙峦</del> 二次元，大概也会发些相关内容，比如galgame的短评&#x2F;中评&#x2F;长评（虽然一篇都没写过）。</li>
-<li><del>欧皇晒卡</del></li>
-<li>其它想发的内容。</li>
-</ul>
-<p>虽然上文说博客的内容<strong>似乎</strong>更正式，但实际上挺随意的。</p>
-<h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>在这里相遇是一种缘分，所以本博客内容可随意使用。</p>
-<p><strong>转载请标明出处</strong></p>
 ]]></content>
       <tags>
         <tag>start</tag>
