@@ -19,8 +19,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>博客搭建</title>
-    <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <title>博客搭建（一）建站</title>
+    <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>本博客使用 <a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 博客框架，主题采用 <a class="link"   href="https://github.com/EvanNotFound/hexo-theme-redefine" >radefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 搭建，最终发布到 github pages。</p>
 <h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p><a class="link"   href="https://hexo.io/zh-cn/docs/" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p><a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 是一个基于 <a class="link"   href="https://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的静态页面博客框架，安装 Hexo 前需要安装 Node.js 和 <a class="link"   href="https://git-scm.com/" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 。笔者之前安装过这两个应用，在这里不详细介绍它们的安装过程。</p>
@@ -71,8 +71,8 @@
       </tags>
   </entry>
   <entry>
-    <title>发表文章</title>
-    <url>/2023/10/05/%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
+    <title>博客搭建（二）发表文章</title>
+    <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>命令</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></div>
 
@@ -197,8 +197,6 @@
 <p>例子</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% folding blue::Folding 测试： 点击查看更多 %&#125;</span><br><span class="line"></span><br><span class="line">啊啊啊啊啊</span><br><span class="line"></span><br><span class="line">&#123;% note danger  %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note tip  %&#125;</span><br><span class="line">tip 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endfolding %&#125;</span><br></pre></td></tr></table></figure></div>
 
-
-
 <details class="blue" data-header-exclude><summary><i class="fa-solid fa-chevron-right"></i>Folding 测试： 点击查看更多 </summary>
               <div class='content'>
               <p>啊啊啊啊啊</p><div class="note danger"><p>danger 提示块标签</p></div><div class="note tip"><p>tip 提示块标签</p></div>
@@ -214,7 +212,6 @@
 <p>每个栏目内容使用 <code>&lt;!-- tab 栏目名称 --&gt;</code> 和 <code>&lt;!-- endtab --&gt;</code> 来定义。</p>
 <p>例子：</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs First unique name %&#125;</span><br><span class="line">&lt;!-- tab First Tab--&gt;</span><br><span class="line">**This is Tab 1.**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab Second Tab--&gt;</span><br><span class="line">**This is Tab 2.**</span><br><span class="line"></span><br><span class="line">This is Tab 2.</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab Third Tab--&gt;</span><br><span class="line">**This is Tab 3.**</span><br><span class="line"></span><br><span class="line">This is Tab 3.</span><br><span class="line"></span><br><span class="line">This is Tab 3.</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
-
 
 <div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p>
 <p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
