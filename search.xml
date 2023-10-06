@@ -226,24 +226,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/10/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>markdown语法</title>
     <url>/2023/10/06/markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">......</span><br></pre></td></tr></table></figure></div>
@@ -340,6 +322,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/10/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>博客搭建（一）建站</title>
     <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>本博客使用 <a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 博客框架，主题采用 <a class="link"   href="https://github.com/EvanNotFound/hexo-theme-redefine" >radefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 搭建，最终发布到 github pages。</p>
@@ -386,6 +386,26 @@
 
 <p>打开控制台，输入：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清空上次生成的文件，第一次运行可不运行</span></span><br><span class="line">hexo generate <span class="comment"># 生成上传到仓库的文件，保存在 public 文件夹下</span></span><br><span class="line">hexo deploy <span class="comment"># 上传到仓库，第一次运行需要绑定 github 账号</span></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇博客</title>
+    <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><p>笔者很早就有建个人博客的想法，但因为 <del>能力不足</del> 懒，迟迟没有上手操作。最近有点上头了，在网上找了教程，花两个小时建了一个简单的博客——就是你现在浏览的这个网站。</p>
+<p>建站的3202年，跟微博、微信朋友圈，甚至QQ空间对比，网络博客好像是一种过时的东西（大概？）。它维护起来更麻烦，内容<strong>似乎</strong>也更正式，不太能跟上越来越快的生活节奏。笔者建立这个博客的初心，是记录学习到的知识，方便以后作为资料站使用。</p>
+<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><ul>
+<li>计算机相关知识的学习经历及成果。</li>
+<li>如你所见，笔者是个 <del>沙峦</del> 二次元，大概也会发些相关内容，比如galgame的短评&#x2F;中评&#x2F;长评（虽然一篇都没写过）。</li>
+<li><del>欧皇晒卡</del></li>
+<li>其它想发的内容。</li>
+</ul>
+<p>虽然上文说博客的内容<strong>似乎</strong>更正式，但实际上挺随意的。</p>
+<h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>本博客内容可随意使用。</p>
+<p><strong>转载请标明出处</strong></p>
 ]]></content>
       <tags>
         <tag>start</tag>
@@ -538,26 +558,6 @@
 <p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
 <p>This is Tab 3.</p>
 <p>This is Tab 3.</p></div></div></div>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇博客</title>
-    <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><p>笔者很早就有建个人博客的想法，但因为 <del>能力不足</del> 懒，迟迟没有上手操作。最近有点上头了，在网上找了教程，花两个小时建了一个简单的博客——就是你现在浏览的这个网站。</p>
-<p>建站的3202年，跟微博、微信朋友圈，甚至QQ空间对比，网络博客好像是一种过时的东西（大概？）。它维护起来更麻烦，内容<strong>似乎</strong>也更正式，不太能跟上越来越快的生活节奏。笔者建立这个博客的初心，是记录学习到的知识，方便以后作为资料站使用。</p>
-<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><ul>
-<li>计算机相关知识的学习经历及成果。</li>
-<li>如你所见，笔者是个 <del>沙峦</del> 二次元，大概也会发些相关内容，比如galgame的短评&#x2F;中评&#x2F;长评（虽然一篇都没写过）。</li>
-<li><del>欧皇晒卡</del></li>
-<li>其它想发的内容。</li>
-</ul>
-<p>虽然上文说博客的内容<strong>似乎</strong>更正式，但实际上挺随意的。</p>
-<h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>本博客内容可随意使用。</p>
-<p><strong>转载请标明出处</strong></p>
 ]]></content>
       <tags>
         <tag>start</tag>
