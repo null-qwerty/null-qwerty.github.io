@@ -497,58 +497,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客搭建（三）配置CDN</title>
-    <url>/2023/10/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/</url>
-    <content><![CDATA[<p>github pages 的服务器在国外，国内访问速度较慢。笔者尝试过免费的 CDN，如 staticfile、cdnjs，但是效果不是很好。<br>之后看到了 <a class="link"   href="https://www.cloudflare.com/" >cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，有免费的CDN，准备上手尝试。</p>
-<blockquote>
-<p>需要的工具：</p>
-<ul>
-<li>一个域名</li>
-<li>一个 github pages 的博客</li>
-<li>一个 cloudflare 的账号</li>
-</ul>
-</blockquote>
-<h2 id="cloudflare-的配置"><a href="#cloudflare-的配置" class="headerlink" title="cloudflare 的配置"></a>cloudflare 的配置</h2><p>注册 cloudflare 账号，添加域名<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg"
-                      alt="cloudflare"
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg"
-                      alt="添加域名"
-                ><br>cloudflare 会自动扫描域名的 DNS 记录，添加 A 记录和 CNAME 记录，如果没有，手动添加 </p>
-<h3 id="手动添加-DNS-记录"><a href="#手动添加-DNS-记录" class="headerlink" title="手动添加 DNS 记录"></a>手动添加 DNS 记录</h3><p>边栏里选择 DNS-&gt;记录-&gt;添加记录<br>A 记录指向 github pages 的服务器 ipv4 地址，地址如下：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure></div>
-<p>个人博客具体的服务器地址可通过 <code>ping username.github.io</code> 获取<br>CNAME 记录指向 github pages 的域名，即 <code>username.github.io</code></p>
-<h2 id="更改域名的-DNS-服务器"><a href="#更改域名的-DNS-服务器" class="headerlink" title="更改域名的 DNS 服务器"></a>更改域名的 DNS 服务器</h2><p>更改域名的 DNS 服务器为 cloudflare 的 DNS 服务器。笔者的域名在阿里云上购买注册，其它域名注册商的操作应该类似。<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg"
-                      alt="更改DNS 1"
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg"
-                      alt="更改DNS 2"
-                ></p>
-<h2 id="github-pages-的配置"><a href="#github-pages-的配置" class="headerlink" title="github pages 的配置"></a>github pages 的配置</h2><p>在 github pages 的仓库中添加 CNAME 文件，内容为自己的域名，如 <code>www.example.com</code>，然后在仓库的设置中添加自定义域名，如下图：<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg"
-                      alt="github pages"
-                ><br>等待出现图上提示的<code>DNS check successful</code>，即可访问自己的域名了。</p>
-<div class="note default icon-padding"><i class="note-icon fa-solid fa-info"></i><p>若出现 ERROR 提示，检查 cloudflare 是否添加记录，如果已添加可能是 DNS 服务器还没有更新，等待一段时间再试。</p>
-</div>
-
-<h2 id="enforce-https"><a href="#enforce-https" class="headerlink" title="enforce https"></a>enforce https</h2><p>在 cloudflare 的 SSL&#x2F;TLS 中设置 <code>Always Use HTTPS</code> 为 <code>On</code>，这样就可以强制使用 https 了。</p>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客搭建（二）发表文章</title>
     <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>命令</p>
@@ -695,6 +643,58 @@
 <p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
 <p>This is Tab 3.</p>
 <p>This is Tab 3.</p></div></div></div>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建（三）配置CDN</title>
+    <url>/2023/10/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/</url>
+    <content><![CDATA[<p>github pages 的服务器在国外，国内访问速度较慢。笔者尝试过免费的 CDN，如 staticfile、cdnjs，但是效果不是很好。<br>之后看到了 <a class="link"   href="https://www.cloudflare.com/" >cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，有免费的CDN，准备上手尝试。</p>
+<blockquote>
+<p>需要的工具：</p>
+<ul>
+<li>一个域名</li>
+<li>一个 github pages 的博客</li>
+<li>一个 cloudflare 的账号</li>
+</ul>
+</blockquote>
+<h2 id="cloudflare-的配置"><a href="#cloudflare-的配置" class="headerlink" title="cloudflare 的配置"></a>cloudflare 的配置</h2><p>注册 cloudflare 账号，添加域名<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg"
+                      alt="cloudflare"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg"
+                      alt="添加域名"
+                ><br>cloudflare 会自动扫描域名的 DNS 记录，添加 A 记录和 CNAME 记录，如果没有，手动添加 </p>
+<h3 id="手动添加-DNS-记录"><a href="#手动添加-DNS-记录" class="headerlink" title="手动添加 DNS 记录"></a>手动添加 DNS 记录</h3><p>边栏里选择 DNS-&gt;记录-&gt;添加记录<br>A 记录指向 github pages 的服务器 ipv4 地址，地址如下：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure></div>
+<p>个人博客具体的服务器地址可通过 <code>ping username.github.io</code> 获取<br>CNAME 记录指向 github pages 的域名，即 <code>username.github.io</code></p>
+<h2 id="更改域名的-DNS-服务器"><a href="#更改域名的-DNS-服务器" class="headerlink" title="更改域名的 DNS 服务器"></a>更改域名的 DNS 服务器</h2><p>更改域名的 DNS 服务器为 cloudflare 的 DNS 服务器。笔者的域名在阿里云上购买注册，其它域名注册商的操作应该类似。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg"
+                      alt="更改DNS 1"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg"
+                      alt="更改DNS 2"
+                ></p>
+<h2 id="github-pages-的配置"><a href="#github-pages-的配置" class="headerlink" title="github pages 的配置"></a>github pages 的配置</h2><p>在 github pages 的仓库中添加 CNAME 文件，内容为自己的域名，如 <code>www.example.com</code>，然后在仓库的设置中添加自定义域名，如下图：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg"
+                      alt="github pages"
+                ><br>等待出现图上提示的<code>DNS check successful</code>，即可访问自己的域名了。</p>
+<div class="note default icon-padding"><i class="note-icon fa-solid fa-info"></i><p>若出现 ERROR 提示，检查 cloudflare 是否添加记录，如果已添加可能是 DNS 服务器还没有更新，等待一段时间再试。</p>
+</div>
+
+<h2 id="enforce-https"><a href="#enforce-https" class="headerlink" title="enforce https"></a>enforce https</h2><p>在 cloudflare 的 SSL&#x2F;TLS 中设置 <code>Always Use HTTPS</code> 为 <code>On</code>，这样就可以强制使用 https 了。</p>
 ]]></content>
       <tags>
         <tag>start</tag>
