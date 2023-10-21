@@ -497,6 +497,58 @@
       </tags>
   </entry>
   <entry>
+    <title>博客搭建（三）配置CDN</title>
+    <url>/2023/10/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/</url>
+    <content><![CDATA[<p>github pages 的服务器在国外，国内访问速度较慢。笔者尝试过免费的 CDN，如 staticfile、cdnjs，但是效果不是很好。<br>之后看到了 <a class="link"   href="https://www.cloudflare.com/" >cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，有免费的CDN，准备上手尝试。</p>
+<blockquote>
+<p>需要的工具：</p>
+<ul>
+<li>一个域名</li>
+<li>一个 github pages 的博客</li>
+<li>一个 cloudflare 的账号</li>
+</ul>
+</blockquote>
+<h2 id="cloudflare-的配置"><a href="#cloudflare-的配置" class="headerlink" title="cloudflare 的配置"></a>cloudflare 的配置</h2><p>注册 cloudflare 账号，添加域名<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg"
+                      alt="cloudflare"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg"
+                      alt="添加域名"
+                ><br>cloudflare 会自动扫描域名的 DNS 记录，添加 A 记录和 CNAME 记录，如果没有，手动添加 </p>
+<h3 id="手动添加-DNS-记录"><a href="#手动添加-DNS-记录" class="headerlink" title="手动添加 DNS 记录"></a>手动添加 DNS 记录</h3><p>边栏里选择 DNS-&gt;记录-&gt;添加记录<br>A 记录指向 github pages 的服务器 ipv4 地址，地址如下：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure></div>
+<p>个人博客具体的服务器地址可通过 <code>ping username.github.io</code> 获取<br>CNAME 记录指向 github pages 的域名，即 <code>username.github.io</code></p>
+<h2 id="更改域名的-DNS-服务器"><a href="#更改域名的-DNS-服务器" class="headerlink" title="更改域名的 DNS 服务器"></a>更改域名的 DNS 服务器</h2><p>更改域名的 DNS 服务器为 cloudflare 的 DNS 服务器。笔者的域名在阿里云上购买注册，其它域名注册商的操作应该类似。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg"
+                      alt="更改DNS 1"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg"
+                      alt="更改DNS 2"
+                ></p>
+<h2 id="github-pages-的配置"><a href="#github-pages-的配置" class="headerlink" title="github pages 的配置"></a>github pages 的配置</h2><p>在 github pages 的仓库中添加 CNAME 文件，内容为自己的域名，如 <code>www.example.com</code>，然后在仓库的设置中添加自定义域名，如下图：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg"
+                      alt="github pages"
+                ><br>等待出现图上提示的<code>DNS check successful</code>，即可访问自己的域名了。</p>
+<div class="note default icon-padding"><i class="note-icon fa-solid fa-info"></i><p>若出现 ERROR 提示，检查 cloudflare 是否添加记录，如果已添加可能是 DNS 服务器还没有更新，等待一段时间再试。</p>
+</div>
+
+<h2 id="enforce-https"><a href="#enforce-https" class="headerlink" title="enforce https"></a>enforce https</h2><p>在 cloudflare 的 SSL&#x2F;TLS 中设置 <code>Always Use HTTPS</code> 为 <code>On</code>，这样就可以强制使用 https 了。</p>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建（二）发表文章</title>
     <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>命令</p>
@@ -649,58 +701,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客搭建（三）配置CDN</title>
-    <url>/2023/10/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/</url>
-    <content><![CDATA[<p>github pages 的服务器在国外，国内访问速度较慢。笔者尝试过免费的 CDN，如 staticfile、cdnjs，但是效果不是很好。<br>之后看到了 <a class="link"   href="https://www.cloudflare.com/" >cloudflare <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，有免费的CDN，准备上手尝试。</p>
-<blockquote>
-<p>需要的工具：</p>
-<ul>
-<li>一个域名</li>
-<li>一个 github pages 的博客</li>
-<li>一个 cloudflare 的账号</li>
-</ul>
-</blockquote>
-<h2 id="cloudflare-的配置"><a href="#cloudflare-的配置" class="headerlink" title="cloudflare 的配置"></a>cloudflare 的配置</h2><p>注册 cloudflare 账号，添加域名<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg"
-                      alt="cloudflare"
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg"
-                      alt="添加域名"
-                ><br>cloudflare 会自动扫描域名的 DNS 记录，添加 A 记录和 CNAME 记录，如果没有，手动添加 </p>
-<h3 id="手动添加-DNS-记录"><a href="#手动添加-DNS-记录" class="headerlink" title="手动添加 DNS 记录"></a>手动添加 DNS 记录</h3><p>边栏里选择 DNS-&gt;记录-&gt;添加记录<br>A 记录指向 github pages 的服务器 ipv4 地址，地址如下：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure></div>
-<p>个人博客具体的服务器地址可通过 <code>ping username.github.io</code> 获取<br>CNAME 记录指向 github pages 的域名，即 <code>username.github.io</code></p>
-<h2 id="更改域名的-DNS-服务器"><a href="#更改域名的-DNS-服务器" class="headerlink" title="更改域名的 DNS 服务器"></a>更改域名的 DNS 服务器</h2><p>更改域名的 DNS 服务器为 cloudflare 的 DNS 服务器。笔者的域名在阿里云上购买注册，其它域名注册商的操作应该类似。<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg"
-                      alt="更改DNS 1"
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg"
-                      alt="更改DNS 2"
-                ></p>
-<h2 id="github-pages-的配置"><a href="#github-pages-的配置" class="headerlink" title="github pages 的配置"></a>github pages 的配置</h2><p>在 github pages 的仓库中添加 CNAME 文件，内容为自己的域名，如 <code>www.example.com</code>，然后在仓库的设置中添加自定义域名，如下图：<br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg"
-                      alt="github pages"
-                ><br>等待出现图上提示的<code>DNS check successful</code>，即可访问自己的域名了。</p>
-<div class="note default icon-padding"><i class="note-icon fa-solid fa-info"></i><p>若出现 ERROR 提示，检查 cloudflare 是否添加记录，如果已添加可能是 DNS 服务器还没有更新，等待一段时间再试。</p>
-</div>
-
-<h2 id="enforce-https"><a href="#enforce-https" class="headerlink" title="enforce https"></a>enforce https</h2><p>在 cloudflare 的 SSL&#x2F;TLS 中设置 <code>Always Use HTTPS</code> 为 <code>On</code>，这样就可以强制使用 https 了。</p>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>理解贝叶斯定理</title>
     <url>/2023/10/10/%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86/</url>
     <content><![CDATA[<p>首先贴一下百度百科上贝叶斯定理的简介：</p>
@@ -764,6 +764,29 @@
 ]]></content>
       <tags>
         <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一次使用ros时产生的段错误</title>
+    <url>/2023/10/22/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8ros%E6%97%B6%E4%BA%A7%E7%94%9F%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>最近在修改项目中与下位机的通信协议时，抛出了一个段错误。调试找到该错误出现在下面这行代码：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">ros::NodeHandle nh_;</span><br></pre></td></tr></table></figure></div>
+<p>显然这个错误是不正常的，因为所有的ros包中都需要这个对象，而且这个对象在其他地方都是正常的。<br>经过分析，发现问题出在<code>#pragma pack(1)</code>上面。</p>
+<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>为了保证通信协议结构体的长度等于内部成员的长度之和，我在通信协议结构体定义前加上了<code>#pragma pack(1)</code>：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>防止内存对齐，保证结构体长度一定是32字节。</p>
+<p>同时，我将包含通信协议的头文件放在了ros的头文件前面：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;protocol.h&quot;</span></span></span><br><span class="line"><span class="comment">// 省略其他头文件</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ros/ros.h&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+<p>在编译时，<strong>编译器会将头文件中的内容拷贝到源文件中</strong>，因此<code>#pragma pack(1)</code>也会被拷贝到源文件中，并且在<code>ros.h</code>的前面，对ros中的相关结构定义产生影响。猜测ros中为了保证速率，会直接对内存进行操作，而这些操作考虑了内存对齐的问题，因此在取消内存对齐后这些操作会出现非法访问，导致段错误。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<li>将自定义的头文件放在ros的头文件后面，这样<code>#pragma pack(1)</code>就不会影响ros的结构体定义。</li>
+<li>在结构体定义后面加上<code>#pragma pack()</code>，还原内存对齐：<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack()    <span class="comment">// 还原内存对齐</span></span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>ros</tag>
+        <tag>C++</tag>
+        <tag>段错误</tag>
       </tags>
   </entry>
 </search>

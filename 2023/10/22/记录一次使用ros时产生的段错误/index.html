@@ -13,19 +13,24 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/tags/"/>
+    <link rel="canonical" href="http://example.com/2023/10/22/记录一次使用ros时产生的段错误/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://example.com/tags/index.html">
+        <meta name="description" content="取消内存对齐引发的段错误">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记录一次使用ros时产生的段错误">
+<meta property="og:url" content="http://example.com/2023/10/22/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8ros%E6%97%B6%E4%BA%A7%E7%94%9F%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="取消内存对齐引发的段错误">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-05T03:14:02.000Z">
-<meta property="article:modified_time" content="2023-10-05T03:14:02.419Z">
+<meta property="article:published_time" content="2023-10-21T16:26:22.000Z">
+<meta property="article:modified_time" content="2023-10-21T16:52:33.822Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="ros">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="段错误">
 <meta name="twitter:card" content="summary">
     
     
@@ -38,7 +43,7 @@
     
     <title>
         
-            标签 -
+            记录一次使用ros时产生的段错误 -
         
         null-qwerty&#39;s blog
     </title>
@@ -169,7 +174,7 @@
                         
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active" 
+                                <a class="" 
                                     href="/tags/"  >
                                     
                                         
@@ -267,7 +272,7 @@
             
                 
                     <li class="drawer-navbar-item text-base my-1.5 flex justify-center items-center">
-                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group active" 
+                        <a class="rounded-3xl py-1.5 px-5 hover:border hover:!text-primary active:!text-primary group " 
                         href="/tags/"  >
                              
                                 
@@ -323,84 +328,169 @@
             <div class="main-content">
 
                 
+                    <div class="post-page-container">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            
+                <h1 class="article-title-regular">记录一次使用ros时产生的段错误</h1>
+            
+            </div>
+            
                     
-<div class="tagcloud-container">
-	
-	<div>
-		<h1 class="tagcloud-header">标签</h1>
-	</div>
-	<div class="tagcloud-content">
-		<ul class="tag-list" data-show-value="true">
-			
-			<li>
-				<a data-weight="2" href="/tags/%E6%95%B0%E5%AD%A6/"
-					><i class="fa-solid fa-hashtag"></i>数学</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/LaTeX/"
-					><i class="fa-solid fa-hashtag"></i>LaTeX</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/markdown/"
-					><i class="fa-solid fa-hashtag"></i>markdown</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/php/"
-					><i class="fa-solid fa-hashtag"></i>php</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/MySQL/"
-					><i class="fa-solid fa-hashtag"></i>MySQL</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"
-					><i class="fa-solid fa-hashtag"></i>网站搭建</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="4" href="/tags/start/"
-					><i class="fa-solid fa-hashtag"></i>start</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"
-					><i class="fa-solid fa-hashtag"></i>概率论与数理统计</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/ros/"
-					><i class="fa-solid fa-hashtag"></i>ros</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/C/"
-					><i class="fa-solid fa-hashtag"></i>C++</a
-				>
-			</li>
-			
-			<li>
-				<a data-weight="1" href="/tags/%E6%AE%B5%E9%94%99%E8%AF%AF/"
-					><i class="fa-solid fa-hashtag"></i>段错误</a
-				>
-			</li>
-			
-		</ul>
-	</div>
-	
+        
+        
+            <div class="article-header flex flex-row gap-2 items-center">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/avatar.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">null-qwerty</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-10-22 00:26:22</span>
+        <span class="mobile">2023-10-22 00:26:22</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-10-22 00:52:33</span>
+            <span class="mobile">2023-10-22 00:52:33</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/ros/">ros</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/C/">C++</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E6%AE%B5%E9%94%99%E8%AF%AF/">段错误</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>458 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body">
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>最近在修改项目中与下位机的通信协议时，抛出了一个段错误。调试找到该错误出现在下面这行代码：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ros::NodeHandle nh_;</span><br></pre></td></tr></table></figure></div>
+<p>显然这个错误是不正常的，因为所有的ros包中都需要这个对象，而且这个对象在其他地方都是正常的。<br>经过分析，发现问题出在<code>#pragma pack(1)</code>上面。</p>
+<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>为了保证通信协议结构体的长度等于内部成员的长度之和，我在通信协议结构体定义前加上了<code>#pragma pack(1)</code>：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>防止内存对齐，保证结构体长度一定是32字节。</p>
+<p>同时，我将包含通信协议的头文件放在了ros的头文件前面：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;protocol.h&quot;</span></span></span><br><span class="line"><span class="comment">// 省略其他头文件</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ros/ros.h&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+<p>在编译时，<strong>编译器会将头文件中的内容拷贝到源文件中</strong>，因此<code>#pragma pack(1)</code>也会被拷贝到源文件中，并且在<code>ros.h</code>的前面，对ros中的相关结构定义产生影响。猜测ros中为了保证速率，会直接对内存进行操作，而这些操作考虑了内存对齐的问题，因此在取消内存对齐后这些操作会出现非法访问，导致段错误。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<li>将自定义的头文件放在ros的头文件后面，这样<code>#pragma pack(1)</code>就不会影响ros的结构体定义。</li>
+<li>在结构体定义后面加上<code>#pragma pack()</code>，还原内存对齐：<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack()    <span class="comment">// 还原内存对齐</span></span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/ros/">#ros</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/C/">#C++</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E6%AE%B5%E9%94%99%E8%AF%AF/">#段错误</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/10/12/ubuntu18-04%E4%B8%8B%E4%BD%BF%E7%94%A8php-mysql-apache%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">ubuntu18.04下使用php+mysql+apache的网站搭建</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">此页目录</div>
+        <div class="page-title">记录一次使用ros时产生的段错误</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90"><span class="nav-text">问题分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-text">解决方案</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
 </div>
 
 
@@ -478,6 +568,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
