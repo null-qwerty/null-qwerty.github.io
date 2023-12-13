@@ -1190,6 +1190,12 @@
                      data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/AutoMinify.png"
                       alt="AutoMinify"
                 ></p>
+
+  <div class="note p-4 mb-4 rounded-small info icon-padding">
+    <i class="note-icon fa-solid fa-info"></i><p>后续发现 <code>Rocket Loader</code> 会导致页面的一些 JS 代码失效，故关闭该功能。</p>
+
+  </div>
+
 <h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>缓存→配置</strong></p>
 <p><img  
                      lazyload
