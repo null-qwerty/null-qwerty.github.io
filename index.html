@@ -383,62 +383,54 @@ mjx-container[display="true"] + br {
 <main class="page-container" id="swup">
 
     
-        
-    <style>
-        .home-banner-container {
-            background: none !important;
-        }
-        .home-article-item,
-        .sidebar-links,
-        .sidebar-content,
-        a.page-number,
-        a.extend,
-        .sidebar-links .links:hover,
-        .right-bottom-tools,
-        footer.footer {
-            background-color: var(--background-color-transparent-80) !important;
-        }
-        .right-bottom-tools:hover,
-        a.page-number:hover,
-        a.extend:hover {
-            background-color: var(--primary-color) !important;
-        }
-        .site-info,
-        .home-article-sticky-label {
-            background-color: var(--background-color-transparent-15) !important;
-        }
-        .home-article-sticky-label {
-            backdrop-filter: none !important;
-        }
-    </style>
-    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="/images/home-banner/bg.webp" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="/images/home-banner/bg.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
+        $temp-title-fs = hexo-config('home_banner.text_style.title_size')
+$title-font-size = $temp-title-fs ? convert($temp-title-fs) : 2.8rem
+$temp-subtitle-fs = hexo-config('home_banner.text_style.subtitle_size')
+$subtitle-font-size = $temp-subtitle-fs ? convert($temp-subtitle-fs) : 1.4rem
+$temp-line-height = hexo-config('style.first_screen.line_height')
+$line-height = $temp-line-height ? $temp-line-height : 1.2
+$home-banner-icon-size = 1.6rem
 
+@import '../../common/variables'
 
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="content mt-8 flex flex-col justify-center items-center">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            null-qwerty's blog
-            
-            
-                <p><i id="subtitle"></i></p>
-            
-        </div>
-        
-    </div>
-    <script>
-        const scrollToMain = ()=> {
-            console.log('scroll');
-            const target = document.querySelector('.main-content-container');
-            target.scrollIntoView({ behavior: 'smooth'});
-        }
-    </script>
-</div>
+.home-banner-background
+  //background var(--home-banner-img) center center / cover no-repeat
+  transition filter 0.3s ease
+
+.home-banner-container
+  font-family 'Chillax-Variable', sans-serif
+  position relative
+  box-sizing border-box
+  width 100%
+  min-height 100vh
+  overflow hidden
+  will-change transform
+
+  .content
+    position relative
+    box-sizing border-box
+    min-height 90vh
+
+    .description
+      font-size $title-font-size
+      line-height $line-height
+      color var(--home-banner-text-color)
+
+      p
+        margin 0
+        opacity 0.9
+        font-family 'Satoshi-Variable', sans-serif
+        font-weight 350
+
+        i
+          font-size $subtitle-font-size
+          font-style normal
+
+        span
+          font-size: $subtitle-font-size * 1.05
+
+      +redefine-tablet()
+        font-size: $title-font-size * 0.9
     
 
     <div class="main-content-container">
@@ -676,7 +668,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">14</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -743,7 +735,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">14</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -820,6 +812,54 @@ mjx-container[display="true"] + br {
     </div>
 
     <a href="/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">阅读全文<span class="seo-reader-text">第一篇博客</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    
+                
+
+                
+                    <div id="home-article-thumbnail" class="home-article-thumbnail relative h-[150px] overflow-hidden rounded-t-large">
+                        <a href="/2024/01/01/%E4%BD%A0%E5%A5%BD-2024/">
+                            <img src="/images/%E4%BD%A0%E5%A5%BD-2024/thumbnail.png" alt="你好, 2024" class="w-full h-full object-cover dark:brightness-75 transition-all" />
+                        </a>
+                    </div>
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-5">
+                    <h3 class="home-article-title">
+                        <a href="/2024/01/01/%E4%BD%A0%E5%A5%BD-2024/">
+                            你好, 2024
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            <p>Happy New Year!</p>
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Mon Jan 01 2024 00:23:57 GMT+0800">
+                
+                    2024-01-01
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2024/01/01/%E4%BD%A0%E5%A5%BD-2024/">阅读全文<span class="seo-reader-text">你好, 2024</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
                 </div>
@@ -1280,58 +1320,6 @@ ubuntu18.04
     </div>
 
     <a href="/2023/10/06/LaTeX%E8%A1%A8%E8%BE%BE%E5%BC%8F/">阅读全文<span class="seo-reader-text">LaTeX表达式</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2023/10/06/markdown%E8%AF%AD%E6%B3%95/">
-                            markdown语法
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            <p>markdown 语法汇总</p>
-
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Fri Oct 06 2023 11:26:39 GMT+0800">
-                
-                    2023-10-06
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/markdown/">markdown</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2023/10/06/markdown%E8%AF%AD%E6%B3%95/">阅读全文<span class="seo-reader-text">markdown语法</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
                 </div>
