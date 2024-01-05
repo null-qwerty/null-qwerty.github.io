@@ -649,8 +649,11 @@
                      data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg"
                       alt="github pages"
                 ><br>等待出现图上提示的<code>DNS check successful</code>，即可访问自己的域名了。</p>
-<div class="note default icon-padding"><i class="note-icon fa-solid fa-info"></i><p>若出现 ERROR 提示，检查 cloudflare 是否添加记录，如果已添加可能是 DNS 服务器还没有更新，等待一段时间再试。</p>
-</div>
+
+  <div class="note p-4 mb-4 rounded-small default icon-padding">
+    <i class="note-icon fa-solid fa-info"></i><p>若出现 ERROR 提示，检查 cloudflare 是否添加记录，如果已添加可能是 DNS 服务器还没有更新，等待一段时间再试。</p>
+
+  </div>
 
 <h2 id="enforce-https"><a href="#enforce-https" class="headerlink" title="enforce https"></a>enforce https</h2><p>在 cloudflare 的 SSL&#x2F;TLS 中设置 <code>Always Use HTTPS</code> 为 <code>On</code>，这样就可以强制使用 https 了。</p>
 

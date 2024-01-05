@@ -639,8 +639,11 @@
 <li>选择分支，点击 “save”。</li>
 </ol>
 <p>等待一段时间后点击上方 “visit site” 或通过网址访问网页。</p>
-<div class="note warning"><p>对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
-</div>
+
+  <div class="note p-4 mb-4 rounded-small warning">
+    <p>对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
+
+  </div>
 
 <h2 id="Hexo-连接到-github-pages"><a href="#Hexo-连接到-github-pages" class="headerlink" title="Hexo 连接到 github pages"></a>Hexo 连接到 github pages</h2><p>在 <code>_config.yml</code> 文件中添加或修改下方内容：</p>
 <div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/&lt;user&gt;/&lt;user&gt;.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;&lt;your-branch&gt;&#x27;</span></span><br></pre></td></tr></table></figure></div>
