@@ -226,6 +226,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/10/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Linux下基于UNIX域套接字的进程间通信</title>
     <url>/2023/12/14/Linux%E4%B8%8B%E5%9F%BA%E4%BA%8EUNIX%E5%9F%9F%E5%A5%97%E6%8E%A5%E5%AD%97%E7%9A%84%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</url>
     <content><![CDATA[<p>UNIX 域套接字（UDS）是一种常用的进程间通信（IPC）的方法，相较于 tcp&#x2F;udp 套接字，它更适合同一台机器的进程间通信，也只能在同一台机器上实现通信。</p>
@@ -264,24 +282,6 @@
         <tag>Linux</tag>
         <tag>Socket</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/12/12/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
   </entry>
   <entry>
     <title>markdown语法</title>
@@ -654,6 +654,78 @@
       </tags>
   </entry>
   <entry>
+    <title>博客搭建（四）Cloudflare配置</title>
+    <url>/2023/12/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p>之前使用 Cloudflare 的免费 CDN 服务，但是效果不是很好，查阅资料发现可以通过配置一些选项来加速国内访问速度。</p>
+<p><strong>配置的思路：尽可能让 CDN 保存多的文件。</strong></p>
+<h2 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>速度→优化→内容优化</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96.png"
+                      alt="内容优化"
+                ></p>
+<p>设置 <code>Rocket Loader</code> 为 <code>ON</code>，<code>Auto Minify</code> 勾选所有的文件类型</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/RocketLoader.png"
+                      alt="RocketLoader"
+                ><br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/AutoMinify.png"
+                      alt="AutoMinify"
+                ></p>
+
+  <div class="note p-4 mb-4 rounded-small info icon-padding">
+    <i class="note-icon fa-solid fa-info"></i><p>后续发现 <code>Rocket Loader</code> 会导致页面的一些 JS 代码失效，故关闭该功能。</p>
+
+  </div>
+
+<h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>缓存→配置</strong></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE.png"
+                      alt="缓存配置"
+                ></p>
+<p>设置 <code>Always Online</code> 为 <code>On</code>，<code>开发模式</code> 为 <code>OFF</code></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/AlwaysOnline.png"
+                      alt="AlwaysOnline"
+                ></p>
+<p>其他保持默认即可。</p>
+<h2 id="页面规则"><a href="#页面规则" class="headerlink" title="页面规则"></a>页面规则</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>规则→页面规则</strong>，免费版只能添加三条规则，不过对于个人博客来说足够了。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99.png"
+                      alt="页面规则"
+                ></p>
+<p>页面规则的配置比较随意，可以根据自己的需求来设置，笔者的配置如下：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99.png"
+                      alt="创建页面规则"
+                ></p>
+<hr>
+<p>至此配置完成。通过测（乐）速（子）网站的测试，国内访问速度有了明显的提升。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E6%B5%8B%E9%80%9F.png"
+                      alt="测速"
+                ></p>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建（二）发表文章</title>
     <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><p>命令</p>
@@ -848,78 +920,6 @@
 <p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
 <p>This is Tab 3.</p>
 <p>This is Tab 3.</p></div></div></div>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建（四）Cloudflare配置</title>
-    <url>/2023/12/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<p>之前使用 Cloudflare 的免费 CDN 服务，但是效果不是很好，查阅资料发现可以通过配置一些选项来加速国内访问速度。</p>
-<p><strong>配置的思路：尽可能让 CDN 保存多的文件。</strong></p>
-<h2 id="速度"><a href="#速度" class="headerlink" title="速度"></a>速度</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>速度→优化→内容优化</strong></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E5%86%85%E5%AE%B9%E4%BC%98%E5%8C%96.png"
-                      alt="内容优化"
-                ></p>
-<p>设置 <code>Rocket Loader</code> 为 <code>ON</code>，<code>Auto Minify</code> 勾选所有的文件类型</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/RocketLoader.png"
-                      alt="RocketLoader"
-                ><br><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/AutoMinify.png"
-                      alt="AutoMinify"
-                ></p>
-
-  <div class="note p-4 mb-4 rounded-small info icon-padding">
-    <i class="note-icon fa-solid fa-info"></i><p>后续发现 <code>Rocket Loader</code> 会导致页面的一些 JS 代码失效，故关闭该功能。</p>
-
-  </div>
-
-<h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>缓存→配置</strong></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE.png"
-                      alt="缓存配置"
-                ></p>
-<p>设置 <code>Always Online</code> 为 <code>On</code>，<code>开发模式</code> 为 <code>OFF</code></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/AlwaysOnline.png"
-                      alt="AlwaysOnline"
-                ></p>
-<p>其他保持默认即可。</p>
-<h2 id="页面规则"><a href="#页面规则" class="headerlink" title="页面规则"></a>页面规则</h2><p>打开 Cloudflare 仪表盘，左边选择<strong>规则→页面规则</strong>，免费版只能添加三条规则，不过对于个人博客来说足够了。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99.png"
-                      alt="页面规则"
-                ></p>
-<p>页面规则的配置比较随意，可以根据自己的需求来设置，笔者的配置如下：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2%E8%A7%84%E5%88%99.png"
-                      alt="创建页面规则"
-                ></p>
-<hr>
-<p>至此配置完成。通过测（乐）速（子）网站的测试，国内访问速度有了明显的提升。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/%E6%B5%8B%E9%80%9F.png"
-                      alt="测速"
-                ></p>
 ]]></content>
       <tags>
         <tag>start</tag>
