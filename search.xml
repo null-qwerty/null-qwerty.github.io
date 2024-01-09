@@ -226,24 +226,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/10/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Linux下基于UNIX域套接字的进程间通信</title>
     <url>/2023/12/14/Linux%E4%B8%8B%E5%9F%BA%E4%BA%8EUNIX%E5%9F%9F%E5%A5%97%E6%8E%A5%E5%AD%97%E7%9A%84%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1/</url>
     <content><![CDATA[<p>UNIX 域套接字（UDS）是一种常用的进程间通信（IPC）的方法，相较于 tcp&#x2F;udp 套接字，它更适合同一台机器的进程间通信，也只能在同一台机器上实现通信。</p>
@@ -282,6 +264,24 @@
         <tag>Linux</tag>
         <tag>Socket</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/10/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
   </entry>
   <entry>
     <title>markdown语法</title>
@@ -377,6 +377,225 @@
 ]]></content>
       <tags>
         <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu18.04下使用php+mysql+apache的网站搭建</title>
+    <url>/2023/10/12/ubuntu18-04%E4%B8%8B%E4%BD%BF%E7%94%A8php-mysql-apache%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>如果我做错了什么，请让法律来制裁我，<strong>而不是让我用php写项目</strong></p>
+
+  </div>
+<p>最近在给社团网站做服务器迁移，遇到了一些问题，记录一下。</p>
+<blockquote>
+<p>系统环境</p>
+<ul>
+<li>ubuntu18.04</li>
+</ul>
+</blockquote>
+<h2 id="安装-配置-MySQL"><a href="#安装-配置-MySQL" class="headerlink" title="安装|配置 MySQL"></a>安装|配置 MySQL</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install mysql-server   <span class="comment"># 安装 mysql 服务端</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>MySQL初始化安全脚本</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure></div>
+
+<p><code>mysql_secure_installation</code>中会有设置root密码，删除匿名用户，禁止root远程登录，删除test数据库，刷新权限表等操作，可以全都选择yes。root密码看情况更改。</p>
+<p>配置完成后，可以使用以下命令查看MySQL服务状态</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl status mysql.service</span><br></pre></td></tr></table></figure></div>
+
+<p>会产生类似如下输出（此处的输出并非在配置结束后运行产生的，仅作参考）</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">● mysql.service - MySQL Community Server</span><br><span class="line">   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)</span><br><span class="line">   Active: active (running) since Thu 2023-10-12 00:26:53 CST; 13h ago</span><br><span class="line"> Main PID: 657 (mysqld)</span><br><span class="line">    Tasks: 28 (<span class="built_in">limit</span>: 2333)</span><br><span class="line">   CGroup: /system.slice/mysql.service</span><br><span class="line">           └─657 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid</span><br></pre></td></tr></table></figure></div>
+
+<p>进入MySQL</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mysql -u root -p</span><br></pre></td></tr></table></figure></div>
+
+<p>创建新用户</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;password&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p>给新用户并授权</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> <span class="operator">*</span>.<span class="operator">*</span> <span class="keyword">TO</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> ;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>刷新权限表（一定要记得刷新）</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure></div>
+
+<p>创建新数据库，给网站使用</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE newdatabase;</span><br></pre></td></tr></table></figure></div>
+
+<p>使用新数据库</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">USE newdatabase;</span><br></pre></td></tr></table></figure></div>
+
+<p>退出MySQL</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="安装-配置-php"><a href="#安装-配置-php" class="headerlink" title="安装|配置 php"></a>安装|配置 php</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>建议使用源码编译安装。<br><strong>获取源码包</strong></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">curl -o php-7.4.33.tar.gz https://www.php.net/distributions/php-7.4.33.tar.gz</span><br><span class="line">tar -zxvf php-7.4.33.tar.gz</span><br><span class="line"><span class="built_in">cd</span> php-7.4.33</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>配置安装内容</strong><br>按需求配置安装内容，这里只是一个示例，具体安装内容可以参考官方文档。</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --prefix=/usr/local/php --sysconfdir=/etc/php --with-openssl --with-zlib --with-bz2 --with-curl --enable-bcmath --enable-gd --with-webp --with-jpeg --with-mhash --enable-mbstring --with-imap-ssl --with-mysqli=mysqlnd --enable-exif --with-ffi --with-zip --enable-sockets --with-pcre-jit --enable-fpm --enable-pdo --with-pdo-mysql=mysqlnd --with-mysql=mysqlnd --enable-pcnt</span><br></pre></td></tr></table></figure></div>
+
+<p>mysqlnd是php提供的mysql驱动，是php5.3之后才有的。此处不选择mysql驱动之后会出错。</p>
+<p>配置过程中可能会出现一些错误，根据错误提示安装相应的依赖即可。</p>
+<p><strong>编译安装</strong></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></div>
+
+<p>安装完成后执行以下命令</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo <span class="built_in">cp</span> php.ini-development /etc/php/php.ini <span class="comment"># 复制配置文件模板</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/php /usr/bin/php   <span class="comment"># 建立软链接</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/phpize /usr/bin/phpize</span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/sbin/php-fpm /usr/bin/php-fpm</span><br></pre></td></tr></table></figure></div>
+
+<p>然后执行以下命令，查看php版本</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">php -v</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>修改php配置文件</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/php/php.ini</span><br></pre></td></tr></table></figure></div>
+
+<p>添加pdo_mysql扩展</p>
+<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">extension</span>=pdo       <span class="comment">; 添加pdo扩展</span></span><br><span class="line"><span class="attr">extension</span>=mysqlnd   <span class="comment">; 添加mysqlnd扩展，因为前面设置pdo_mysql驱动为mysqlnd</span></span><br><span class="line"><span class="attr">extension</span>=pdo_mysql <span class="comment">; 添加pdo_mysql扩展</span></span><br></pre></td></tr></table></figure></div>
+
+<p>修改完后退出保存，重启php-fpm</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart php-fpm</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="安装-配置-apache"><a href="#安装-配置-apache" class="headerlink" title="安装|配置 apache"></a>安装|配置 apache</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install apache2</span><br><span class="line">sudo apt-get install libapache2-mod-php</span><br></pre></td></tr></table></figure></div>
+
+<p>安装完成后启动apache</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl start apache2</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h3><p>修改apache配置文件</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/apache2/apache2.conf</span><br></pre></td></tr></table></figure></div>
+
+<p>添加如下内容</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;Directory /var/www/html&gt;</span><br><span class="line">    Options Indexes FollowSymLinks</span><br><span class="line">    AllowOverride All</span><br><span class="line">    Require all granted</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>修改完后退出保存，重启apache</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart apache2</span><br></pre></td></tr></table></figure></div>
+
+<p>执行以下命令，启动<code>rewrite</code>模块</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo a2enmod rewrite</span><br></pre></td></tr></table></figure></div>
+
+<p>在 <code>/var/www/html</code> 目录下创建 <code>index.php</code> 文件，输入以下内容</p>
+<div class="highlight-container" data-rel="Php"><figure class="iseeu highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></div>
+<p>创建<code>.htaccess</code>文件，输入以下内容</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">RewriteEngine on</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</span><br><span class="line">RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]</span><br><span class="line">&lt;/IfModule&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>然后在浏览器中输入 <code>http://localhost</code> ，如果出现php信息页面，说明apache和php都安装成功了。可以用此页面查看php的配置信息。<br>随后即可在该路径下放置网页文件。</p>
+<h4 id="设置域名"><a href="#设置域名" class="headerlink" title="设置域名"></a>设置域名</h4><p>在 <code>/etc/apache2/sites-available</code> 目录下创建 <code>example.com.conf</code> 文件，输入以下内容</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line">    ServerName example.com</span><br><span class="line">    DocumentRoot /var/www/html</span><br><span class="line"></span><br><span class="line">    &lt;Directory /var/www/&gt;</span><br><span class="line">        Options Indexes FollowSymLinks</span><br><span class="line">        AllowOverride All</span><br><span class="line">        Require all granted</span><br><span class="line">    &lt;/Directory&gt;</span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <tags>
+        <tag>php</tag>
+        <tag>MySQL</tag>
+        <tag>网站搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好，2024</title>
+    <url>/2024/01/01/%E4%BD%A0%E5%A5%BD2024/</url>
+    <content><![CDATA[<p>我前几天想发布一篇年末总结，但是因为有事（懒），没有写，然后就拖到了这个时候。这个时候发布，就不叫年末总结了，于是想标题想了很久，最后选择了这个标题，Neta 一下程序员们写的第一个程序。就内容而言，我还是将它分为两个部分。</p>
+<h2 id="2023-年总结"><a href="#2023-年总结" class="headerlink" title="2023 年总结"></a>2023 年总结</h2><p>2023 年，过去的两个学期没有挂科、没有奖学金、还活着，这学期大概也是这样了。二战六级，分数还不知道（我猜能过）。在杭电的生活是自由的，你想卷可以卷，学校有一定的资源；不想卷可以不卷，也还过得去。显然我是后者（笑）。</p>
+<p>2023 年，玩游戏的时间大大减少，因为真的没时间玩了。但是也挤出了时间推完了樱之诗（樱之刻汉化什么时候出, FUTA自什么时候爆樱之响）、Eden*，前几天开始推 ATRI 的精神续作 GINKA，还在推，剧情非常熟悉。年末几个月开始玩文明6和怪猎 <del>什么时候能遇到一个像美咕噜一样的学妹</del>，将一天游戏时间控制到了 25 小时之内。舰C半弃坑，肝不动了，肝小碧蓝去了（凹总力战凹的）。</p>
+<p>2023 年对我而言是一个非常<strong>难忘</strong>的一年，其中最重要的一点是我成为了一名 RMer，这是我非常荣幸的一件事，也是我认为做过的最正确的决定。<strong>虽然它占用了我大量的时间，但我认为这是值得的</strong>。</p>
+<p><del>虽然打 RM 会变得非常不幸</del></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/RM.jpg"
+                      alt="不要打RM,会变得非常不幸"
+                ></p>
+<p>在这里我认识了很多优秀的人，也学到了很多东西。在所谓“校园与社会脱节”的现状下，Robomaster 给我一个很好的机会去接触较为真实的开发场景。<strong>它不再是学校里的一门课，而是一个真正的项目，有着真正的目标，有着真正的团队，有着真正的开发流程</strong>。过程不再是理想化的，而是会遇到非常多的问题。为了解决这些问题可能需要一天甚至一个月的时间，这是真正的开发。我认为这是一个非常好的锻炼机会，也是一个非常好的学习机会。</p>
+<p>我做过哨兵，学习了导航的技术栈；做过自瞄，学习了图形图像处理的技术栈；做过工程的视觉，学习了机械臂的逆运动学解算；此外还学习了非常多的其他知识，这让我见识到了一个合理、高效、优雅的代码是什么样的。在惊叹的同时也让我意识到了自己实力的不足，我还有很多要学习的东西和增进的地方，这让我更加坚定了我要继续学习的决心。</p>
+<p>队友的支持，让我成为了战队视觉组的组长，这对我来说是一个非常大的挑战。我以前没有管理过团队，更没有管理项目开发的经历，一上来就管理近10人的团队多少有些吃力，同时我心里其实是拒绝的：我想做技术工作，而不是管理工作。开始的一段时间我天天给自己做思想工作，让自己能接受做管理工作。于是我留实验室的时间更长了，每天不仅要做技术工作，还要抽空考虑今后团队的发展，跟进每项工作的进度，帮助做技术支持等等。很忙，但很充实，这段时间我觉得我学到了非常多的东西，不仅仅是技术层面，还有团队管理方法，人际交流等。我要<strong>特别感谢我的队友们</strong>，管理工作我做的不算很好，而且我的性格其实是不适合做管理工作的，说话很直，很多时候会伤到人，但他们对我非常包容，而且能理解我的意思，这让我非常感动，谢谢你们。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/PHEONIX.png"
+                     
+                ></p>
+<p>年末我给视觉组放了个假，拉了两个人（大怨种）去广州参加萤火虫漫展，爆了点米，还是很开心的。在广州逛了一圈，感觉还是不错的，广州的生活比较悠闲，我比较喜欢。另外我们发现，所谓的“冰室”好像就是珠三角的沙县小吃。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/%E8%90%A4%E7%81%AB%E8%99%AB.jpg"
+                     
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/%E5%B9%BF%E5%B7%9E%E5%A1%94.png"
+                     
+                ></p>
+<p>这图我们拍的，还意外成为了一次互联网图源（乐）</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/mika.png"
+                     
+                ></p>
+<h2 id="2024-年展望"><a href="#2024-年展望" class="headerlink" title="2024 年展望"></a>2024 年展望</h2><p>2024 年，尽量不挂科 :(。</p>
+<p>最重要的是能管理好视觉组，让视觉组<del>“让某位成员女装”</del>的任务能够圆满完成，争取能够在 Robomaster 2024 的比赛中取得好成绩；做好下一届的培养，让他们能够顺利接手视觉组的工作。同时继续学习，提升自己的能力，让在 Robomaster 中学到的东西能够在以后的工作中发挥作用，<strong>让这段时间的花费是值得的</strong>，这也是我想告诉我的队员们的：<strong>不要浪费自己的时间</strong>。</p>
+<p>最后，祝看到这篇文章的人新年快乐，2024 年万事如意。</p>
+<p>让我们在新的一年里继续传递友谊与爱的魔法吧！</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/endimage.png"
+                     
+                ></p>
+<p>2024 年 1 月 1 日 00:23:57<br>于广州</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>博客搭建（一）建站</title>
+    <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>本博客使用 <a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 博客框架，主题采用 <a class="link"   href="https://github.com/EvanNotFound/hexo-theme-redefine" >radefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 搭建，最终发布到 github pages。</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p><a class="link"   href="https://hexo.io/zh-cn/docs/" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 是一个基于 <a class="link"   href="https://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的静态页面博客框架，安装 Hexo 前需要安装 Node.js 和 <a class="link"   href="https://git-scm.com/" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 。笔者之前安装过这两个应用，在这里不详细介绍它们的安装过程。</p>
+<p>安装完上述应用后，打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<p>即可安装 Hexo 。</p>
+<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><p>在打算放置博客的路径下打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="string">&quot;your-blog-name&quot;</span></span><br><span class="line"><span class="built_in">cd</span> your-blog-name</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
+
+<p>执行完成后，当前文件夹的文件结构如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的配置文件。</p>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>网站所需要的程序包。</p>
+<h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><p>模板文件夹，新建文章时会根据该文件夹下的模板创建文件。</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+<h3 id="theme"><a href="#theme" class="headerlink" title="theme"></a>theme</h3><p>主题文件夹。</p>
+<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>新建的 Hexo 博客默认使用 landscape 主题。</p>
+<p>在 <a class="link"   href="https://hexo.io/themes/" >这里 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以找到更多的 Hexo 主题，每个主题有不同的配置方法，请根据文档进行配置，此处不做赘述。</p>
+<p>在博客根目录打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>结果如下：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></div>
+
+<p>此时用浏览器访问 <code>http://localhost:4000/</code> 可预览网页。</p>
+<h2 id="申请github-pages"><a href="#申请github-pages" class="headerlink" title="申请github pages"></a>申请github pages</h2><p><a class="link"   href="https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>创建用户或组织站点，则存储库必须命名为 <code>&lt;user&gt;.github.io</code> 或 <code>&lt;organization&gt;.github.io</code> ，全小写。</p>
+<h3 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h3><p>新建站点入口文件。GitHub Pages 将查找 <code>index.html</code>、<code>index.md</code> 或 <code>README.md</code> 文件，作为站点的入口文件。</p>
+<ol>
+<li>进入仓库，找到 “settings”，打开。</li>
+<li>在边栏中找到 “pages”，打开。</li>
+<li>选择分支，点击 “save”。</li>
+</ol>
+<p>等待一段时间后点击上方 “visit site” 或通过网址访问网页。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning">
+    <p>对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
+
+  </div>
+
+<h2 id="Hexo-连接到-github-pages"><a href="#Hexo-连接到-github-pages" class="headerlink" title="Hexo 连接到 github pages"></a>Hexo 连接到 github pages</h2><p>在 <code>_config.yml</code> 文件中添加或修改下方内容：</p>
+<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/&lt;user&gt;/&lt;user&gt;.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;&lt;your-branch&gt;&#x27;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>打开控制台，输入：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清空上次生成的文件，第一次运行可不运行</span></span><br><span class="line">hexo generate <span class="comment"># 生成上传到仓库的文件，保存在 public 文件夹下</span></span><br><span class="line">hexo deploy <span class="comment"># 上传到仓库，第一次运行需要绑定 github 账号</span></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <tags>
+        <tag>start</tag>
       </tags>
   </entry>
   <entry>
@@ -629,225 +848,6 @@
 <p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
 <p>This is Tab 3.</p>
 <p>This is Tab 3.</p></div></div></div>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu18.04下使用php+mysql+apache的网站搭建</title>
-    <url>/2023/10/12/ubuntu18-04%E4%B8%8B%E4%BD%BF%E7%94%A8php-mysql-apache%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[
-  <div class="note p-4 mb-4 rounded-small info">
-    <p>如果我做错了什么，请让法律来制裁我，<strong>而不是让我用php写项目</strong></p>
-
-  </div>
-<p>最近在给社团网站做服务器迁移，遇到了一些问题，记录一下。</p>
-<blockquote>
-<p>系统环境</p>
-<ul>
-<li>ubuntu18.04</li>
-</ul>
-</blockquote>
-<h2 id="安装-配置-MySQL"><a href="#安装-配置-MySQL" class="headerlink" title="安装|配置 MySQL"></a>安装|配置 MySQL</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install mysql-server   <span class="comment"># 安装 mysql 服务端</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>MySQL初始化安全脚本</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure></div>
-
-<p><code>mysql_secure_installation</code>中会有设置root密码，删除匿名用户，禁止root远程登录，删除test数据库，刷新权限表等操作，可以全都选择yes。root密码看情况更改。</p>
-<p>配置完成后，可以使用以下命令查看MySQL服务状态</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl status mysql.service</span><br></pre></td></tr></table></figure></div>
-
-<p>会产生类似如下输出（此处的输出并非在配置结束后运行产生的，仅作参考）</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">● mysql.service - MySQL Community Server</span><br><span class="line">   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)</span><br><span class="line">   Active: active (running) since Thu 2023-10-12 00:26:53 CST; 13h ago</span><br><span class="line"> Main PID: 657 (mysqld)</span><br><span class="line">    Tasks: 28 (<span class="built_in">limit</span>: 2333)</span><br><span class="line">   CGroup: /system.slice/mysql.service</span><br><span class="line">           └─657 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid</span><br></pre></td></tr></table></figure></div>
-
-<p>进入MySQL</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo mysql -u root -p</span><br></pre></td></tr></table></figure></div>
-
-<p>创建新用户</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;password&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
-
-<p>给新用户并授权</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> <span class="operator">*</span>.<span class="operator">*</span> <span class="keyword">TO</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> ;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>刷新权限表（一定要记得刷新）</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure></div>
-
-<p>创建新数据库，给网站使用</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE newdatabase;</span><br></pre></td></tr></table></figure></div>
-
-<p>使用新数据库</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">USE newdatabase;</span><br></pre></td></tr></table></figure></div>
-
-<p>退出MySQL</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="安装-配置-php"><a href="#安装-配置-php" class="headerlink" title="安装|配置 php"></a>安装|配置 php</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>建议使用源码编译安装。<br><strong>获取源码包</strong></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">curl -o php-7.4.33.tar.gz https://www.php.net/distributions/php-7.4.33.tar.gz</span><br><span class="line">tar -zxvf php-7.4.33.tar.gz</span><br><span class="line"><span class="built_in">cd</span> php-7.4.33</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>配置安装内容</strong><br>按需求配置安装内容，这里只是一个示例，具体安装内容可以参考官方文档。</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --prefix=/usr/local/php --sysconfdir=/etc/php --with-openssl --with-zlib --with-bz2 --with-curl --enable-bcmath --enable-gd --with-webp --with-jpeg --with-mhash --enable-mbstring --with-imap-ssl --with-mysqli=mysqlnd --enable-exif --with-ffi --with-zip --enable-sockets --with-pcre-jit --enable-fpm --enable-pdo --with-pdo-mysql=mysqlnd --with-mysql=mysqlnd --enable-pcnt</span><br></pre></td></tr></table></figure></div>
-
-<p>mysqlnd是php提供的mysql驱动，是php5.3之后才有的。此处不选择mysql驱动之后会出错。</p>
-<p>配置过程中可能会出现一些错误，根据错误提示安装相应的依赖即可。</p>
-<p><strong>编译安装</strong></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></div>
-
-<p>安装完成后执行以下命令</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo <span class="built_in">cp</span> php.ini-development /etc/php/php.ini <span class="comment"># 复制配置文件模板</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/php /usr/bin/php   <span class="comment"># 建立软链接</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/phpize /usr/bin/phpize</span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/sbin/php-fpm /usr/bin/php-fpm</span><br></pre></td></tr></table></figure></div>
-
-<p>然后执行以下命令，查看php版本</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">php -v</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>修改php配置文件</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/php/php.ini</span><br></pre></td></tr></table></figure></div>
-
-<p>添加pdo_mysql扩展</p>
-<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">extension</span>=pdo       <span class="comment">; 添加pdo扩展</span></span><br><span class="line"><span class="attr">extension</span>=mysqlnd   <span class="comment">; 添加mysqlnd扩展，因为前面设置pdo_mysql驱动为mysqlnd</span></span><br><span class="line"><span class="attr">extension</span>=pdo_mysql <span class="comment">; 添加pdo_mysql扩展</span></span><br></pre></td></tr></table></figure></div>
-
-<p>修改完后退出保存，重启php-fpm</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart php-fpm</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="安装-配置-apache"><a href="#安装-配置-apache" class="headerlink" title="安装|配置 apache"></a>安装|配置 apache</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install apache2</span><br><span class="line">sudo apt-get install libapache2-mod-php</span><br></pre></td></tr></table></figure></div>
-
-<p>安装完成后启动apache</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl start apache2</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h3><p>修改apache配置文件</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/apache2/apache2.conf</span><br></pre></td></tr></table></figure></div>
-
-<p>添加如下内容</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;Directory /var/www/html&gt;</span><br><span class="line">    Options Indexes FollowSymLinks</span><br><span class="line">    AllowOverride All</span><br><span class="line">    Require all granted</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>修改完后退出保存，重启apache</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart apache2</span><br></pre></td></tr></table></figure></div>
-
-<p>执行以下命令，启动<code>rewrite</code>模块</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo a2enmod rewrite</span><br></pre></td></tr></table></figure></div>
-
-<p>在 <code>/var/www/html</code> 目录下创建 <code>index.php</code> 文件，输入以下内容</p>
-<div class="highlight-container" data-rel="Php"><figure class="iseeu highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></div>
-<p>创建<code>.htaccess</code>文件，输入以下内容</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">RewriteEngine on</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</span><br><span class="line">RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]</span><br><span class="line">&lt;/IfModule&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>然后在浏览器中输入 <code>http://localhost</code> ，如果出现php信息页面，说明apache和php都安装成功了。可以用此页面查看php的配置信息。<br>随后即可在该路径下放置网页文件。</p>
-<h4 id="设置域名"><a href="#设置域名" class="headerlink" title="设置域名"></a>设置域名</h4><p>在 <code>/etc/apache2/sites-available</code> 目录下创建 <code>example.com.conf</code> 文件，输入以下内容</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line">    ServerName example.com</span><br><span class="line">    DocumentRoot /var/www/html</span><br><span class="line"></span><br><span class="line">    &lt;Directory /var/www/&gt;</span><br><span class="line">        Options Indexes FollowSymLinks</span><br><span class="line">        AllowOverride All</span><br><span class="line">        Require all granted</span><br><span class="line">    &lt;/Directory&gt;</span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-]]></content>
-      <tags>
-        <tag>php</tag>
-        <tag>MySQL</tag>
-        <tag>网站搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你好，2024</title>
-    <url>/2024/01/01/%E4%BD%A0%E5%A5%BD2024/</url>
-    <content><![CDATA[<p>我前几天想发布一篇年末总结，但是因为有事（懒），没有写，然后就拖到了这个时候。这个时候发布，就不叫年末总结了，于是想标题想了很久，最后选择了这个标题，Neta 一下程序员们写的第一个程序。就内容而言，我还是将它分为两个部分。</p>
-<h2 id="2023-年总结"><a href="#2023-年总结" class="headerlink" title="2023 年总结"></a>2023 年总结</h2><p>2023 年，过去的两个学期没有挂科、没有奖学金、还活着，这学期大概也是这样了。二战六级，分数还不知道（我猜能过）。在杭电的生活是自由的，你想卷可以卷，学校有一定的资源；不想卷可以不卷，也还过得去。显然我是后者（笑）。</p>
-<p>2023 年，玩游戏的时间大大减少，因为真的没时间玩了。但是也挤出了时间推完了樱之诗（樱之刻汉化什么时候出, FUTA自什么时候爆樱之响）、Eden*，前几天开始推 ATRI 的精神续作 GINKA，还在推，剧情非常熟悉。年末几个月开始玩文明6和怪猎 <del>什么时候能遇到一个像美咕噜一样的学妹</del>，将一天游戏时间控制到了 25 小时之内。舰C半弃坑，肝不动了，肝小碧蓝去了（凹总力战凹的）。</p>
-<p>2023 年对我而言是一个非常<strong>难忘</strong>的一年，其中最重要的一点是我成为了一名 RMer，这是我非常荣幸的一件事，也是我认为做过的最正确的决定。<strong>虽然它占用了我大量的时间，但我认为这是值得的</strong>。</p>
-<p><del>虽然打 RM 会变得非常不幸</del></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/RM.jpg"
-                      alt="不要打RM,会变得非常不幸"
-                ></p>
-<p>在这里我认识了很多优秀的人，也学到了很多东西。在所谓“校园与社会脱节”的现状下，Robomaster 给我一个很好的机会去接触较为真实的开发场景。<strong>它不再是学校里的一门课，而是一个真正的项目，有着真正的目标，有着真正的团队，有着真正的开发流程</strong>。过程不再是理想化的，而是会遇到非常多的问题。为了解决这些问题可能需要一天甚至一个月的时间，这是真正的开发。我认为这是一个非常好的锻炼机会，也是一个非常好的学习机会。</p>
-<p>我做过哨兵，学习了导航的技术栈；做过自瞄，学习了图形图像处理的技术栈；做过工程的视觉，学习了机械臂的逆运动学解算；此外还学习了非常多的其他知识，这让我见识到了一个合理、高效、优雅的代码是什么样的。在惊叹的同时也让我意识到了自己实力的不足，我还有很多要学习的东西和增进的地方，这让我更加坚定了我要继续学习的决心。</p>
-<p>队友的支持，让我成为了战队视觉组的组长，这对我来说是一个非常大的挑战。我以前没有管理过团队，更没有管理项目开发的经历，一上来就管理近10人的团队多少有些吃力，同时我心里其实是拒绝的：我想做技术工作，而不是管理工作。开始的一段时间我天天给自己做思想工作，让自己能接受做管理工作。于是我留实验室的时间更长了，每天不仅要做技术工作，还要抽空考虑今后团队的发展，跟进每项工作的进度，帮助做技术支持等等。很忙，但很充实，这段时间我觉得我学到了非常多的东西，不仅仅是技术层面，还有团队管理方法，人际交流等。我要<strong>特别感谢我的队友们</strong>，管理工作我做的不算很好，而且我的性格其实是不适合做管理工作的，说话很直，很多时候会伤到人，但他们对我非常包容，而且能理解我的意思，这让我非常感动，谢谢你们。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/PHEONIX.png"
-                     
-                ></p>
-<p>年末我给视觉组放了个假，拉了两个人（大怨种）去广州参加萤火虫漫展，爆了点米，还是很开心的。在广州逛了一圈，感觉还是不错的，广州的生活比较悠闲，我比较喜欢。另外我们发现，所谓的“冰室”好像就是珠三角的沙县小吃。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/%E8%90%A4%E7%81%AB%E8%99%AB.jpg"
-                     
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/%E5%B9%BF%E5%B7%9E%E5%A1%94.png"
-                     
-                ></p>
-<p>这图我们拍的，还意外成为了一次互联网图源（乐）</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/mika.png"
-                     
-                ></p>
-<h2 id="2024-年展望"><a href="#2024-年展望" class="headerlink" title="2024 年展望"></a>2024 年展望</h2><p>2024 年，尽量不挂科 :(。</p>
-<p>最重要的是能管理好视觉组，让视觉组<del>“让某位成员女装”</del>的任务能够圆满完成，争取能够在 Robomaster 2024 的比赛中取得好成绩；做好下一届的培养，让他们能够顺利接手视觉组的工作。同时继续学习，提升自己的能力，让在 Robomaster 中学到的东西能够在以后的工作中发挥作用，<strong>让这段时间的花费是值得的</strong>，这也是我想告诉我的队员们的：<strong>不要浪费自己的时间</strong>。</p>
-<p>最后，祝看到这篇文章的人新年快乐，2024 年万事如意。</p>
-<p>让我们在新的一年里继续传递友谊与爱的魔法吧！</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/images/%E4%BD%A0%E5%A5%BD2024/endimage.png"
-                     
-                ></p>
-<p>2024 年 1 月 1 日 00:23:57<br>于广州</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>博客搭建（一）建站</title>
-    <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/</url>
-    <content><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>本博客使用 <a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 博客框架，主题采用 <a class="link"   href="https://github.com/EvanNotFound/hexo-theme-redefine" >radefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 搭建，最终发布到 github pages。</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p><a class="link"   href="https://hexo.io/zh-cn/docs/" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p><a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 是一个基于 <a class="link"   href="https://nodejs.org/" >Node.js <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 的静态页面博客框架，安装 Hexo 前需要安装 Node.js 和 <a class="link"   href="https://git-scm.com/" >git <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 。笔者之前安装过这两个应用，在这里不详细介绍它们的安装过程。</p>
-<p>安装完上述应用后，打开控制台，输入：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
-
-<p>即可安装 Hexo 。</p>
-<h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><p>在打算放置博客的路径下打开控制台，输入：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="string">&quot;your-blog-name&quot;</span></span><br><span class="line"><span class="built_in">cd</span> your-blog-name</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
-
-<p>执行完成后，当前文件夹的文件结构如下：</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的配置文件。</p>
-<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>网站所需要的程序包。</p>
-<h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><p>模板文件夹，新建文章时会根据该文件夹下的模板创建文件。</p>
-<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
-<h3 id="theme"><a href="#theme" class="headerlink" title="theme"></a>theme</h3><p>主题文件夹。</p>
-<h2 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h2><p>新建的 Hexo 博客默认使用 landscape 主题。</p>
-<p>在 <a class="link"   href="https://hexo.io/themes/" >这里 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 可以找到更多的 Hexo 主题，每个主题有不同的配置方法，请根据文档进行配置，此处不做赘述。</p>
-<p>在博客根目录打开控制台，输入：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>结果如下：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></div>
-
-<p>此时用浏览器访问 <code>http://localhost:4000/</code> 可预览网页。</p>
-<h2 id="申请github-pages"><a href="#申请github-pages" class="headerlink" title="申请github pages"></a>申请github pages</h2><p><a class="link"   href="https://docs.github.com/zh/pages/getting-started-with-github-pages/creating-a-github-pages-site" >官方教程 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>创建用户或组织站点，则存储库必须命名为 <code>&lt;user&gt;.github.io</code> 或 <code>&lt;organization&gt;.github.io</code> ，全小写。</p>
-<h3 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h3><p>新建站点入口文件。GitHub Pages 将查找 <code>index.html</code>、<code>index.md</code> 或 <code>README.md</code> 文件，作为站点的入口文件。</p>
-<ol>
-<li>进入仓库，找到 “settings”，打开。</li>
-<li>在边栏中找到 “pages”，打开。</li>
-<li>选择分支，点击 “save”。</li>
-</ol>
-<p>等待一段时间后点击上方 “visit site” 或通过网址访问网页。</p>
-
-  <div class="note p-4 mb-4 rounded-small warning">
-    <p>对站点的更改在推送到 GitHub 后，最长可能需要 10 分钟才会发布。</p>
-
-  </div>
-
-<h2 id="Hexo-连接到-github-pages"><a href="#Hexo-连接到-github-pages" class="headerlink" title="Hexo 连接到 github pages"></a>Hexo 连接到 github pages</h2><p>在 <code>_config.yml</code> 文件中添加或修改下方内容：</p>
-<div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&#x27;https://github.com/&lt;user&gt;/&lt;user&gt;.github.io.git&#x27;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&#x27;&lt;your-branch&gt;&#x27;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>打开控制台，输入：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清空上次生成的文件，第一次运行可不运行</span></span><br><span class="line">hexo generate <span class="comment"># 生成上传到仓库的文件，保存在 public 文件夹下</span></span><br><span class="line">hexo deploy <span class="comment"># 上传到仓库，第一次运行需要绑定 github 账号</span></span><br></pre></td></tr></table></figure></div>
 ]]></content>
       <tags>
         <tag>start</tag>
