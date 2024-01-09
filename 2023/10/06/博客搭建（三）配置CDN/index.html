@@ -25,17 +25,17 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="给博客配置 CDN，方便国内访问">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg">
-<meta property="og:image" content="http://example.com/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg">
-<meta property="og:image" content="http://example.com/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg">
-<meta property="og:image" content="http://example.com/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg">
-<meta property="og:image" content="http://example.com/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg">
+<meta property="og:image" content="https://images.null-qwerty.top/blog/cloudflare.jpg">
+<meta property="og:image" content="https://images.null-qwerty.top/blog/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg">
+<meta property="og:image" content="https://images.null-qwerty.top/blog/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg">
+<meta property="og:image" content="https://images.null-qwerty.top/blog/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg">
+<meta property="og:image" content="https://images.null-qwerty.top/blog/github.jpg">
 <meta property="article:published_time" content="2023-10-06T11:35:01.000Z">
-<meta property="article:modified_time" content="2023-10-06T11:37:59.871Z">
+<meta property="article:modified_time" content="2024-01-09T09:02:19.545Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="start">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg">
+<meta name="twitter:image" content="https://images.null-qwerty.top/blog/cloudflare.jpg">
     
     
     <!--- Icon Part-->
@@ -562,8 +562,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-06 19:37:59</span>
-            <span class="mobile">2023-10-06 19:37:59</span>
+            <span class="desktop">2024-01-09 17:02:19</span>
+            <span class="mobile">2024-01-09 17:02:19</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -621,13 +621,13 @@
 <h2 id="cloudflare-的配置"><a href="#cloudflare-的配置" class="headerlink" title="cloudflare 的配置"></a>cloudflare 的配置</h2><p>注册 cloudflare 账号，添加域名<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/cloudflare.jpg"
+                     data-src="https://images.null-qwerty.top/blog/cloudflare.jpg"
                       alt="cloudflare"
                 ><br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg"
-                      alt="添加域名"
+                     data-src="https://images.null-qwerty.top/blog/%E8%AE%BE%E7%BD%AE%E5%9F%9F%E5%90%8D.jpg"
+                      alt="设置域名"
                 ><br>cloudflare 会自动扫描域名的 DNS 记录，添加 A 记录和 CNAME 记录，如果没有，手动添加 </p>
 <h3 id="手动添加-DNS-记录"><a href="#手动添加-DNS-记录" class="headerlink" title="手动添加 DNS 记录"></a>手动添加 DNS 记录</h3><p>边栏里选择 DNS-&gt;记录-&gt;添加记录<br>A 记录指向 github pages 的服务器 ipv4 地址，地址如下：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">185.199.108.153</span><br><span class="line">185.199.109.153</span><br><span class="line">185.199.110.153</span><br><span class="line">185.199.111.153</span><br></pre></td></tr></table></figure></div>
@@ -635,18 +635,18 @@
 <h2 id="更改域名的-DNS-服务器"><a href="#更改域名的-DNS-服务器" class="headerlink" title="更改域名的 DNS 服务器"></a>更改域名的 DNS 服务器</h2><p>更改域名的 DNS 服务器为 cloudflare 的 DNS 服务器。笔者的域名在阿里云上购买注册，其它域名注册商的操作应该类似。<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg"
-                      alt="更改DNS 1"
+                     data-src="https://images.null-qwerty.top/blog/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg"
+                      alt="更改DNS"
                 ><br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg"
+                     data-src="https://images.null-qwerty.top/blog/%E5%90%8D%E7%A7%B0%E6%9C%8D%E5%8A%A1%E5%99%A82.jpg"
                       alt="更改DNS 2"
                 ></p>
 <h2 id="github-pages-的配置"><a href="#github-pages-的配置" class="headerlink" title="github pages 的配置"></a>github pages 的配置</h2><p>在 github pages 的仓库中添加 CNAME 文件，内容为自己的域名，如 <code>www.example.com</code>，然后在仓库的设置中添加自定义域名，如下图：<br><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/images/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%89%EF%BC%89%E9%85%8D%E7%BD%AECDN/github.jpg"
+                     data-src="https://images.null-qwerty.top/blog/github.jpg"
                       alt="github pages"
                 ><br>等待出现图上提示的<code>DNS check successful</code>，即可访问自己的域名了。</p>
 
