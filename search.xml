@@ -268,22 +268,134 @@
   <entry>
     <title>TestPage</title>
     <url>/2024/01/12/TestPage/</url>
-    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><!-- require APlayer -->
-<link rel="stylesheet" href="/assets/css/APlayer.min.css">
-<script src="/js/libs/APlayer.min.js"></script>
-<!-- require MetingJS -->
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-<script>
-var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=:id&r=:r';
+    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script>
+var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=:id&r=:r;
 </script>
-<meting-js
+<p><meting-js
     server="netease"
     type="playlist"
-    id="9138278379">
-</meting-js>
+    id="9138278379"><br></meting-js></p>
+<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 alpha 值，使其透明。</p>
+<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><video controls width="100%">
+    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
+</video>
 
-<p>需要对<code>aplayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 alpha 值，使其透明。</p>
+<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/10/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>markdown语法</title>
+    <url>/2023/10/06/markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">......</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="斜体-加粗-删除线"><a href="#斜体-加粗-删除线" class="headerlink" title="斜体/加粗/删除线"></a>斜体/加粗/删除线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**加粗**</span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></div>
+
+<p><em>斜体</em></p>
+<p><strong>加粗</strong></p>
+<p><em><strong>斜体加粗</strong></em></p>
+<p><del>删除线</del></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; 一级引用 </span><br><span class="line">&gt; 一级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt;&gt; 三级引用 </span><br><span class="line">&gt;&gt;&gt; ...</span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>一级引用<br>一级引用</p>
+<blockquote>
+<p>二级引用<br>二级引用</p>
+<blockquote>
+<p>三级引用<br>…</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">![图片描述](path/to/image.jpg)</span><br><span class="line">[链接描述](https://example.com)</span><br></pre></td></tr></table></figure></div>
+
+<p><img lazyload="" src="/images/loading.svg" data-src="https://images.null-qwerty.top/blog/large_evcg11d.png" alt="音理音理音"></p>
+<p><a class="link" href="http://shiratamaco.com/">星空鉄道とシロの旅 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">`代码片段`</span><br></pre></td></tr></table></figure></div>
+
+<p>C语言中格式化输出函数是 <code>printf()</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">``` 语言</span><br><span class="line">代码块</span><br><span class="line">```</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    std::cout &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line">* * *</span><br><span class="line">---</span><br><span class="line">- - -</span><br><span class="line">___</span><br><span class="line">_ _ _</span><br></pre></td></tr></table></figure></div>
+
+<p>效果相同</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序表"><a href="#无序表" class="headerlink" title="无序表"></a>无序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 无序</span><br><span class="line">* 无序</span><br><span class="line">* 无序</span><br></pre></td></tr></table></figure></div>
+
+<p>等同于</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br></pre></td></tr></table></figure></div>
+
+<p>等同于</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 无序</span><br><span class="line">- 无序</span><br><span class="line">- 无序</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>无序</li>
+<li>无序</li>
+<li>无序</li>
+</ul>
+<h3 id="有序表"><a href="#有序表" class="headerlink" title="有序表"></a>有序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 有序</span><br><span class="line">2. 有序</span><br><span class="line">3. 有序</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>有序</li>
+<li>有序</li>
+<li>有序</li>
+</ol>
+<h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- [ ] 未选</span><br><span class="line">- [x] 已选</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><input disabled="" type="checkbox"> 未选</li>
+<li><input checked="" disabled="" type="checkbox"> 已选</li>
+</ul>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| ----- | ----- | ----- |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br><span class="line">| 内容4 | 内容5 | 内容6 |</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+<th>表头3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容1</td>
+<td>内容2</td>
+<td>内容3</td>
+</tr>
+<tr>
+<td>内容4</td>
+<td>内容5</td>
+<td>内容6</td>
+</tr>
+</tbody></table>
+<h2 id="LaTeX表达式"><a href="#LaTeX表达式" class="headerlink" title="LaTeX表达式"></a>LaTeX表达式</h2><p>使用一对 <code>$</code> 或一对 <code>$$</code> 括起来。</p>
+<p>语法见 <a href="/2023/10/06/LaTeX%E8%A1%A8%E8%BE%BE%E5%BC%8F/">LaTeX表达式</a></p>
+]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
   </entry>
   <entry>
     <title>ubuntu18.04下使用php+mysql+apache的网站搭建</title>
@@ -450,24 +562,6 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/10/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>博客搭建（一）建站</title>
     <url>/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>本博客使用 <a class="link"   href="https://hexo.io/zh-cn/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 博客框架，主题采用 <a class="link"   href="https://github.com/EvanNotFound/hexo-theme-redefine" >radefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 搭建，最终发布到 github pages。</p>
@@ -520,102 +614,6 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
 ]]></content>
       <tags>
         <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>markdown语法</title>
-    <url>/2023/10/06/markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">......</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="斜体-加粗-删除线"><a href="#斜体-加粗-删除线" class="headerlink" title="斜体/加粗/删除线"></a>斜体/加粗/删除线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**加粗**</span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></div>
-
-<p><em>斜体</em></p>
-<p><strong>加粗</strong></p>
-<p><em><strong>斜体加粗</strong></em></p>
-<p><del>删除线</del></p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; 一级引用 </span><br><span class="line">&gt; 一级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt;&gt; 三级引用 </span><br><span class="line">&gt;&gt;&gt; ...</span><br></pre></td></tr></table></figure></div>
-
-<blockquote>
-<p>一级引用<br>一级引用</p>
-<blockquote>
-<p>二级引用<br>二级引用</p>
-<blockquote>
-<p>三级引用<br>…</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">![图片描述](path/to/image.jpg)</span><br><span class="line">[链接描述](https://example.com)</span><br></pre></td></tr></table></figure></div>
-
-<p><img lazyload="" src="/images/loading.svg" data-src="https://images.null-qwerty.top/blog/large_evcg11d.png" alt="音理音理音"></p>
-<p><a class="link" href="http://shiratamaco.com/">星空鉄道とシロの旅 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">`代码片段`</span><br></pre></td></tr></table></figure></div>
-
-<p>C语言中格式化输出函数是 <code>printf()</code></p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">``` 语言</span><br><span class="line">代码块</span><br><span class="line">```</span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    std::cout &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line">* * *</span><br><span class="line">---</span><br><span class="line">- - -</span><br><span class="line">___</span><br><span class="line">_ _ _</span><br></pre></td></tr></table></figure></div>
-
-<p>效果相同</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序表"><a href="#无序表" class="headerlink" title="无序表"></a>无序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 无序</span><br><span class="line">* 无序</span><br><span class="line">* 无序</span><br></pre></td></tr></table></figure></div>
-
-<p>等同于</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br></pre></td></tr></table></figure></div>
-
-<p>等同于</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 无序</span><br><span class="line">- 无序</span><br><span class="line">- 无序</span><br></pre></td></tr></table></figure></div>
-
-<ul>
-<li>无序</li>
-<li>无序</li>
-<li>无序</li>
-</ul>
-<h3 id="有序表"><a href="#有序表" class="headerlink" title="有序表"></a>有序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 有序</span><br><span class="line">2. 有序</span><br><span class="line">3. 有序</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>有序</li>
-<li>有序</li>
-<li>有序</li>
-</ol>
-<h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- [ ] 未选</span><br><span class="line">- [x] 已选</span><br></pre></td></tr></table></figure></div>
-
-<ul>
-<li><input disabled="" type="checkbox"> 未选</li>
-<li><input checked="" disabled="" type="checkbox"> 已选</li>
-</ul>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| ----- | ----- | ----- |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br><span class="line">| 内容4 | 内容5 | 内容6 |</span><br></pre></td></tr></table></figure></div>
-
-<table>
-<thead>
-<tr>
-<th>表头1</th>
-<th>表头2</th>
-<th>表头3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容1</td>
-<td>内容2</td>
-<td>内容3</td>
-</tr>
-<tr>
-<td>内容4</td>
-<td>内容5</td>
-<td>内容6</td>
-</tr>
-</tbody></table>
-<h2 id="LaTeX表达式"><a href="#LaTeX表达式" class="headerlink" title="LaTeX表达式"></a>LaTeX表达式</h2><p>使用一对 <code>$</code> 或一对 <code>$$</code> 括起来。</p>
-<p>语法见 <a href="/2023/10/06/LaTeX%E8%A1%A8%E8%BE%BE%E5%BC%8F/">LaTeX表达式</a></p>
-]]></content>
-      <tags>
-        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
