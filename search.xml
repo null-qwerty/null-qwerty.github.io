@@ -274,8 +274,9 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
 <p><meting-js
     server="netease"
     type="playlist"
-    id="9138278379"><br></meting-js></p>
-<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 alpha 值，使其透明。</p>
+    id="9138278379"
+    list-folded=true><br></meting-js></p>
+<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 alpha 值，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.top/Meting" >https://api.null-qwerty.top/Meting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><video controls width="100%">
     <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
 </video>
