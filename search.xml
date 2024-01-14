@@ -269,7 +269,7 @@
     <title>TestPage</title>
     <url>/2024/01/12/TestPage/</url>
     <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script>
-var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=:id&r=:r;
+var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=:id&r=:r';
 </script>
 <p><meting-js
     server="netease"
