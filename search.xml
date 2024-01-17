@@ -303,6 +303,102 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
 ]]></content>
   </entry>
   <entry>
+    <title>markdown语法</title>
+    <url>/2023/10/06/markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">......</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="斜体-加粗-删除线"><a href="#斜体-加粗-删除线" class="headerlink" title="斜体/加粗/删除线"></a>斜体/加粗/删除线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**加粗**</span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></div>
+
+<p><em>斜体</em></p>
+<p><strong>加粗</strong></p>
+<p><em><strong>斜体加粗</strong></em></p>
+<p><del>删除线</del></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; 一级引用 </span><br><span class="line">&gt; 一级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt;&gt; 三级引用 </span><br><span class="line">&gt;&gt;&gt; ...</span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>一级引用<br>一级引用</p>
+<blockquote>
+<p>二级引用<br>二级引用</p>
+<blockquote>
+<p>三级引用<br>…</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">![图片描述](path/to/image.jpg)</span><br><span class="line">[链接描述](https://example.com)</span><br></pre></td></tr></table></figure></div>
+
+<p><img lazyload="" src="/images/loading.svg" data-src="https://images.null-qwerty.top/blog/large_evcg11d.png" alt="音理音理音"></p>
+<p><a class="link" href="http://shiratamaco.com/">星空鉄道とシロの旅 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">`代码片段`</span><br></pre></td></tr></table></figure></div>
+
+<p>C语言中格式化输出函数是 <code>printf()</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">``` 语言</span><br><span class="line">代码块</span><br><span class="line">```</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    std::cout &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line">* * *</span><br><span class="line">---</span><br><span class="line">- - -</span><br><span class="line">___</span><br><span class="line">_ _ _</span><br></pre></td></tr></table></figure></div>
+
+<p>效果相同</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序表"><a href="#无序表" class="headerlink" title="无序表"></a>无序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 无序</span><br><span class="line">* 无序</span><br><span class="line">* 无序</span><br></pre></td></tr></table></figure></div>
+
+<p>等同于</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br></pre></td></tr></table></figure></div>
+
+<p>等同于</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 无序</span><br><span class="line">- 无序</span><br><span class="line">- 无序</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>无序</li>
+<li>无序</li>
+<li>无序</li>
+</ul>
+<h3 id="有序表"><a href="#有序表" class="headerlink" title="有序表"></a>有序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 有序</span><br><span class="line">2. 有序</span><br><span class="line">3. 有序</span><br></pre></td></tr></table></figure></div>
+
+<ol>
+<li>有序</li>
+<li>有序</li>
+<li>有序</li>
+</ol>
+<h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- [ ] 未选</span><br><span class="line">- [x] 已选</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><input disabled="" type="checkbox"> 未选</li>
+<li><input checked="" disabled="" type="checkbox"> 已选</li>
+</ul>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| ----- | ----- | ----- |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br><span class="line">| 内容4 | 内容5 | 内容6 |</span><br></pre></td></tr></table></figure></div>
+
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+<th>表头3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容1</td>
+<td>内容2</td>
+<td>内容3</td>
+</tr>
+<tr>
+<td>内容4</td>
+<td>内容5</td>
+<td>内容6</td>
+</tr>
+</tbody></table>
+<h2 id="LaTeX表达式"><a href="#LaTeX表达式" class="headerlink" title="LaTeX表达式"></a>LaTeX表达式</h2><p>使用一对 <code>$</code> 或一对 <code>$$</code> 括起来。</p>
+<p>语法见 <a href="/2023/10/06/LaTeX%E8%A1%A8%E8%BE%BE%E5%BC%8F/">LaTeX表达式</a></p>
+]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ubuntu18.04下使用php+mysql+apache的网站搭建</title>
     <url>/2023/10/12/ubuntu18-04%E4%B8%8B%E4%BD%BF%E7%94%A8php-mysql-apache%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[
@@ -465,102 +561,6 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
                 ></p>
 <p>2024 年 1 月 1 日 00:23:57<br>于广州</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>markdown语法</title>
-    <url>/2023/10/06/markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">......</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="斜体-加粗-删除线"><a href="#斜体-加粗-删除线" class="headerlink" title="斜体/加粗/删除线"></a>斜体/加粗/删除线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">*斜体*</span><br><span class="line">**加粗**</span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></div>
-
-<p><em>斜体</em></p>
-<p><strong>加粗</strong></p>
-<p><em><strong>斜体加粗</strong></em></p>
-<p><del>删除线</del></p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; 一级引用 </span><br><span class="line">&gt; 一级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt; 二级引用 </span><br><span class="line">&gt;&gt;&gt; 三级引用 </span><br><span class="line">&gt;&gt;&gt; ...</span><br></pre></td></tr></table></figure></div>
-
-<blockquote>
-<p>一级引用<br>一级引用</p>
-<blockquote>
-<p>二级引用<br>二级引用</p>
-<blockquote>
-<p>三级引用<br>…</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">![图片描述](path/to/image.jpg)</span><br><span class="line">[链接描述](https://example.com)</span><br></pre></td></tr></table></figure></div>
-
-<p><img lazyload="" src="/images/loading.svg" data-src="https://images.null-qwerty.top/blog/large_evcg11d.png" alt="音理音理音"></p>
-<p><a class="link" href="http://shiratamaco.com/">星空鉄道とシロの旅 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">`代码片段`</span><br></pre></td></tr></table></figure></div>
-
-<p>C语言中格式化输出函数是 <code>printf()</code></p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">``` 语言</span><br><span class="line">代码块</span><br><span class="line">```</span><br></pre></td></tr></table></figure></div>
-
-<div class="highlight-container" data-rel="C++"><figure class="iseeu highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    std::cout &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; std::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line">* * *</span><br><span class="line">---</span><br><span class="line">- - -</span><br><span class="line">___</span><br><span class="line">_ _ _</span><br></pre></td></tr></table></figure></div>
-
-<p>效果相同</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序表"><a href="#无序表" class="headerlink" title="无序表"></a>无序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">* 无序</span><br><span class="line">* 无序</span><br><span class="line">* 无序</span><br></pre></td></tr></table></figure></div>
-
-<p>等同于</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br><span class="line">+ 无序</span><br></pre></td></tr></table></figure></div>
-
-<p>等同于</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 无序</span><br><span class="line">- 无序</span><br><span class="line">- 无序</span><br></pre></td></tr></table></figure></div>
-
-<ul>
-<li>无序</li>
-<li>无序</li>
-<li>无序</li>
-</ul>
-<h3 id="有序表"><a href="#有序表" class="headerlink" title="有序表"></a>有序表</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 有序</span><br><span class="line">2. 有序</span><br><span class="line">3. 有序</span><br></pre></td></tr></table></figure></div>
-
-<ol>
-<li>有序</li>
-<li>有序</li>
-<li>有序</li>
-</ol>
-<h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">- [ ] 未选</span><br><span class="line">- [x] 已选</span><br></pre></td></tr></table></figure></div>
-
-<ul>
-<li><input disabled="" type="checkbox"> 未选</li>
-<li><input checked="" disabled="" type="checkbox"> 已选</li>
-</ul>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 |</span><br><span class="line">| ----- | ----- | ----- |</span><br><span class="line">| 内容1 | 内容2 | 内容3 |</span><br><span class="line">| 内容4 | 内容5 | 内容6 |</span><br></pre></td></tr></table></figure></div>
-
-<table>
-<thead>
-<tr>
-<th>表头1</th>
-<th>表头2</th>
-<th>表头3</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>内容1</td>
-<td>内容2</td>
-<td>内容3</td>
-</tr>
-<tr>
-<td>内容4</td>
-<td>内容5</td>
-<td>内容6</td>
-</tr>
-</tbody></table>
-<h2 id="LaTeX表达式"><a href="#LaTeX表达式" class="headerlink" title="LaTeX表达式"></a>LaTeX表达式</h2><p>使用一对 <code>$</code> 或一对 <code>$$</code> 括起来。</p>
-<p>语法见 <a href="/2023/10/06/LaTeX%E8%A1%A8%E8%BE%BE%E5%BC%8F/">LaTeX表达式</a></p>
-]]></content>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
   </entry>
   <entry>
     <title>博客搭建（一）建站</title>
@@ -1404,6 +1404,25 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
       </tags>
   </entry>
   <entry>
+    <title>第一篇博客</title>
+    <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><p>笔者很早就有建个人博客的想法，但因为 <del>能力不足</del> 懒，迟迟没有上手操作。最近有点上头了，在网上找了教程，花两个小时建了一个简单的博客——就是你现在浏览的这个网站。</p>
+<p>建站的3202年，跟微博、微信朋友圈，甚至QQ空间对比，网络博客好像是一种过时的东西（大概？）。它维护起来更麻烦，内容<strong>似乎</strong>也更正式，不太能跟上越来越快的生活节奏。笔者建立这个博客的初心，是记录学习到的知识，方便以后作为资料站使用。</p>
+<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><ul>
+<li>计算机相关知识的学习经历及成果。</li>
+<li>如你所见，笔者是个 <del>沙峦</del> 二次元，大概也会发些相关内容，比如galgame的短评&#x2F;中评&#x2F;长评（虽然一篇都没写过）。</li>
+<li><del>欧皇晒卡</del></li>
+<li>其它想发的内容。</li>
+</ul>
+<p>虽然上文说博客的内容<strong>似乎</strong>更正式，但实际上挺随意的。</p>
+<h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>本博客全部内容（除特别声明外）均采用 <a class="link"   href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" >CC BY-NC-SA 4.0 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 协议进行许可。</p>
+]]></content>
+      <tags>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>记录一次使用ros时产生的段错误</title>
     <url>/2023/10/22/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8ros%E6%97%B6%E4%BA%A7%E7%94%9F%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>最近在修改项目中与下位机的通信协议时，抛出了一个段错误。调试找到该错误出现在下面这行代码：</p>
@@ -1424,25 +1443,6 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
         <tag>ros</tag>
         <tag>C++</tag>
         <tag>段错误</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇博客</title>
-    <url>/2023/10/05/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>严格的说这并不是第一篇博客，因为在这之前还有 <code>Hexo</code>自动生成的一篇 <a href="/2023/10/04/hello-world/">hello-world</a> ，笔者不打算删除那篇文章，还把建站时间定成了那篇文章的发布时间，因为它是在项目构建的时候生成的，能让建站时间更长（笑）</p>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><p>笔者很早就有建个人博客的想法，但因为 <del>能力不足</del> 懒，迟迟没有上手操作。最近有点上头了，在网上找了教程，花两个小时建了一个简单的博客——就是你现在浏览的这个网站。</p>
-<p>建站的3202年，跟微博、微信朋友圈，甚至QQ空间对比，网络博客好像是一种过时的东西（大概？）。它维护起来更麻烦，内容<strong>似乎</strong>也更正式，不太能跟上越来越快的生活节奏。笔者建立这个博客的初心，是记录学习到的知识，方便以后作为资料站使用。</p>
-<h2 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h2><ul>
-<li>计算机相关知识的学习经历及成果。</li>
-<li>如你所见，笔者是个 <del>沙峦</del> 二次元，大概也会发些相关内容，比如galgame的短评&#x2F;中评&#x2F;长评（虽然一篇都没写过）。</li>
-<li><del>欧皇晒卡</del></li>
-<li>其它想发的内容。</li>
-</ul>
-<p>虽然上文说博客的内容<strong>似乎</strong>更正式，但实际上挺随意的。</p>
-<h2 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h2><p>本博客全部内容（除特别声明外）均采用 <a class="link"   href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" >CC BY-NC-SA 4.0 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 协议进行许可。</p>
-]]></content>
-      <tags>
-        <tag>start</tag>
       </tags>
   </entry>
 </search>
