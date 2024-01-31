@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cloudflare国内访问慢的原因和解决方法</title>
+    <url>/2024/01/31/Cloudflare%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AE%E6%85%A2%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%92%8C%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="减速-CDN"><a href="#减速-CDN" class="headerlink" title="减速 CDN"></a>减速 CDN</h2><p>虽然 Cloudflare 提供全球 CDN 服务，但是在国内访问的速度非常慢，常被戏称为“减速 CDN”。原因在于，对来自中国大陆的访问，Cloudflare 会将其路由到位于美国的服务器，导致访问速度异常的慢。</p>
+<p>至于为什么路由到美国而不是更近的新加坡、日本、中国香港等地，大概是因为亚洲的网络线路的费用更贵吧（）</p>
+<p>实际上 Cloudflare 和百度云（后面好像换成了京东云）有合作，在中国有 CDN 服务器的，但这是一种定制服务，作为个人是无法使用的。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.top/blog/Cloudflare%E4%B8%AD%E5%9B%BD%E7%BD%91%E7%BB%9C%E8%AE%BF%E9%97%AE.png"
+                      alt="Cloudflare中国网络访问"
+                ></p>
+<p>不过我们可以使用别的一些方法自选服务器地址使在中国大陆的访问更快。</p>
+<h2 id="CloudflareSpeedTest"><a href="#CloudflareSpeedTest" class="headerlink" title="CloudflareSpeedTest"></a>CloudflareSpeedTest</h2><p>在查阅资料时笔者发现了 <a class="link"   href="https://github.com/XIU2/CloudflareSpeedTest" >CloudflareSpeedTest <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 这个仓库，他可以返回当前网络连接下，延迟最低的 Cloudflare 服务器。</p>
+<p>既然我已经有了 CDN 服务器的 IP，那么我就可以选择这个 CDN 服务器提供服务。</p>
+<h2 id="配置自选-IP"><a href="#配置自选-IP" class="headerlink" title="配置自选 IP"></a>配置自选 IP</h2><h3 id="网上查到的方法"><a href="#网上查到的方法" class="headerlink" title="网上查到的方法"></a>网上查到的方法</h3><p>首先使用 <code>CloudflareSpeedTest</code> 测速，找到延迟最低的 Cloudflare CDN 服务器 IP。例如，笔者在<code>杭州移动</code>网络下测到的 IP 如下：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.top/blog/cdn%E5%BB%B6%E8%BF%9F.png"
+                      alt="cdn延迟"
+                ></p>
+<p>之后，将域名的 DNS 服务器改成非 Cloudflare 的 DNS 服务器，如笔者改回了阿里云分配的万网 DNS：</p>
+<div class="highlight-container" data-rel="Txt"><figure class="iseeu highlight txt"><table><tr><td class="code"><pre><span class="line">dns27.hichina.com</span><br><span class="line">dns28.hichina.com</span><br></pre></td></tr></table></figure></div>
+
+<p>并在解析中添加 A 记录指向上面测出的低延迟服务器 IP 即可。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.top/blog/%E9%98%BF%E9%87%8C%E4%BA%91dns%E8%AE%B0%E5%BD%95.png"
+                      alt="阿里云dns记录"
+                ></p>
+<p>当然也可以只加一部分。</p>
+<p>但是，一段时间过后会收到 Cloudflare 发送的邮件：</p>
+<blockquote>
+<p>xxx 的名称服务器不再指向 Cloudflare。它们现在指向：</p>
+<p>dns27.hichina.com<br>dns28.hichina.com<br>[not set]</p>
+<p>此更改意味着 xxx 不再使用 Cloudflare……</p>
+</blockquote>
+<p>也就是你没有使用 Cloudflare 的 DNS，需要把 DNS 服务器换到它给你的那两个重新开启 Cloudflare 服务。但这么做太麻烦了。<br>笔者尝试过将 Cloudflare 的 DNS 和万网 DNS 同时设置，以及在 DNS 解析中添加 NS 记录指向 Cloudflare DNS，都无法解决这个问题。</p>
+<h3 id="修改后的方法"><a href="#修改后的方法" class="headerlink" title="修改后的方法"></a>修改后的方法</h3><p>考虑到这个博客的访问几乎都来自国内，实际上不用考虑来自国外的访问。所以做出以下改动。</p>
+<p>前两步与上面相同，测速并添加 A 记录，但是 DNS 不动，保持使用 Cloudflare DNS。</p>
+<p>随后，在 Cloudflare 的 DNS 解析记录中添加 NS 记录：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.top/blog/Cloudflare%E8%AE%B0%E5%BD%95.png"
+                      alt="Cloudflare记录"
+                ></p>
+]]></content>
+      <tags>
+        <tag>Cloudflare</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTeX表达式</title>
     <url>/2023/10/06/LaTeX%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     <content><![CDATA[<h2 id="字母"><a href="#字母" class="headerlink" title="字母"></a>字母</h2><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">a b c d e f g h i j k l m n o p q r s t u v w x y z</span><br><span class="line">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</span><br></pre></td></tr></table></figure></div>
@@ -689,6 +743,7 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
 <h2 id="enforce-https"><a href="#enforce-https" class="headerlink" title="enforce https"></a>enforce https</h2><p>在 cloudflare 的 SSL&#x2F;TLS 中设置 <code>Always Use HTTPS</code> 为 <code>On</code>，这样就可以强制使用 https 了。</p>
 ]]></content>
       <tags>
+        <tag>Cloudflare</tag>
         <tag>start</tag>
       </tags>
   </entry>
@@ -994,6 +1049,7 @@ var meting_api='https://api.null-qwerty.top/Meting?server=:server&type=:type&id=
                 ></p>
 ]]></content>
       <tags>
+        <tag>Cloudflare</tag>
         <tag>start</tag>
       </tags>
   </entry>
