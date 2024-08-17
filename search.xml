@@ -1173,7 +1173,7 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
     <url>/2024/01/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%94%EF%BC%89%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[
   <div class="note p-4 mb-4 rounded-small icon-padding">
-    <i class="note-icon fa-solid fa-info"></i><p>适用于<code>hexo</code>博客，使用<code>hexo-theme-Redefine</code>主题。参阅<a class="link"   href="https://null-qwerty.top/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/" >博客搭建（一）建站 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>。</p>
+    <i class="note-icon fa-solid fa-info"></i><p>适用于<code>hexo</code>博客，使用<code>hexo-theme-Redefine</code>主题。参阅<a href="/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/">博客搭建（一）建站</a>。</p>
 
   </div>
 
