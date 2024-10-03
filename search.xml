@@ -582,6 +582,33 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       </tags>
   </entry>
   <entry>
+    <title>vscode 配置 clangd</title>
+    <url>/2024/10/03/vscode-%E9%85%8D%E7%BD%AE-clangd/</url>
+    <content><![CDATA[<h2 id="clangd-介绍"><a href="#clangd-介绍" class="headerlink" title="clangd 介绍"></a>clangd 介绍</h2><p><code>clangd</code> 是一个基于 <code>clang</code> 的 C&#x2F;C++ 语言服务器，提供了代码补全、静态分析等功能。相较于 vscode 自带的 C&#x2F;C++ 插件，<code>clangd</code> 不需要配置 <code>c_cpp_properties.json</code>，并且在大型项目中的性能表现更好。</p>
+
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>本文假设已经安装了 vscode 并安装了 <code>C/C++ Extension Pack</code> 插件。</p>
+
+  </div>
+
+<h2 id="安装-配置"><a href="#安装-配置" class="headerlink" title="安装 &amp; 配置"></a>安装 &amp; 配置</h2><ol>
+<li>搜索 vscode 插件 <code>clangd</code>，在 vscode 中搜索 <code>clangd</code> 并安装，安装时会询问是否安装 <code>clangd</code>，选择 <code>Yes</code> 即可;</li>
+<li>禁用 vscode 自带的 C&#x2F;C++ 插件，避免冲突;</li>
+<li>勾选 <code>cmake tools</code> 插件设置中 <code>Export Compile Commands</code> 选项，以生成 <code>compile_commands.json</code> 文件;</li>
+<li>在 <code>clangd</code> 插件设置中 <code>Arguments</code> 选项中添加 <code>--compile-commands-dir=$&#123;workspaceFolder&#125;/build</code>，指定 <code>compile_commands.json</code> 文件所在目录;</li>
+</ol>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>打开一个 C&#x2F;C++ 项目，<code>clangd</code> 会自动读取 <code>compile_commands.json</code> 文件并进行代码补全和静态分析，若没有生成 <code>compile_commands.json</code> 文件，使用 <code>cmake</code> 生成即可。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning">
+    <p>截至文档发布，<code>clangd</code> 仍不支持解析 <code>doxygen</code> 格式的注释。</p>
+
+  </div>]]></content>
+      <tags>
+        <tag>vscode</tag>
+        <tag>clangd</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>传统视觉理论及实践</title>
     <url>/2024/04/26/%E4%BC%A0%E7%BB%9F%E8%A7%86%E8%A7%89%E7%90%86%E8%AE%BA%E5%8F%8A%E5%AE%9E%E8%B7%B5/</url>
     <content><![CDATA[<h2 id="什么是计算机视觉"><a href="#什么是计算机视觉" class="headerlink" title="什么是计算机视觉"></a>什么是计算机视觉</h2><p>计算机视觉（Computer Vision）是一门研究如何使机器“看”的科学，它利用摄像头和计算机算法，让机器能够像人一样“看”，并且能够从中<strong>获取信息</strong>。计算机视觉是一门多领域交叉的学科，涉及到计算机科学、数学、物理学、生物学、心理学等多个学科。</p>
