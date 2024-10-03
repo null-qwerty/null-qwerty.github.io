@@ -345,14 +345,8 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
   var hls = new Hls();
   hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
   hls.attachMedia(video);
-  hls.on(Hls.Events.MANIFEST_PARSED,function() {
-  video.play();
-});
 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
   video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
-  video.addEventListener('loadedmetadata',function() {
-  video.play();
-});
 }
 </script>
 
