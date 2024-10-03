@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.null-qwerty.top/2024/10/03/ubuntu-%E4%B8%8B-CubeMX-cmake-gcc-arm-none-eabi-ozone-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.null-qwerty.top/2024/10/03/vscode-%E9%85%8D%E7%BD%AE-clangd/</loc>
     
     <lastmod>2024-10-03</lastmod>
@@ -251,6 +260,27 @@
   </url>
   
   <url>
+    <loc>https://www.null-qwerty.top/tags/stm32/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.null-qwerty.top/tags/vscode/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.null-qwerty.top/tags/cmake/</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.null-qwerty.top/tags/php/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -266,13 +296,6 @@
   
   <url>
     <loc>https://www.null-qwerty.top/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.null-qwerty.top/tags/vscode/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
