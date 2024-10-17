@@ -354,6 +354,243 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 ]]></content>
   </entry>
   <entry>
+    <title>git 安装与使用</title>
+    <url>/2024/10/17/git-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[
+  <div class="note p-4 mb-4 rounded-small info icon-padding">
+    <i class="note-icon fa-solid fa-info"></i><p>本文中开发环境为 ubuntu 24.04，其他系统的安装可能会有所不同，仅供参考。</p>
+
+  </div>
+
+<h2 id="为什么使用-git"><a href="#为什么使用-git" class="headerlink" title="为什么使用 git"></a>为什么使用 git</h2><p>git 是一个分布式<strong>版本控制系统</strong>，可以有效的管理代码，方便团队协作，提高开发效率。在开发过程中，我们经常会遇到以下问题：</p>
+<ul>
+<li>代码丢失</li>
+<li>代码冲突</li>
+<li>代码版本混乱</li>
+<li>代码备份不及时</li>
+<li>代码合并困难</li>
+</ul>
+<p>等等，这些问题都可以通过 git 来解决。</p>
+<h2 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h2><p>与大多数软件一样，我们可以使用 apt 来安装 git：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install git -y</span><br></pre></td></tr></table></figure></div>
+
+<p>安装完成后，可以使用以下命令查看 git 的版本：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure></div>
+
+<p>输出：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git version 2.43.0</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="配置-git"><a href="#配置-git" class="headerlink" title="配置 git"></a>配置 git</h2><p>安装完成后，我们需要配置 git，配置的内容包括用户名和邮箱：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;email@example.com&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>其中 <code>--global</code> 表示全局配置，如果只想对当前仓库配置，可以去掉 <code>--global</code>，这样<strong>只对当前仓库生效</strong>。一般情况下，我们都是全局配置。</p>
+<h2 id="git-基本操作"><a href="#git-基本操作" class="headerlink" title="git 基本操作"></a>git 基本操作</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>在本地创建一个新的仓库，可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会在当前目录下创建一个 <code>.git</code> 文件夹，这个文件夹是 git 用来管理版本的核心。</p>
+<h3 id="克隆仓库"><a href="#克隆仓库" class="headerlink" title="克隆仓库"></a>克隆仓库</h3><p>如果我们想要克隆一个远程仓库到本地，可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;url&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>url</code> 是远程仓库的地址，可以是 <code>https</code> 或者 <code>ssh</code> 协议。</p>
+<p>例如：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/null-qwerty/null-qwerty.git</span><br></pre></td></tr></table></figure></div>
+
+<p>会将我的 github 主页克隆到本地。</p>
+<h3 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h3><p>在 git 中，我们需要将<strong>修改过的文件</strong>添加到暂存区，然后再提交到仓库。添加文件到暂存区可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>如果想要添加所有文件，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></div>
+
+<p><code>filename</code> 可以是文件名，也可以是目录名，可以使用通配符。</p>
+<h3 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h3><p>将暂存区的文件提交到仓库，可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;message&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p><code>message</code> 是提交的信息，可以是任意字符串，一般情况下，我们会写上这次提交的内容。如果不加 <code>-m</code> 参数，会进入一个编辑器，让我们输入提交信息。</p>
+<p>提交规范请参考<a href="#commit-%E8%A7%84%E8%8C%83">commit 规范</a>。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning icon-padding">
+    <i class="note-icon fa-solid fa-circle-exclamation"></i><p>提交信息是必须的，如果不写提交信息，会提交失败。</p>
+
+  </div>
+
+<h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><p>查看当前仓库的状态，可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会显示当前仓库的状态，包括<strong>已修改的文件</strong>，<strong>已暂存的文件</strong>，<strong>未跟踪的文件</strong>等。</p>
+<p>查看单个文件的修改情况，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;commit&gt; &lt;filename&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>commit</code> 是提交的哈希值，可以使用 <code>git log</code> 查看，也可以填写分支名，<code>filename</code> 是文件名。</p>
+<p>比较两个提交之间的差异，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git diff &lt;commit1&gt; &lt;commit2&gt;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="查看提交记录"><a href="#查看提交记录" class="headerlink" title="查看提交记录"></a>查看提交记录</h3><p>查看提交记录，可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会显示当前仓库的提交记录，包括<strong>提交者</strong>，<strong>提交时间</strong>，<strong>提交信息</strong>等。分支操作中有以下几个重要的概念：</p>
+<ul>
+<li>HEAD：指向当前分支的指针</li>
+<li>origin：远程仓库</li>
+<li>branch：分支</li>
+</ul>
+<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><p>在 git 中，分支是一个非常重要的概念，我们可以使用分支来进行<strong>并行开发</strong>，<strong>版本控制</strong>等。</p>
+<p>查看当前分支，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会显示当前仓库的所有分支，当前分支会有一个 <code>*</code> 标记。</p>
+<p>创建分支，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git branch &lt;branchname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>branchname</code> 是分支名。</p>
+<p>切换分支，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout &lt;branchname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>合并分支，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branchname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>会将 <code>branchname</code> 分支合并到当前分支。</p>
+<p>删除分支，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git branch -d &lt;branchname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><p>在 git 中，我们可以将本地仓库推送到远程仓库，也可以从远程仓库拉取代码。</p>
+<p>推送代码到远程仓库，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin &lt;branchname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>这条命令会将当前分支暂存的提交推送到远程仓库的 <code>branchname</code> 分支。<br>如果不填写 <code>branchname</code>，会将当前分支推送到远程仓库的当前分支，此时可以简写为<code>git push</code>;<br>如果远程仓库没有当前分支，会自动创建。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning icon-padding">
+    <i class="note-icon fa-solid fa-circle-exclamation"></i><p>请注意，推送代码到远程仓库是一个危险的操作，一定要谨慎操作。</p>
+
+  </div>
+
+
+  <div class="note p-4 mb-4 rounded-small danger icon-padding">
+    <i class="note-icon fa-solid fa-triangle-exclamation"></i><p>禁止使用 <code>git push -f</code>，这个命令会强制推送代码，会覆盖远程仓库的代码。</p>
+
+  </div>
+
+<p>拉取代码，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git pull origin &lt;branchname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>这条命令会将远程仓库的 <code>branchname</code> 分支拉取到本地仓库。<br>如果不填写 <code>branchname</code>，会拉取远程仓库的当前分支，此时可以简写为<code>git pull</code>。</p>
+<p>拉取代码时，本地暂存区不能有未提交的修改，否则会拉取失败。可以使用 <code>git stash</code> 命令将本地暂存区的修改暂存起来，合并之后再使用 <code>git stash pop</code> 恢复。</p>
+<h3 id="tag-操作"><a href="#tag-操作" class="headerlink" title="tag 操作"></a>tag 操作</h3><p>在 git 中，我们可以使用 tag 来标记一些重要的提交，例如版本发布等。</p>
+<p>创建 tag，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git tag &lt;tagname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>tagname</code> 是 tag 的名字。git 会默认将 tag 标记在最新的提交上，并自动创建一个轻量标签。</p>
+<p>如果想要在之前的提交上创建 tag，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git tag &lt;tagname&gt; &lt;commit&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>commit</code> 是提交的哈希值。</p>
+<p>查看 tag，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git tag</span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会显示当前仓库的所有 tag。</p>
+<p>删除 tag，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git tag -d &lt;tagname&gt;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h3><p>撤销修改，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout -- &lt;filename&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会将 <code>filename</code> 文件恢复到最近一次提交的状态。</p>
+<p>撤销暂存，可以使用：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git reset HEAD &lt;filename&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会将 <code>filename</code> 文件从暂存区移除。</p>
+<h2 id="gitignore-文件"><a href="#gitignore-文件" class="headerlink" title=".gitignore 文件"></a>.gitignore 文件</h2><p>在 git 中，我们可以使用 <code>.gitignore</code> 文件来忽略一些文件，这些文件不会被 git 管理。</p>
+<p>例如，在项目根目录下创建一个 <code>.gitignore</code> 文件，在文件中写入：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">build/</span><br><span class="line">*.log</span><br></pre></td></tr></table></figure></div>
+
+<p>这样，<code>build</code> 目录和所有的 <code>.log</code> 文件都不会被 git 管理，不会被提交到仓库。</p>
+<p>我们建议将项目的构建目录、日志文件、临时文件、IDE 配置文件和大型文件等都加入到 <code>.gitignore</code> 文件中。</p>
+<p>如果你在之前已经提交了这些文件，且已经提交到远端，可以使用以下命令修改提交：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git filter-branch --force --index-filter <span class="string">&#x27;git rm --cached --ignore-unmatch &lt;filename&gt;&#x27;</span> --prune-empty --tag-name-filter <span class="built_in">cat</span> -- --all</span><br></pre></td></tr></table></figure></div>
+
+<p>命令解释：<br><code>fliter-branch</code>：过滤分支，用于修改提交历史。<br><code>--force</code>：强制执行。<br><code>--index-filter</code>：修改索引，用于修改文件。<br><code>&#39;git rm --cached --ignore-unmatch &lt;filename&gt;&#39;</code>：删除文件。<br><code>--prune-empty</code>：删除空提交。<br><code>--tag-name-filter cat</code>：修改 tag。<br><code>-- --all</code>：修改所有分支。</p>
+<p>其中 <code>filename</code> 是文件名或文件夹，可以使用通配符。</p>
+
+  <div class="note p-4 mb-4 rounded-small danger icon-padding">
+    <i class="note-icon fa-solid fa-triangle-exclamation"></i><p>该操作<strong>极其危险</strong>，会修改提交历史，若无必要请不要在多人协作的项目中使用。</p>
+
+  </div>
+
+<h2 id="使用-vscode-进行-git-操作"><a href="#使用-vscode-进行-git-操作" class="headerlink" title="使用 vscode 进行 git 操作"></a>使用 vscode 进行 git 操作</h2><p>vscode 内置的 git 插件提供了图形化的界面，方便我们进行 git 操作。可对照上面的命令学习使用，这里不再赘述。</p>
+<h2 id="连接到-github"><a href="#连接到-github" class="headerlink" title="连接到 github"></a>连接到 github</h2><p>在使用 git 的过程中，我们经常会使用 github 来托管代码，这里简单介绍一下如何连接到 github。</p>
+<p>由于目前 github 已经不再支持密码登录，有两种方式连接，下面一一介绍。</p>
+<h3 id="使用-ssh-key-连接"><a href="#使用-ssh-key-连接" class="headerlink" title="使用 ssh key 连接"></a>使用 ssh key 连接</h3><p>首先，我们需要生成 ssh key：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>这个命令会在 <code>~/.ssh</code> 目录下生成一个 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 文件，<code>id_rsa</code> 是私钥，<code>id_rsa.pub</code> 是公钥。</p>
+<p>然后，我们需要将公钥添加到 github 上，打开 github，点击右上角的头像，选择 <code>Settings</code>，然后选择 <code>SSH and GPG keys</code>，点击 <code>New SSH key</code>，将公钥粘贴到 <code>Key</code> 中，点击 <code>Add SSH key</code>。</p>
+<p>接下来，我们需要测试一下是否连接成功：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
+
+<p>如果连接成功，会显示 <code>Hi username! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code>。</p>
+<p>之后在使用过程中，将远程仓库地址改为 ssh 协议即可。</p>
+<h3 id="使用-token-连接"><a href="#使用-token-连接" class="headerlink" title="使用 token 连接"></a>使用 token 连接</h3><p>首先，我们需要在 github 上生成一个 token，打开 github，点击右上角的头像，选择 <code>Settings</code>，然后选择 <code>Developer settings</code>，点击 <code>Personal access tokens</code>，点击 <code>Generate new token</code>，填写 <code>Note</code>，选择 <code>repo</code> 权限，为了方便也可以把权限全部勾选，点击 <code>Generate token</code>，将生成的 token 复制下来。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning icon-padding">
+    <i class="note-icon fa-solid fa-circle-exclamation"></i><p>token 只有一次复制机会，请妥善保管 token，且不要泄露给他人。</p>
+
+  </div>
+
+<p>然后，我们需要将 token 添加到 git 的凭证管理器中：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global credential.helper store</span><br></pre></td></tr></table></figure></div>
+
+<p>然后在登录时使用 token 替换密码，提交到 https 协议的远程仓库。用户名和密钥会保存在 <code>~/.git-credentials</code> 文件中。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning icon-padding">
+    <i class="note-icon fa-solid fa-circle-exclamation"></i><p>不推荐使用 token 连接，因为 token 有时效性，且泄露后会造成安全问题。</p>
+
+  </div>
+
+<h2 id="commit-规范"><a href="#commit-规范" class="headerlink" title="commit 规范"></a>commit 规范</h2><p>在多人协作的项目中，commit 规范是非常重要的，可以提高代码的可读性，方便团队协作。规范的提交信息应该包括以下几个部分：</p>
+<ul>
+<li>type：提交的类型。</li>
+<li>scope：提交的范围，可以是文件名，模块名等。</li>
+<li>subject：提交的主题，简短描述这次提交的内容。</li>
+<li>body：提交的详细内容，可以包括修改的原因，解决的问题等。</li>
+<li>footer：提交的备注，可以包括关联的 issue，关闭的 issue 等。</li>
+<li>breaking change：提交的破坏性变更，可以包括 API 的变更，配置的变更等。</li>
+</ul>
+
+  <div class="note-large green">
+    <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
+      <i class="notel-icon fa-solid fa-lightbulb"></i><p>type 的类型</p>
+
+    </div>
+    <div class="notel-content">
+      <ul>
+<li>feat：新功能，指新增了一个功能。</li>
+<li>fix：修复 bug，指修复了一个 bug。</li>
+<li>docs：文档更新。</li>
+<li>style：格式化代码，不影响代码逻辑。</li>
+<li>refactor：重构代码，既不新增功能，也不修复 bug。</li>
+<li>test：测试，包括单元测试，集成测试等，不影响代码逻辑。</li>
+<li>chore：构建工具，依赖管理等，不影响代码逻辑。</li>
+<li>perf：性能优化，提高代码性能。</li>
+<li>revert：回滚，撤销之前的提交。</li>
+<li>merge：合并，合并分支。</li>
+<li>release：发布，发布新版本。</li>
+<li>deps：依赖更新，更新依赖包。</li>
+</ul>
+
+    </div>
+  </div>
+
+<p>每次提交尽量做到<strong>单一功能</strong>，不要将多个功能放在一个提交中，这样可以方便代码的维护和回滚。</p>
+<p>例如：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">feat(core): add new feature</span><br><span class="line"></span><br><span class="line">add new feature to core module</span><br><span class="line"></span><br><span class="line">close #123</span><br><span class="line"></span><br><span class="line">BREAKING CHANGE: change the API of core module</span><br></pre></td></tr></table></figure></div>
+
+<p>建议仅将<strong>源文件</strong>提交到仓库，其他文件如<strong>编译生成的文件</strong>、<strong>依赖库</strong>等不要提交到仓库，用 <code>.gitignore</code> 文件来忽略这些文件或文件夹。</p>
+]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/10/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -1371,39 +1608,6 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       </tags>
   </entry>
   <entry>
-    <title>博客搭建（五）配置gitalk评论功能</title>
-    <url>/2024/01/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%94%EF%BC%89%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[
-  <div class="note p-4 mb-4 rounded-small icon-padding">
-    <i class="note-icon fa-solid fa-info"></i><p>适用于<code>hexo</code>博客，使用<code>hexo-theme-Redefine</code>主题。参阅<a href="/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/">博客搭建（一）建站</a>。</p>
-
-  </div>
-
-<h2 id="1-注册github应用"><a href="#1-注册github应用" class="headerlink" title="1. 注册github应用"></a>1. 注册github应用</h2><p>首先需要<a class="link"   href="https://github.com/settings/applications/new" >注册一个github应用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://images.null-qwerty.work/blog/githubApp.png"
-                      alt="github App"
-                ></p>
-<p>其中<code>Homepage URL</code>和<code>Authorization callback URL</code>都填写博客的域名即可。</p>
-<p>点击<code>Register application</code>后，会生成一个<code>Client ID</code>和一个<code>Client Secret</code>，没有<code>Client Secret</code>的话点击<code>Generate a new client secret</code>即可，这两个值在后面会用到。</p>
-<h2 id="2-新建一个仓库"><a href="#2-新建一个仓库" class="headerlink" title="2. 新建一个仓库"></a>2. 新建一个仓库</h2><p>在github上新建一个 <strong>public</strong> 仓库，用于存放评论数据。随便发布一个 issue 用于开启 issues。</p>
-<h2 id="3-修改配置"><a href="#3-修改配置" class="headerlink" title="3. 修改配置"></a>3. 修改配置</h2><p>修改 <code>_config.redefine.yml</code> 文件的相关配置：</p>
-<div class="highlight-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="comment"># Whether to enable comment</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Comment system</span></span><br><span class="line">  <span class="attr">system:</span> <span class="string">gitalk</span> <span class="comment"># waline, gitalk, twikoo, giscus</span></span><br><span class="line">  <span class="comment"># System configuration</span></span><br><span class="line">  <span class="attr">config:</span></span><br><span class="line">    <span class="comment"># Gitalk comment system. See https://github.com/gitalk/gitalk</span></span><br><span class="line">    <span class="attr">gitalk:</span></span><br><span class="line">      <span class="attr">clientID:</span> <span class="comment"># GitHub Application Client ID</span></span><br><span class="line">      <span class="attr">clientSecret:</span> <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line">      <span class="attr">repo:</span>  <span class="comment"># GitHub repository</span></span><br><span class="line">      <span class="attr">owner:</span> <span class="comment"># GitHub repository owner</span></span><br><span class="line">      <span class="attr">proxy:</span> <span class="string">https://cors-anywhere.1l1.icu/https://github.com/login/oauth/access_token</span> <span class="comment"># CORS Proxy</span></span><br></pre></td></tr></table></figure></div>
-
-<p><code>clientID</code> 和 <code>clientSecret</code> 是第一步注册应用时生成的两个值，<code>repo</code> 是第二步新建的仓库的名称，<code>owner</code> 是仓库的拥有者，一般是自己的用户名。<code>proxy</code> 是一个代理，用于解决跨域问题，由于经常被墙，所以可能需要更换。可以在<a class="link"   href="https://github.com/gitalk/gitalk/issues" >gitalk的issues <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>里找到可能可用的代理。</p>
-<h2 id="4-可能遇到的问题"><a href="#4-可能遇到的问题" class="headerlink" title="4. 可能遇到的问题"></a>4. 可能遇到的问题</h2><ul>
-<li><code>未找到相关的 issues 进行评论，请联系 @xxx 初始化创建</code>：点一下下面的<code>使用 github 登录</code>按钮即可。如果在部署 gitalk 之前发布过文章，则需要登录后将每篇文章刷新一下，才能正常使用评论功能。</li>
-<li><code>Error: Not Found</code>：没找到仓库，检查名称是否正确。</li>
-<li><code>Error: Network Error</code>：网络错误，检查代理是否可用。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>start</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客搭建（四）Cloudflare配置</title>
     <url>/2023/12/12/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E5%9B%9B%EF%BC%89Cloudflare%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<p>之前使用 Cloudflare 的免费 CDN 服务，但是效果不是很好，查阅资料发现可以通过配置一些选项来加速国内访问速度。</p>
@@ -1473,6 +1677,39 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 ]]></content>
       <tags>
         <tag>Cloudflare</tag>
+        <tag>start</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建（五）配置gitalk评论功能</title>
+    <url>/2024/01/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%94%EF%BC%89%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[
+  <div class="note p-4 mb-4 rounded-small icon-padding">
+    <i class="note-icon fa-solid fa-info"></i><p>适用于<code>hexo</code>博客，使用<code>hexo-theme-Redefine</code>主题。参阅<a href="/2023/10/05/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E5%BB%BA%E7%AB%99/">博客搭建（一）建站</a>。</p>
+
+  </div>
+
+<h2 id="1-注册github应用"><a href="#1-注册github应用" class="headerlink" title="1. 注册github应用"></a>1. 注册github应用</h2><p>首先需要<a class="link"   href="https://github.com/settings/applications/new" >注册一个github应用 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.work/blog/githubApp.png"
+                      alt="github App"
+                ></p>
+<p>其中<code>Homepage URL</code>和<code>Authorization callback URL</code>都填写博客的域名即可。</p>
+<p>点击<code>Register application</code>后，会生成一个<code>Client ID</code>和一个<code>Client Secret</code>，没有<code>Client Secret</code>的话点击<code>Generate a new client secret</code>即可，这两个值在后面会用到。</p>
+<h2 id="2-新建一个仓库"><a href="#2-新建一个仓库" class="headerlink" title="2. 新建一个仓库"></a>2. 新建一个仓库</h2><p>在github上新建一个 <strong>public</strong> 仓库，用于存放评论数据。随便发布一个 issue 用于开启 issues。</p>
+<h2 id="3-修改配置"><a href="#3-修改配置" class="headerlink" title="3. 修改配置"></a>3. 修改配置</h2><p>修改 <code>_config.redefine.yml</code> 文件的相关配置：</p>
+<div class="highlight-container" data-rel="Yml"><figure class="iseeu highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="comment"># Whether to enable comment</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># Comment system</span></span><br><span class="line">  <span class="attr">system:</span> <span class="string">gitalk</span> <span class="comment"># waline, gitalk, twikoo, giscus</span></span><br><span class="line">  <span class="comment"># System configuration</span></span><br><span class="line">  <span class="attr">config:</span></span><br><span class="line">    <span class="comment"># Gitalk comment system. See https://github.com/gitalk/gitalk</span></span><br><span class="line">    <span class="attr">gitalk:</span></span><br><span class="line">      <span class="attr">clientID:</span> <span class="comment"># GitHub Application Client ID</span></span><br><span class="line">      <span class="attr">clientSecret:</span> <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line">      <span class="attr">repo:</span>  <span class="comment"># GitHub repository</span></span><br><span class="line">      <span class="attr">owner:</span> <span class="comment"># GitHub repository owner</span></span><br><span class="line">      <span class="attr">proxy:</span> <span class="string">https://cors-anywhere.1l1.icu/https://github.com/login/oauth/access_token</span> <span class="comment"># CORS Proxy</span></span><br></pre></td></tr></table></figure></div>
+
+<p><code>clientID</code> 和 <code>clientSecret</code> 是第一步注册应用时生成的两个值，<code>repo</code> 是第二步新建的仓库的名称，<code>owner</code> 是仓库的拥有者，一般是自己的用户名。<code>proxy</code> 是一个代理，用于解决跨域问题，由于经常被墙，所以可能需要更换。可以在<a class="link"   href="https://github.com/gitalk/gitalk/issues" >gitalk的issues <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>里找到可能可用的代理。</p>
+<h2 id="4-可能遇到的问题"><a href="#4-可能遇到的问题" class="headerlink" title="4. 可能遇到的问题"></a>4. 可能遇到的问题</h2><ul>
+<li><code>未找到相关的 issues 进行评论，请联系 @xxx 初始化创建</code>：点一下下面的<code>使用 github 登录</code>按钮即可。如果在部署 gitalk 之前发布过文章，则需要登录后将每篇文章刷新一下，才能正常使用评论功能。</li>
+<li><code>Error: Not Found</code>：没找到仓库，检查名称是否正确。</li>
+<li><code>Error: Network Error</code>：网络错误，检查代理是否可用。</li>
+</ul>
+]]></content>
+      <tags>
         <tag>start</tag>
       </tags>
   </entry>
