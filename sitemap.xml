@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.null-qwerty.top/2024/01/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%94%EF%BC%89%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</loc>
+    
+    <lastmod>2024-10-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.null-qwerty.top/links/index.html</loc>
     
     <lastmod>2024-10-24</lastmod>
@@ -50,15 +59,6 @@
     <loc>https://www.null-qwerty.top/2024/10/03/vscode-%E9%85%8D%E7%BD%AE-clangd/</loc>
     
     <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.null-qwerty.top/2024/01/09/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%94%EF%BC%89%E9%85%8D%E7%BD%AEgitalk%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</loc>
-    
-    <lastmod>2024-08-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
