@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.null-qwerty.top/links/index.html</loc>
+    
+    <lastmod>2024-10-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.null-qwerty.top/2024/10/24/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91-OpenCV-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2024-10-24</lastmod>
@@ -203,15 +212,6 @@
     <loc>https://www.null-qwerty.top/2023/10/10/%E7%90%86%E8%A7%A3%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86/</loc>
     
     <lastmod>2023-10-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.null-qwerty.top/links/index.html</loc>
-    
-    <lastmod>2023-10-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
