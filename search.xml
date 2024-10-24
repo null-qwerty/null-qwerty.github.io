@@ -321,6 +321,39 @@
       </tags>
   </entry>
   <entry>
+    <title>TestPage</title>
+    <url>/2024/01/12/TestPage/</url>
+    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script data-swup-reload-script type="text/javascript">
+var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id=:id&r=:r';
+</script>
+<p><meting-js
+    server="netease"
+    type="playlist"
+    id="9138278379"
+    list-folded=true><br></meting-js></p>
+<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 <code>alpha 值</code>，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.work/Meting" >https://api.null-qwerty.work/Meting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><h3 id="onedrive"><a href="#onedrive" class="headerlink" title="onedrive"></a>onedrive</h3><video controls width="100%">
+    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
+</video>
+
+<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
+<h3 id="github-视频床"><a href="#github-视频床" class="headerlink" title="github 视频床"></a>github 视频床</h3><p><video id="video" controls loop="false" width="100%"></video></p>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script data-swup-reload-script type="text/javascript">
+  var video = document.getElementById('video');
+  if(Hls.isSupported()) {
+  var hls = new Hls();
+  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
+  hls.attachMedia(video);
+} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
+}
+</script>
+
+<p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
+]]></content>
+  </entry>
+  <entry>
     <title>git 安装与使用</title>
     <url>/2024/10/17/git-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[
@@ -565,39 +598,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TestPage</title>
-    <url>/2024/01/12/TestPage/</url>
-    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script data-swup-reload-script type="text/javascript">
-var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id=:id&r=:r';
-</script>
-<p><meting-js
-    server="netease"
-    type="playlist"
-    id="9138278379"
-    list-folded=true><br></meting-js></p>
-<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 <code>alpha 值</code>，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.work/Meting" >https://api.null-qwerty.work/Meting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><h3 id="onedrive"><a href="#onedrive" class="headerlink" title="onedrive"></a>onedrive</h3><video controls width="100%">
-    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
-</video>
-
-<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
-<h3 id="github-视频床"><a href="#github-视频床" class="headerlink" title="github 视频床"></a>github 视频床</h3><p><video id="video" controls loop="false" width="100%"></video></p>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script data-swup-reload-script type="text/javascript">
-  var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-  var hls = new Hls();
-  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
-  hls.attachMedia(video);
-} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
-}
-</script>
-
-<p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/10/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -709,114 +709,6 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 ]]></content>
       <tags>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ubuntu18.04下使用php+mysql+apache的网站搭建</title>
-    <url>/2023/10/12/ubuntu18-04%E4%B8%8B%E4%BD%BF%E7%94%A8php-mysql-apache%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[
-  <div class="note p-4 mb-4 rounded-small info">
-    <p>如果我做错了什么，请让法律来制裁我，<strong>而不是让我用php写项目</strong></p>
-
-  </div>
-<p>最近在给社团网站做服务器迁移，遇到了一些问题，记录一下。</p>
-<blockquote>
-<p>系统环境</p>
-<ul>
-<li>ubuntu18.04</li>
-</ul>
-</blockquote>
-<h2 id="安装-配置-MySQL"><a href="#安装-配置-MySQL" class="headerlink" title="安装|配置 MySQL"></a>安装|配置 MySQL</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get update</span><br><span class="line"><span class="built_in">sudo</span> apt-get install mysql-server   <span class="comment"># 安装 mysql 服务端</span></span><br></pre></td></tr></table></figure></div>
-
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>MySQL初始化安全脚本</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> mysql_secure_installation</span><br></pre></td></tr></table></figure></div>
-
-<p><code>mysql_secure_installation</code>中会有设置root密码，删除匿名用户，禁止root远程登录，删除test数据库，刷新权限表等操作，可以全都选择yes。root密码看情况更改。</p>
-<p>配置完成后，可以使用以下命令查看MySQL服务状态</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl status mysql.service</span><br></pre></td></tr></table></figure></div>
-
-<p>会产生类似如下输出（此处的输出并非在配置结束后运行产生的，仅作参考）</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">● mysql.service - MySQL Community Server</span><br><span class="line">   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)</span><br><span class="line">   Active: active (running) since Thu 2023-10-12 00:26:53 CST; 13h ago</span><br><span class="line"> Main PID: 657 (mysqld)</span><br><span class="line">    Tasks: 28 (<span class="built_in">limit</span>: 2333)</span><br><span class="line">   CGroup: /system.slice/mysql.service</span><br><span class="line">           └─657 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid</span><br></pre></td></tr></table></figure></div>
-
-<p>进入MySQL</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> mysql -u root -p</span><br></pre></td></tr></table></figure></div>
-
-<p>创建新用户</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;password&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
-
-<p>给新用户并授权</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> <span class="operator">*</span>.<span class="operator">*</span> <span class="keyword">TO</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> ;</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>刷新权限表（一定要记得刷新）</strong></p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure></div>
-
-<p>创建新数据库，给网站使用</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE newdatabase;</span><br></pre></td></tr></table></figure></div>
-
-<p>使用新数据库</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">USE newdatabase;</span><br></pre></td></tr></table></figure></div>
-
-<p>退出MySQL</p>
-<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="安装-配置-php"><a href="#安装-配置-php" class="headerlink" title="安装|配置 php"></a>安装|配置 php</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>建议使用源码编译安装。<br><strong>获取源码包</strong></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">curl -o php-7.4.33.tar.gz https://www.php.net/distributions/php-7.4.33.tar.gz</span><br><span class="line">tar -zxvf php-7.4.33.tar.gz</span><br><span class="line"><span class="built_in">cd</span> php-7.4.33</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>配置安装内容</strong><br>按需求配置安装内容，这里只是一个示例，具体安装内容可以参考官方文档。</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --prefix=/usr/local/php --sysconfdir=/etc/php --with-openssl --with-zlib --with-bz2 --with-curl --enable-bcmath --enable-gd --with-webp --with-jpeg --with-mhash --enable-mbstring --with-imap-ssl --with-mysqli=mysqlnd --enable-exif --with-ffi --with-zip --enable-sockets --with-pcre-jit --enable-fpm --enable-pdo --with-pdo-mysql=mysqlnd --with-mysql=mysqlnd --enable-pcnt</span><br></pre></td></tr></table></figure></div>
-
-<p>mysqlnd是php提供的mysql驱动，是php5.3之后才有的。此处不选择mysql驱动之后会出错。</p>
-<p>配置过程中可能会出现一些错误，根据错误提示安装相应的依赖即可。</p>
-<p><strong>编译安装</strong></p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make</span><br><span class="line"><span class="built_in">sudo</span> make install</span><br></pre></td></tr></table></figure></div>
-
-<p>安装完成后执行以下命令</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> php.ini-development /etc/php/php.ini <span class="comment"># 复制配置文件模板</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/php /usr/bin/php   <span class="comment"># 建立软链接</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/phpize /usr/bin/phpize</span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/sbin/php-fpm /usr/bin/php-fpm</span><br></pre></td></tr></table></figure></div>
-
-<p>然后执行以下命令，查看php版本</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">php -v</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>修改php配置文件</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/php/php.ini</span><br></pre></td></tr></table></figure></div>
-
-<p>添加pdo_mysql扩展</p>
-<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">extension</span>=pdo       <span class="comment">; 添加pdo扩展</span></span><br><span class="line"><span class="attr">extension</span>=mysqlnd   <span class="comment">; 添加mysqlnd扩展，因为前面设置pdo_mysql驱动为mysqlnd</span></span><br><span class="line"><span class="attr">extension</span>=pdo_mysql <span class="comment">; 添加pdo_mysql扩展</span></span><br></pre></td></tr></table></figure></div>
-
-<p>修改完后退出保存，重启php-fpm</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart php-fpm</span><br></pre></td></tr></table></figure></div>
-
-<h2 id="安装-配置-apache"><a href="#安装-配置-apache" class="headerlink" title="安装|配置 apache"></a>安装|配置 apache</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install apache2</span><br><span class="line"><span class="built_in">sudo</span> apt-get install libapache2-mod-php</span><br></pre></td></tr></table></figure></div>
-
-<p>安装完成后启动apache</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl start apache2</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h3><p>修改apache配置文件</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/apache2/apache2.conf</span><br></pre></td></tr></table></figure></div>
-
-<p>添加如下内容</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;Directory /var/www/html&gt;</span><br><span class="line">    Options Indexes FollowSymLinks</span><br><span class="line">    AllowOverride All</span><br><span class="line">    Require all granted</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>修改完后退出保存，重启apache</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart apache2</span><br></pre></td></tr></table></figure></div>
-
-<p>执行以下命令，启动<code>rewrite</code>模块</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> a2enmod rewrite</span><br></pre></td></tr></table></figure></div>
-
-<p>在 <code>/var/www/html</code> 目录下创建 <code>index.php</code> 文件，输入以下内容</p>
-<div class="highlight-container" data-rel="Php"><figure class="iseeu highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></div>
-<p>创建<code>.htaccess</code>文件，输入以下内容</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">RewriteEngine on</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</span><br><span class="line">RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]</span><br><span class="line">&lt;/IfModule&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>然后在浏览器中输入 <code>http://localhost</code> ，如果出现php信息页面，说明apache和php都安装成功了。可以用此页面查看php的配置信息。<br>随后即可在该路径下放置网页文件。</p>
-<h4 id="设置域名"><a href="#设置域名" class="headerlink" title="设置域名"></a>设置域名</h4><p>在 <code>/etc/apache2/sites-available</code> 目录下创建 <code>example.com.conf</code> 文件，输入以下内容</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line">    ServerName example.com</span><br><span class="line">    DocumentRoot /var/www/html</span><br><span class="line"></span><br><span class="line">    &lt;Directory /var/www/&gt;</span><br><span class="line">        Options Indexes FollowSymLinks</span><br><span class="line">        AllowOverride All</span><br><span class="line">        Require all granted</span><br><span class="line">    &lt;/Directory&gt;</span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
-]]></content>
-      <tags>
-        <tag>php</tag>
-        <tag>MySQL</tag>
-        <tag>网站搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -998,6 +890,114 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
         <tag>stm32</tag>
         <tag>vscode</tag>
         <tag>cmake</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ubuntu18.04下使用php+mysql+apache的网站搭建</title>
+    <url>/2023/10/12/ubuntu18-04%E4%B8%8B%E4%BD%BF%E7%94%A8php-mysql-apache%E7%9A%84%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>如果我做错了什么，请让法律来制裁我，<strong>而不是让我用php写项目</strong></p>
+
+  </div>
+<p>最近在给社团网站做服务器迁移，遇到了一些问题，记录一下。</p>
+<blockquote>
+<p>系统环境</p>
+<ul>
+<li>ubuntu18.04</li>
+</ul>
+</blockquote>
+<h2 id="安装-配置-MySQL"><a href="#安装-配置-MySQL" class="headerlink" title="安装|配置 MySQL"></a>安装|配置 MySQL</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get update</span><br><span class="line"><span class="built_in">sudo</span> apt-get install mysql-server   <span class="comment"># 安装 mysql 服务端</span></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>MySQL初始化安全脚本</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> mysql_secure_installation</span><br></pre></td></tr></table></figure></div>
+
+<p><code>mysql_secure_installation</code>中会有设置root密码，删除匿名用户，禁止root远程登录，删除test数据库，刷新权限表等操作，可以全都选择yes。root密码看情况更改。</p>
+<p>配置完成后，可以使用以下命令查看MySQL服务状态</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl status mysql.service</span><br></pre></td></tr></table></figure></div>
+
+<p>会产生类似如下输出（此处的输出并非在配置结束后运行产生的，仅作参考）</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">● mysql.service - MySQL Community Server</span><br><span class="line">   Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)</span><br><span class="line">   Active: active (running) since Thu 2023-10-12 00:26:53 CST; 13h ago</span><br><span class="line"> Main PID: 657 (mysqld)</span><br><span class="line">    Tasks: 28 (<span class="built_in">limit</span>: 2333)</span><br><span class="line">   CGroup: /system.slice/mysql.service</span><br><span class="line">           └─657 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid</span><br></pre></td></tr></table></figure></div>
+
+<p>进入MySQL</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> mysql -u root -p</span><br></pre></td></tr></table></figure></div>
+
+<p>创建新用户</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">USER</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">&#x27;password&#x27;</span>;</span><br></pre></td></tr></table></figure></div>
+
+<p>给新用户并授权</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> <span class="operator">*</span>.<span class="operator">*</span> <span class="keyword">TO</span> <span class="string">&#x27;newuser&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> ;</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>刷新权限表（一定要记得刷新）</strong></p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure></div>
+
+<p>创建新数据库，给网站使用</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> DATABASE newdatabase;</span><br></pre></td></tr></table></figure></div>
+
+<p>使用新数据库</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">USE newdatabase;</span><br></pre></td></tr></table></figure></div>
+
+<p>退出MySQL</p>
+<div class="highlight-container" data-rel="Sql"><figure class="iseeu highlight sql"><table><tr><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="安装-配置-php"><a href="#安装-配置-php" class="headerlink" title="安装|配置 php"></a>安装|配置 php</h2><h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>建议使用源码编译安装。<br><strong>获取源码包</strong></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">curl -o php-7.4.33.tar.gz https://www.php.net/distributions/php-7.4.33.tar.gz</span><br><span class="line">tar -zxvf php-7.4.33.tar.gz</span><br><span class="line"><span class="built_in">cd</span> php-7.4.33</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>配置安装内容</strong><br>按需求配置安装内容，这里只是一个示例，具体安装内容可以参考官方文档。</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --prefix=/usr/local/php --sysconfdir=/etc/php --with-openssl --with-zlib --with-bz2 --with-curl --enable-bcmath --enable-gd --with-webp --with-jpeg --with-mhash --enable-mbstring --with-imap-ssl --with-mysqli=mysqlnd --enable-exif --with-ffi --with-zip --enable-sockets --with-pcre-jit --enable-fpm --enable-pdo --with-pdo-mysql=mysqlnd --with-mysql=mysqlnd --enable-pcnt</span><br></pre></td></tr></table></figure></div>
+
+<p>mysqlnd是php提供的mysql驱动，是php5.3之后才有的。此处不选择mysql驱动之后会出错。</p>
+<p>配置过程中可能会出现一些错误，根据错误提示安装相应的依赖即可。</p>
+<p><strong>编译安装</strong></p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make</span><br><span class="line"><span class="built_in">sudo</span> make install</span><br></pre></td></tr></table></figure></div>
+
+<p>安装完成后执行以下命令</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> php.ini-development /etc/php/php.ini <span class="comment"># 复制配置文件模板</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/php /usr/bin/php   <span class="comment"># 建立软链接</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/bin/phpize /usr/bin/phpize</span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/php/sbin/php-fpm /usr/bin/php-fpm</span><br></pre></td></tr></table></figure></div>
+
+<p>然后执行以下命令，查看php版本</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">php -v</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><p>修改php配置文件</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/php/php.ini</span><br></pre></td></tr></table></figure></div>
+
+<p>添加pdo_mysql扩展</p>
+<div class="highlight-container" data-rel="Ini"><figure class="iseeu highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">extension</span>=pdo       <span class="comment">; 添加pdo扩展</span></span><br><span class="line"><span class="attr">extension</span>=mysqlnd   <span class="comment">; 添加mysqlnd扩展，因为前面设置pdo_mysql驱动为mysqlnd</span></span><br><span class="line"><span class="attr">extension</span>=pdo_mysql <span class="comment">; 添加pdo_mysql扩展</span></span><br></pre></td></tr></table></figure></div>
+
+<p>修改完后退出保存，重启php-fpm</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart php-fpm</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="安装-配置-apache"><a href="#安装-配置-apache" class="headerlink" title="安装|配置 apache"></a>安装|配置 apache</h2><h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>使用 <code>apt-get</code> 安装</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install apache2</span><br><span class="line"><span class="built_in">sudo</span> apt-get install libapache2-mod-php</span><br></pre></td></tr></table></figure></div>
+
+<p>安装完成后启动apache</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl start apache2</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h3><p>修改apache配置文件</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/apache2/apache2.conf</span><br></pre></td></tr></table></figure></div>
+
+<p>添加如下内容</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;Directory /var/www/html&gt;</span><br><span class="line">    Options Indexes FollowSymLinks</span><br><span class="line">    AllowOverride All</span><br><span class="line">    Require all granted</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>修改完后退出保存，重启apache</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> systemctl restart apache2</span><br></pre></td></tr></table></figure></div>
+
+<p>执行以下命令，启动<code>rewrite</code>模块</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> a2enmod rewrite</span><br></pre></td></tr></table></figure></div>
+
+<p>在 <code>/var/www/html</code> 目录下创建 <code>index.php</code> 文件，输入以下内容</p>
+<div class="highlight-container" data-rel="Php"><figure class="iseeu highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></div>
+<p>创建<code>.htaccess</code>文件，输入以下内容</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;IfModule mod_rewrite.c&gt;</span><br><span class="line">RewriteEngine on</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-d</span><br><span class="line">RewriteCond %&#123;REQUEST_FILENAME&#125; !-f</span><br><span class="line">RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]</span><br><span class="line">&lt;/IfModule&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>然后在浏览器中输入 <code>http://localhost</code> ，如果出现php信息页面，说明apache和php都安装成功了。可以用此页面查看php的配置信息。<br>随后即可在该路径下放置网页文件。</p>
+<h4 id="设置域名"><a href="#设置域名" class="headerlink" title="设置域名"></a>设置域名</h4><p>在 <code>/etc/apache2/sites-available</code> 目录下创建 <code>example.com.conf</code> 文件，输入以下内容</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line">    ServerName example.com</span><br><span class="line">    DocumentRoot /var/www/html</span><br><span class="line"></span><br><span class="line">    &lt;Directory /var/www/&gt;</span><br><span class="line">        Options Indexes FollowSymLinks</span><br><span class="line">        AllowOverride All</span><br><span class="line">        Require all granted</span><br><span class="line">    &lt;/Directory&gt;</span><br><span class="line">&lt;/VirtualHost&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <tags>
+        <tag>php</tag>
+        <tag>MySQL</tag>
+        <tag>网站搭建</tag>
       </tags>
   </entry>
   <entry>
