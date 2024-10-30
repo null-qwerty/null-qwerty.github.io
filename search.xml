@@ -565,6 +565,9 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 <li>footer：提交的备注，可以包括关联的 issue，关闭的 issue 等。</li>
 <li>breaking change：提交的破坏性变更，可以包括 API 的变更，配置的变更等。</li>
 </ul>
+<p>模板如下：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">type(scope): subject</span><br><span class="line"></span><br><span class="line">body</span><br><span class="line"></span><br><span class="line">footer</span><br></pre></td></tr></table></figure></div>
+
 
   <div class="note-large green">
     <div class="notel-title rounded-t-lg p-3 font-bold text-lg flex flex-row gap-2 items-center">
