@@ -419,6 +419,10 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 
   </div>
 
+<h3 id="撤销提交"><a href="#撤销提交" class="headerlink" title="撤销提交"></a>撤销提交</h3><p>如果我们提交了错误的代码，或者想要撤销提交，可以使用以下命令：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git reset --hard &lt;commit&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>commit</code> 是提交的哈希值，可以使用 <code>git log</code> 查看，也可以填写分支名。</p>
 <h3 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h3><p>查看当前仓库的状态，可以使用以下命令：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></div>
 
