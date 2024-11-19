@@ -1225,39 +1225,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TestPage</title>
-    <url>/2024/01/12/TestPage/</url>
-    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script data-swup-reload-script type="text/javascript">
-var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id=:id&r=:r';
-</script>
-<p><meting-js
-    server="netease"
-    type="playlist"
-    id="9138278379"
-    list-folded=true><br></meting-js></p>
-<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 <code>alpha 值</code>，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.work/Meting" >https://api.null-qwerty.work/Meting<i class="fa-sharp fa-regular fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em]"></i></p>
-<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><h3 id="onedrive"><a href="#onedrive" class="headerlink" title="onedrive"></a>onedrive</h3><video controls width="100%">
-    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
-</video>
-
-<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
-<h3 id="github-视频床"><a href="#github-视频床" class="headerlink" title="github 视频床"></a>github 视频床</h3><p><video id="video" controls loop="false" width="100%"></video></p>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script data-swup-reload-script type="text/javascript">
-  var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-  var hls = new Hls();
-  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
-  hls.attachMedia(video);
-} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
-}
-</script>
-
-<p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
-]]></content>
-  </entry>
-  <entry>
     <title>git 安装与使用</title>
     <url>/2024/10/17/git-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[
@@ -1499,6 +1466,39 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       <tags>
         <tag>git</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>TestPage</title>
+    <url>/2024/01/12/TestPage/</url>
+    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script data-swup-reload-script type="text/javascript">
+var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id=:id&r=:r';
+</script>
+<p><meting-js
+    server="netease"
+    type="playlist"
+    id="9138278379"
+    list-folded=true><br></meting-js></p>
+<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 <code>alpha 值</code>，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.work/Meting" >https://api.null-qwerty.work/Meting<i class="fa-sharp fa-regular fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em]"></i></p>
+<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><h3 id="onedrive"><a href="#onedrive" class="headerlink" title="onedrive"></a>onedrive</h3><video controls width="100%">
+    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
+</video>
+
+<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
+<h3 id="github-视频床"><a href="#github-视频床" class="headerlink" title="github 视频床"></a>github 视频床</h3><p><video id="video" controls loop="false" width="100%"></video></p>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script data-swup-reload-script type="text/javascript">
+  var video = document.getElementById('video');
+  if(Hls.isSupported()) {
+  var hls = new Hls();
+  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
+  hls.attachMedia(video);
+} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
+}
+</script>
+
+<p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
+]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -1931,111 +1931,6 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       </tags>
   </entry>
   <entry>
-    <title>交叉编译 OpenCV 踩坑记录</title>
-    <url>/2024/10/24/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91-OpenCV-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>最近准备一个比赛，用到了香橙派，需要在上面跑 OpenCV，并且需要高版本，只能编译安装。由于香橙派的性能有限，所以选择在自己电脑上交叉编译，然后把编译好的库拷贝到香橙派上。</p>
-<blockquote>
-<p>OS: Ubuntu 24.04<br>OpenCV: 4.10.0<br>toolchain: aaarch64-linux-gnu<br>target: OrangePi Zero3</p>
-</blockquote>
-<h2 id="配置交叉编译"><a href="#配置交叉编译" class="headerlink" title="配置交叉编译"></a>配置交叉编译</h2><p>工具链直接使用 <code>apt</code> 安装：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu</span><br></pre></td></tr></table></figure></div>
-
-<p>从 github 上克隆 OpenCV 源码：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/opencv/opencv.git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/opencv/opencv_contrib.git</span><br><span class="line"><span class="built_in">cd</span> opencv</span><br></pre></td></tr></table></figure></div>
-
-<p>创建一个 build 目录，进入 build 目录：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> build &amp;&amp; <span class="built_in">cd</span> build</span><br></pre></td></tr></table></figure></div>
-
-<p>打开 cmake-gui，配置交叉编译：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">cmake-gui ..</span><br></pre></td></tr></table></figure></div>
-
-<p>点击 <code>Configure</code>，选择 <code>Unix Makefiles</code> 和 <code>Specify toolchain file for cross-compiling</code>，然后 <code>Next</code>，如图：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_open_and_configure.png"
-                      alt="opencv_cmake_gui_open_and_configure"
-                ></p>
-<p>第二页是编译选项。<code>Target System</code> 选择 <code>Linux</code>；<code>Compiler</code> 下 <code>C</code> 和 <code>C++</code> 中分别填入 <code>aarch64-linux-gnu-gcc</code> 和 <code>aarch64-linux-gnu-g++</code> 的路径；<code>Find Program/Library/Include</code> 下，<code>Target Root</code> 填入交叉编译工具链的路径 <code>/usr/aarch64-linux-gnu</code>，其他按图中篇配置：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_configure.png"
-                      alt="opencv_cmake_gui_configure"
-                ></p>
-<p>解释一下 <code>Find Program/Library/Include</code> 中的配置：</p>
-<ul>
-<li><code>Target Root</code>：交叉编译工具链的路径，这个路径下应该有 <code>bin</code>、<code>lib</code>、<code>include</code> 等目录</li>
-<li>其他三个选项: <code>Search in Target Root</code>，表示在 <code>Target Root</code> 下搜索，<code>Search in native system</code> 表示在本地系统搜索</li>
-</ul>
-<p>这里由于需要移植到一个新环境，所以选择了 <code>Search in Target Root</code>。</p>
-<p>配置完成点击 <code>Finish</code>。</p>
-<h2 id="配置-OpenCV"><a href="#配置-OpenCV" class="headerlink" title="配置 OpenCV"></a>配置 OpenCV</h2><p>上面步骤完成后，不要直接点击 <code>Generate</code>，还需要配置一些选项。</p>
-<h3 id="配置-OpenCV-contrib"><a href="#配置-OpenCV-contrib" class="headerlink" title="配置 OpenCV_contrib"></a>配置 OpenCV_contrib</h3><p>搜索 <code>OPENCV_EXTRA_MODULES_PATH</code>，填入 <code>opencv_contrib</code> 的路径：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_opencv_contrib.png"
-                      alt="opencv_cmake_gui_opencv_contrib"
-                ></p>
-<p>由于我是在 <code>opencv</code> 目录下创建的 <code>build</code> 目录，之前我们在上级目录中克隆的 <code>opencv</code> 和 <code>opencv_contrib</code>，所以这里填入 <code>../opencv_contrib/modules</code>。</p>
-<h3 id="关闭-dnn-模块"><a href="#关闭-dnn-模块" class="headerlink" title="关闭 dnn 模块"></a>关闭 dnn 模块</h3><p>由于 <a class="link"   href="https://github.com/opencv/opencv/issues/25678" >dnn 模块在编译 arm 版本时会出现问题<i class="fa-sharp fa-regular fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em]"></i>, 所以需要关闭 dnn 模块。当然可以先尝试编译，如果编译失败，再关闭。</p>
-<p>搜索 <code>BUILD_opencv_dnn</code>，将其设置为 <code>OFF</code>：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_dnn.png"
-                      alt="opencv_cmake_gui_dnn"
-                ></p>
-<p>配置完成后，点击 <code>Generate</code>。</p>
-<h2 id="交叉编译-OpenCV"><a href="#交叉编译-OpenCV" class="headerlink" title="交叉编译 OpenCV"></a>交叉编译 OpenCV</h2><p>命令行编译：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make -j$(<span class="built_in">nproc</span> --ignore=2) <span class="comment"># 留两个线程给系统</span></span><br></pre></td></tr></table></figure></div>
-<p>然后等待报错。</p>
-<h3 id="libpng-报错"><a href="#libpng-报错" class="headerlink" title="libpng 报错"></a>libpng 报错</h3><p>表现为找不到一些定义：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_do_expand_palette_rgb8_neon&#x27;</span></span><br><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_init_filter_functions_neon&#x27;</span></span><br><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_do_expand_palette_rgba8_neon&#x27;</span></span><br><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_riffle_palette_neon&#x27;</span></span><br></pre></td></tr></table></figure></div>
-
-<p><strong>解决方法</strong></p>
-<p>修改 OpenCV 根目录下 <code>3rdparty/libpng/pngpriv.h</code> 文件，将</p>
-<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">if</span> (defined(ARM_NEON) || defined(__ARM_NEON)) &amp;&amp; */</span></span><br></pre></td></tr></table></figure></div>
-
-<p>修改为</p>
-<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">if</span> defined(PNG_ARM_NEON) &amp;&amp; (defined(ARM_NEON) || defined(__ARM_NEON)) &amp;&amp; \</span></span><br></pre></td></tr></table></figure></div>
-
-<p>然后重新编译。</p>
-<h3 id="dnn-报错"><a href="#dnn-报错" class="headerlink" title="dnn 报错"></a>dnn 报错</h3><p>上面已经给出了解决方法，<a href="#%E5%85%B3%E9%97%AD-dnn-%E6%A8%A1%E5%9D%97">关闭 dnn 模块</a>。</p>
-<h2 id="安装-OpenCV"><a href="#安装-OpenCV" class="headerlink" title="安装 OpenCV"></a>安装 OpenCV</h2><p>编译完成后，安装：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure></div>
-
-<p>会在 <code>build</code> 目录下生成 <code>install</code> 目录，里面包含了编译好的库。</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">install <span class="comment"># 目录结构</span></span><br><span class="line">├── bin <span class="comment"># 可执行文件</span></span><br><span class="line">├── include <span class="comment"># 头文件</span></span><br><span class="line">├── lib <span class="comment"># 库文件</span></span><br><span class="line">└── share <span class="comment"># 其他文件</span></span><br></pre></td></tr></table></figure></div>
-
-<p>将 <code>install</code> 目录拷贝到目标设备上，这里我直接拷贝到项目目录下的 <code>3rd-party</code> 目录，然后配置 <code>CMakeLists.txt</code>：</p>
-<div class="highlight-container" data-rel="Cmake"><figure class="iseeu highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span>(OPENCV_DIR <span class="variable">$&#123;CMAKE_SOURCE_DIR&#125;</span>/<span class="number">3</span>rd-party/opencv)</span><br><span class="line"></span><br><span class="line"><span class="keyword">find_package</span>(OpenCV REQUIRED</span><br><span class="line">PATHS <span class="variable">$&#123;OPENCV_DIR&#125;</span></span><br><span class="line">NO_DEFAULT_PATH</span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
-
-<p>这样就可以在项目中使用交叉编译好的 OpenCV 了。</p>
-<h2 id="处理编译运行项目代码时报错"><a href="#处理编译运行项目代码时报错" class="headerlink" title="处理编译运行项目代码时报错"></a>处理编译运行项目代码时报错</h2><p>运行项目代码时可能会报错，比如：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">error <span class="keyword">while</span> loading shared libraries: libopencv_imgcodecs.so.410: cannot open shared object file: No such file or directory</span><br></pre></td></tr></table></figure></div>
-
-<p>通过 <code>ldd</code> 命令发现：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">ldd main</span><br><span class="line"><span class="comment"># 输出</span></span><br><span class="line"><span class="comment"># ...</span></span><br><span class="line">        libopencv_imgcodecs.so.410 =&gt; not found</span><br><span class="line">        libopencv_video.so.410 =&gt; not found</span><br><span class="line">        libopencv_calib3d.so.410 =&gt; not found</span><br><span class="line">        libopencv_features2d.so.410 =&gt; not found</span><br><span class="line">        libopencv_flann.so.410 =&gt; not found</span><br><span class="line"><span class="comment"># ...</span></span><br></pre></td></tr></table></figure></div>
-
-<p>这是由于系统找不到这些库，需要配置动态链接库路径。在 <code>etc/ld.so.conf</code> 中添加库路径：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/ld.so.conf</span><br></pre></td></tr></table></figure></div>
-
-<p>在文件中添加：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">/path/to/opencv/install/lib</span><br></pre></td></tr></table></figure></div>
-
-<p>然后运行：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ldconfig</span><br></pre></td></tr></table></figure></div>
-
-<p>再次运行项目代码，应该就不会报错了。</p>
-]]></content>
-      <tags>
-        <tag>cmake</tag>
-        <tag>OpenCV</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>传统视觉理论及实践</title>
     <url>/2024/04/26/%E4%BC%A0%E7%BB%9F%E8%A7%86%E8%A7%89%E7%90%86%E8%AE%BA%E5%8F%8A%E5%AE%9E%E8%B7%B5/</url>
     <content><![CDATA[<h2 id="什么是计算机视觉"><a href="#什么是计算机视觉" class="headerlink" title="什么是计算机视觉"></a>什么是计算机视觉</h2><p>计算机视觉（Computer Vision）是一门研究如何使机器“看”的科学，它利用摄像头和计算机算法，让机器能够像人一样“看”，并且能够从中<strong>获取信息</strong>。计算机视觉是一门多领域交叉的学科，涉及到计算机科学、数学、物理学、生物学、心理学等多个学科。</p>
@@ -2248,8 +2143,113 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 ]]></content>
       <tags>
         <tag>C/C++</tag>
-        <tag>OpenCV</tag>
         <tag>计算机视觉</tag>
+        <tag>OpenCV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>交叉编译 OpenCV 踩坑记录</title>
+    <url>/2024/10/24/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91-OpenCV-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>最近准备一个比赛，用到了香橙派，需要在上面跑 OpenCV，并且需要高版本，只能编译安装。由于香橙派的性能有限，所以选择在自己电脑上交叉编译，然后把编译好的库拷贝到香橙派上。</p>
+<blockquote>
+<p>OS: Ubuntu 24.04<br>OpenCV: 4.10.0<br>toolchain: aaarch64-linux-gnu<br>target: OrangePi Zero3</p>
+</blockquote>
+<h2 id="配置交叉编译"><a href="#配置交叉编译" class="headerlink" title="配置交叉编译"></a>配置交叉编译</h2><p>工具链直接使用 <code>apt</code> 安装：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu</span><br></pre></td></tr></table></figure></div>
+
+<p>从 github 上克隆 OpenCV 源码：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/opencv/opencv.git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/opencv/opencv_contrib.git</span><br><span class="line"><span class="built_in">cd</span> opencv</span><br></pre></td></tr></table></figure></div>
+
+<p>创建一个 build 目录，进入 build 目录：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> build &amp;&amp; <span class="built_in">cd</span> build</span><br></pre></td></tr></table></figure></div>
+
+<p>打开 cmake-gui，配置交叉编译：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">cmake-gui ..</span><br></pre></td></tr></table></figure></div>
+
+<p>点击 <code>Configure</code>，选择 <code>Unix Makefiles</code> 和 <code>Specify toolchain file for cross-compiling</code>，然后 <code>Next</code>，如图：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_open_and_configure.png"
+                      alt="opencv_cmake_gui_open_and_configure"
+                ></p>
+<p>第二页是编译选项。<code>Target System</code> 选择 <code>Linux</code>；<code>Compiler</code> 下 <code>C</code> 和 <code>C++</code> 中分别填入 <code>aarch64-linux-gnu-gcc</code> 和 <code>aarch64-linux-gnu-g++</code> 的路径；<code>Find Program/Library/Include</code> 下，<code>Target Root</code> 填入交叉编译工具链的路径 <code>/usr/aarch64-linux-gnu</code>，其他按图中篇配置：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_configure.png"
+                      alt="opencv_cmake_gui_configure"
+                ></p>
+<p>解释一下 <code>Find Program/Library/Include</code> 中的配置：</p>
+<ul>
+<li><code>Target Root</code>：交叉编译工具链的路径，这个路径下应该有 <code>bin</code>、<code>lib</code>、<code>include</code> 等目录</li>
+<li>其他三个选项: <code>Search in Target Root</code>，表示在 <code>Target Root</code> 下搜索，<code>Search in native system</code> 表示在本地系统搜索</li>
+</ul>
+<p>这里由于需要移植到一个新环境，所以选择了 <code>Search in Target Root</code>。</p>
+<p>配置完成点击 <code>Finish</code>。</p>
+<h2 id="配置-OpenCV"><a href="#配置-OpenCV" class="headerlink" title="配置 OpenCV"></a>配置 OpenCV</h2><p>上面步骤完成后，不要直接点击 <code>Generate</code>，还需要配置一些选项。</p>
+<h3 id="配置-OpenCV-contrib"><a href="#配置-OpenCV-contrib" class="headerlink" title="配置 OpenCV_contrib"></a>配置 OpenCV_contrib</h3><p>搜索 <code>OPENCV_EXTRA_MODULES_PATH</code>，填入 <code>opencv_contrib</code> 的路径：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_opencv_contrib.png"
+                      alt="opencv_cmake_gui_opencv_contrib"
+                ></p>
+<p>由于我是在 <code>opencv</code> 目录下创建的 <code>build</code> 目录，之前我们在上级目录中克隆的 <code>opencv</code> 和 <code>opencv_contrib</code>，所以这里填入 <code>../opencv_contrib/modules</code>。</p>
+<h3 id="关闭-dnn-模块"><a href="#关闭-dnn-模块" class="headerlink" title="关闭 dnn 模块"></a>关闭 dnn 模块</h3><p>由于 <a class="link"   href="https://github.com/opencv/opencv/issues/25678" >dnn 模块在编译 arm 版本时会出现问题<i class="fa-sharp fa-regular fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em]"></i>, 所以需要关闭 dnn 模块。当然可以先尝试编译，如果编译失败，再关闭。</p>
+<p>搜索 <code>BUILD_opencv_dnn</code>，将其设置为 <code>OFF</code>：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://images.null-qwerty.work/blog/opencv_cmake_gui_dnn.png"
+                      alt="opencv_cmake_gui_dnn"
+                ></p>
+<p>配置完成后，点击 <code>Generate</code>。</p>
+<h2 id="交叉编译-OpenCV"><a href="#交叉编译-OpenCV" class="headerlink" title="交叉编译 OpenCV"></a>交叉编译 OpenCV</h2><p>命令行编译：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make -j$(<span class="built_in">nproc</span> --ignore=2) <span class="comment"># 留两个线程给系统</span></span><br></pre></td></tr></table></figure></div>
+<p>然后等待报错。</p>
+<h3 id="libpng-报错"><a href="#libpng-报错" class="headerlink" title="libpng 报错"></a>libpng 报错</h3><p>表现为找不到一些定义：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_do_expand_palette_rgb8_neon&#x27;</span></span><br><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_init_filter_functions_neon&#x27;</span></span><br><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_do_expand_palette_rgba8_neon&#x27;</span></span><br><span class="line">../../lib/libopencv_imgcodecs.so.4.10.0: undefined reference to <span class="string">&#x27;png_riffle_palette_neon&#x27;</span></span><br></pre></td></tr></table></figure></div>
+
+<p><strong>解决方法</strong></p>
+<p>修改 OpenCV 根目录下 <code>3rdparty/libpng/pngpriv.h</code> 文件，将</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">if</span> (defined(ARM_NEON) || defined(__ARM_NEON)) &amp;&amp; */</span></span><br></pre></td></tr></table></figure></div>
+
+<p>修改为</p>
+<div class="highlight-container" data-rel="C"><figure class="iseeu highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">if</span> defined(PNG_ARM_NEON) &amp;&amp; (defined(ARM_NEON) || defined(__ARM_NEON)) &amp;&amp; \</span></span><br></pre></td></tr></table></figure></div>
+
+<p>然后重新编译。</p>
+<h3 id="dnn-报错"><a href="#dnn-报错" class="headerlink" title="dnn 报错"></a>dnn 报错</h3><p>上面已经给出了解决方法，<a href="#%E5%85%B3%E9%97%AD-dnn-%E6%A8%A1%E5%9D%97">关闭 dnn 模块</a>。</p>
+<h2 id="安装-OpenCV"><a href="#安装-OpenCV" class="headerlink" title="安装 OpenCV"></a>安装 OpenCV</h2><p>编译完成后，安装：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure></div>
+
+<p>会在 <code>build</code> 目录下生成 <code>install</code> 目录，里面包含了编译好的库。</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">install <span class="comment"># 目录结构</span></span><br><span class="line">├── bin <span class="comment"># 可执行文件</span></span><br><span class="line">├── include <span class="comment"># 头文件</span></span><br><span class="line">├── lib <span class="comment"># 库文件</span></span><br><span class="line">└── share <span class="comment"># 其他文件</span></span><br></pre></td></tr></table></figure></div>
+
+<p>将 <code>install</code> 目录拷贝到目标设备上，这里我直接拷贝到项目目录下的 <code>3rd-party</code> 目录，然后配置 <code>CMakeLists.txt</code>：</p>
+<div class="highlight-container" data-rel="Cmake"><figure class="iseeu highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="keyword">set</span>(OPENCV_DIR <span class="variable">$&#123;CMAKE_SOURCE_DIR&#125;</span>/<span class="number">3</span>rd-party/opencv)</span><br><span class="line"></span><br><span class="line"><span class="keyword">find_package</span>(OpenCV REQUIRED</span><br><span class="line">PATHS <span class="variable">$&#123;OPENCV_DIR&#125;</span></span><br><span class="line">NO_DEFAULT_PATH</span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+
+<p>这样就可以在项目中使用交叉编译好的 OpenCV 了。</p>
+<h2 id="处理编译运行项目代码时报错"><a href="#处理编译运行项目代码时报错" class="headerlink" title="处理编译运行项目代码时报错"></a>处理编译运行项目代码时报错</h2><p>运行项目代码时可能会报错，比如：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">error <span class="keyword">while</span> loading shared libraries: libopencv_imgcodecs.so.410: cannot open shared object file: No such file or directory</span><br></pre></td></tr></table></figure></div>
+
+<p>通过 <code>ldd</code> 命令发现：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">ldd main</span><br><span class="line"><span class="comment"># 输出</span></span><br><span class="line"><span class="comment"># ...</span></span><br><span class="line">        libopencv_imgcodecs.so.410 =&gt; not found</span><br><span class="line">        libopencv_video.so.410 =&gt; not found</span><br><span class="line">        libopencv_calib3d.so.410 =&gt; not found</span><br><span class="line">        libopencv_features2d.so.410 =&gt; not found</span><br><span class="line">        libopencv_flann.so.410 =&gt; not found</span><br><span class="line"><span class="comment"># ...</span></span><br></pre></td></tr></table></figure></div>
+
+<p>这是由于系统找不到这些库，需要配置动态链接库路径。在 <code>etc/ld.so.conf</code> 中添加库路径：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> vim /etc/ld.so.conf</span><br></pre></td></tr></table></figure></div>
+
+<p>在文件中添加：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">/path/to/opencv/install/lib</span><br></pre></td></tr></table></figure></div>
+
+<p>然后运行：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> ldconfig</span><br></pre></td></tr></table></figure></div>
+
+<p>再次运行项目代码，应该就不会报错了。</p>
+]]></content>
+      <tags>
+        <tag>cmake</tag>
+        <tag>OpenCV</tag>
       </tags>
   </entry>
   <entry>
