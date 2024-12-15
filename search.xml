@@ -1225,6 +1225,39 @@
       </tags>
   </entry>
   <entry>
+    <title>TestPage</title>
+    <url>/2024/01/12/TestPage/</url>
+    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script data-swup-reload-script type="text/javascript">
+var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id=:id&r=:r';
+</script>
+<p><meting-js
+    server="netease"
+    type="playlist"
+    id="9138278379"
+    list-folded=true><br></meting-js></p>
+<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 <code>alpha 值</code>，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.work/Meting" >https://api.null-qwerty.work/Meting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><h3 id="onedrive"><a href="#onedrive" class="headerlink" title="onedrive"></a>onedrive</h3><video controls width="100%">
+    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
+</video>
+
+<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
+<h3 id="github-视频床"><a href="#github-视频床" class="headerlink" title="github 视频床"></a>github 视频床</h3><p><video id="video" controls loop="false" width="100%"></video></p>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script data-swup-reload-script type="text/javascript">
+  var video = document.getElementById('video');
+  if(Hls.isSupported()) {
+  var hls = new Hls();
+  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
+  hls.attachMedia(video);
+} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
+}
+</script>
+
+<p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
+]]></content>
+  </entry>
+  <entry>
     <title>git 安装与使用</title>
     <url>/2024/10/17/git-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[
@@ -1466,39 +1499,6 @@
       <tags>
         <tag>git</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>TestPage</title>
-    <url>/2024/01/12/TestPage/</url>
-    <content><![CDATA[<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><script data-swup-reload-script type="text/javascript">
-var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id=:id&r=:r';
-</script>
-<p><meting-js
-    server="netease"
-    type="playlist"
-    id="9138278379"
-    list-folded=true><br></meting-js></p>
-<p>使用<code>APlayerJS</code>和<code>MetingJS</code>，需要对<code>APlayer</code>插件进行修改，使其支持夜间模式。<br>笔者改的非常简单，修改颜色的 <code>alpha 值</code>，使其透明。<br>另外把自建的<code>Meting API</code>放在这：<a class="link"   href="https://api.null-qwerty.work/Meting" >https://api.null-qwerty.work/Meting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><h3 id="onedrive"><a href="#onedrive" class="headerlink" title="onedrive"></a>onedrive</h3><video controls width="100%">
-    <source src="https://hdueducn-my.sharepoint.com/personal/22060817_hdu_edu_cn/_layouts/52/download.aspx?share=EXmk8SShiIBIriDJ_HT7b5gBW5FcTJ-AcwwcjHeDk8VWnw" type="video/mp4">
-</video>
-
-<p>使用 <code>onedrive</code> 作为视频存储，获取直链后用<code>video</code>标签进行播放。</p>
-<h3 id="github-视频床"><a href="#github-视频床" class="headerlink" title="github 视频床"></a>github 视频床</h3><p><video id="video" controls loop="false" width="100%"></video></p>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script data-swup-reload-script type="text/javascript">
-  var video = document.getElementById('video');
-  if(Hls.isSupported()) {
-  var hls = new Hls();
-  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
-  hls.attachMedia(video);
-} else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
-}
-</script>
-
-<p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
-]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
