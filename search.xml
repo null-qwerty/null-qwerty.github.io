@@ -1315,62 +1315,7 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 </script>
 
 <p>使用<code>ffmpeg</code>将视频切片，每个片段最好不超过 20M。画质可能会有所下降，跟所设码率有关。<br>使用<code>github</code>作为视频存储。<br>使用<code>hls.js</code>播放<code>m3u8</code>格式的视频。<br><del>cloudflare workers 要骂娘，请求次数巨高</del><br><del>不仅白嫖<code>github</code>，还白嫖<code>cloudflare</code>，真香</del></p>
-<h2 id="烟花效果"><a href="#烟花效果" class="headerlink" title="烟花效果"></a>烟花效果</h2><p><canvas id=".fireworks" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; background=transparent;"></canvas></p>
-<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
-<script data-swup-reload-script type="text/javascript">
-const container = document.getElementById('.fireworks');
-const fireworks = new Fireworks.default(container);
-fireworks.updateOptions({
-  autoresize: true,
-  opacity: 0.5,
-  acceleration: 1.01,
-  friction: 0.97,
-  gravity: 2.0,
-  particles: 60,
-  traceLength: 3,
-  traceSpeed: 10,
-  explosion: 5,
-  intensity: 30,
-  flickering: 50,
-  lineStyle: 'round',
-  hue: {
-    min: 0,
-    max: 360
-  },
-  delay: {
-    min: 1,
-    max: 100
-  },
-  rocketsPoint: {
-    min: 0,
-    max: 100
-  },
-  lineWidth: {
-    explosion: {
-      min: 1,
-      max: 3
-    },
-    trace: {
-      min: 1,
-      max: 2
-    }
-  },
-  brightness: {
-    min: 50,
-    max: 80
-  },
-  decay: {
-    min: 0.015,
-    max: 0.05
-  },
-  mouse: {
-    click: false,
-    move: false,
-    max: 1
-  }
-});
-fireworks.start();
-</script>]]></content>
+]]></content>
   </entry>
   <entry>
     <title>git 安装与使用</title>
