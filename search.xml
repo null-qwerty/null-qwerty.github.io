@@ -1374,6 +1374,24 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 ]]></content>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/10/04/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>git 安装与使用</title>
     <url>/2024/10/17/git-%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[
@@ -1617,24 +1635,6 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/10/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>markdown语法</title>
     <url>/2023/10/06/markdown%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">......</span><br></pre></td></tr></table></figure></div>
@@ -1790,6 +1790,11 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 
   <div class="note p-4 mb-4 rounded-small danger">
     <p>笔者在使用 6.12.1 版本时，JxBrowser Engine 在刚打开 CubeMX 的时候直接报 crash 导致窗口无法正常打开，切换至 6.11.1 版本后问题解决。</p>
+
+  </div>
+
+  <div class="note p-4 mb-4 rounded-small success">
+    <p>2025.3.3 更新：更新至 6.14.0 版本后问题解决。</p>
 
   </div>
 
@@ -2017,6 +2022,33 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
         <tag>php</tag>
         <tag>MySQL</tag>
         <tag>网站搭建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vscode 配置 clangd</title>
+    <url>/2024/10/03/vscode-%E9%85%8D%E7%BD%AE-clangd/</url>
+    <content><![CDATA[<h2 id="clangd-介绍"><a href="#clangd-介绍" class="headerlink" title="clangd 介绍"></a>clangd 介绍</h2><p><code>clangd</code> 是一个基于 <code>clang</code> 的 C&#x2F;C++ 语言服务器，提供了代码补全、静态分析等功能。相较于 vscode 自带的 C&#x2F;C++ 插件，<code>clangd</code> 不需要配置 <code>c_cpp_properties.json</code>，并且在大型项目中的性能表现更好。</p>
+
+  <div class="note p-4 mb-4 rounded-small info">
+    <p>本文假设已经安装了 vscode 并安装了 <code>C/C++ Extension Pack</code> 插件。</p>
+
+  </div>
+
+<h2 id="安装-配置"><a href="#安装-配置" class="headerlink" title="安装 &amp; 配置"></a>安装 &amp; 配置</h2><ol>
+<li>搜索 vscode 插件 <code>clangd</code>，在 vscode 中搜索 <code>clangd</code> 并安装，安装时会询问是否安装 <code>clangd</code>，选择 <code>Yes</code> 即可;</li>
+<li>禁用 vscode 自带的 C&#x2F;C++ 插件，避免冲突;</li>
+<li>勾选 <code>cmake tools</code> 插件设置中 <code>Export Compile Commands</code> 选项，以生成 <code>compile_commands.json</code> 文件;</li>
+<li>在 <code>clangd</code> 插件设置中 <code>Arguments</code> 选项中添加 <code>--compile-commands-dir=$&#123;workspaceFolder&#125;/build</code>，指定 <code>compile_commands.json</code> 文件所在目录;</li>
+</ol>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>打开一个 C&#x2F;C++ 项目，<code>clangd</code> 会自动读取 <code>compile_commands.json</code> 文件并进行代码补全和静态分析，若没有生成 <code>compile_commands.json</code> 文件，使用 <code>cmake</code> 生成即可。</p>
+
+  <div class="note p-4 mb-4 rounded-small warning">
+    <p>截至文档发布，<code>clangd</code> 仍不支持解析 <code>doxygen</code> 格式的注释。</p>
+
+  </div>]]></content>
+      <tags>
+        <tag>vscode</tag>
+        <tag>clangd</tag>
       </tags>
   </entry>
   <entry>
@@ -2255,33 +2287,6 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       <tags>
         <tag>cmake</tag>
         <tag>OpenCV</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vscode 配置 clangd</title>
-    <url>/2024/10/03/vscode-%E9%85%8D%E7%BD%AE-clangd/</url>
-    <content><![CDATA[<h2 id="clangd-介绍"><a href="#clangd-介绍" class="headerlink" title="clangd 介绍"></a>clangd 介绍</h2><p><code>clangd</code> 是一个基于 <code>clang</code> 的 C&#x2F;C++ 语言服务器，提供了代码补全、静态分析等功能。相较于 vscode 自带的 C&#x2F;C++ 插件，<code>clangd</code> 不需要配置 <code>c_cpp_properties.json</code>，并且在大型项目中的性能表现更好。</p>
-
-  <div class="note p-4 mb-4 rounded-small info">
-    <p>本文假设已经安装了 vscode 并安装了 <code>C/C++ Extension Pack</code> 插件。</p>
-
-  </div>
-
-<h2 id="安装-配置"><a href="#安装-配置" class="headerlink" title="安装 &amp; 配置"></a>安装 &amp; 配置</h2><ol>
-<li>搜索 vscode 插件 <code>clangd</code>，在 vscode 中搜索 <code>clangd</code> 并安装，安装时会询问是否安装 <code>clangd</code>，选择 <code>Yes</code> 即可;</li>
-<li>禁用 vscode 自带的 C&#x2F;C++ 插件，避免冲突;</li>
-<li>勾选 <code>cmake tools</code> 插件设置中 <code>Export Compile Commands</code> 选项，以生成 <code>compile_commands.json</code> 文件;</li>
-<li>在 <code>clangd</code> 插件设置中 <code>Arguments</code> 选项中添加 <code>--compile-commands-dir=$&#123;workspaceFolder&#125;/build</code>，指定 <code>compile_commands.json</code> 文件所在目录;</li>
-</ol>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>打开一个 C&#x2F;C++ 项目，<code>clangd</code> 会自动读取 <code>compile_commands.json</code> 文件并进行代码补全和静态分析，若没有生成 <code>compile_commands.json</code> 文件，使用 <code>cmake</code> 生成即可。</p>
-
-  <div class="note p-4 mb-4 rounded-small warning">
-    <p>截至文档发布，<code>clangd</code> 仍不支持解析 <code>doxygen</code> 格式的注释。</p>
-
-  </div>]]></content>
-      <tags>
-        <tag>vscode</tag>
-        <tag>clangd</tag>
       </tags>
   </entry>
   <entry>
@@ -3050,29 +3055,6 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
       </tags>
   </entry>
   <entry>
-    <title>记录一次使用ros时产生的段错误</title>
-    <url>/2023/10/22/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8ros%E6%97%B6%E4%BA%A7%E7%94%9F%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>最近在修改项目中与下位机的通信协议时，抛出了一个段错误。调试找到该错误出现在下面这行代码：</p>
-<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">ros::NodeHandle nh_;</span><br></pre></td></tr></table></figure></div>
-<p>显然这个错误是不正常的，因为所有的ros包中都需要这个对象，而且这个对象在其他地方都是正常的。<br>经过分析，发现问题出在<code>#pragma pack(1)</code>上面。</p>
-<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>为了保证通信协议结构体的长度等于内部成员的长度之和，我在通信协议结构体定义前加上了<code>#pragma pack(1)</code>：</p>
-<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<p>防止内存对齐，保证结构体长度一定是32字节。</p>
-<p>同时，我将包含通信协议的头文件放在了ros的头文件前面：</p>
-<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;protocol.h&quot;</span></span></span><br><span class="line"><span class="comment">// 省略其他头文件</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ros/ros.h&gt;</span></span></span><br></pre></td></tr></table></figure></div>
-<p>在编译时，<strong>编译器会将头文件中的内容拷贝到源文件中</strong>，因此<code>#pragma pack(1)</code>也会被拷贝到源文件中，并且在<code>ros.h</code>的前面，对ros中的相关结构定义产生影响。猜测ros中为了保证速率，会直接对内存进行操作，而这些操作考虑了内存对齐的问题，因此在取消内存对齐后这些操作会出现非法访问，导致段错误。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
-<li>将自定义的头文件放在ros的头文件后面，这样<code>#pragma pack(1)</code>就不会影响ros的结构体定义。</li>
-<li>在结构体定义后面加上<code>#pragma pack()</code>，还原内存对齐：<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack()    <span class="comment">// 还原内存对齐</span></span></span><br></pre></td></tr></table></figure></div></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>C/C++</tag>
-        <tag>ros</tag>
-        <tag>段错误</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>提问的智慧</title>
     <url>/2023/10/26/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/</url>
     <content><![CDATA[
@@ -3450,6 +3432,29 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
 ]]></content>
       <tags>
         <tag>计算机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一次使用ros时产生的段错误</title>
+    <url>/2023/10/22/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8ros%E6%97%B6%E4%BA%A7%E7%94%9F%E7%9A%84%E6%AE%B5%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>最近在修改项目中与下位机的通信协议时，抛出了一个段错误。调试找到该错误出现在下面这行代码：</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line">ros::NodeHandle nh_;</span><br></pre></td></tr></table></figure></div>
+<p>显然这个错误是不正常的，因为所有的ros包中都需要这个对象，而且这个对象在其他地方都是正常的。<br>经过分析，发现问题出在<code>#pragma pack(1)</code>上面。</p>
+<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>为了保证通信协议结构体的长度等于内部成员的长度之和，我在通信协议结构体定义前加上了<code>#pragma pack(1)</code>：</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>防止内存对齐，保证结构体长度一定是32字节。</p>
+<p>同时，我将包含通信协议的头文件放在了ros的头文件前面：</p>
+<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;protocol.h&quot;</span></span></span><br><span class="line"><span class="comment">// 省略其他头文件</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ros/ros.h&gt;</span></span></span><br></pre></td></tr></table></figure></div>
+<p>在编译时，<strong>编译器会将头文件中的内容拷贝到源文件中</strong>，因此<code>#pragma pack(1)</code>也会被拷贝到源文件中，并且在<code>ros.h</code>的前面，对ros中的相关结构定义产生影响。猜测ros中为了保证速率，会直接对内存进行操作，而这些操作考虑了内存对齐的问题，因此在取消内存对齐后这些操作会出现非法访问，导致段错误。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<li>将自定义的头文件放在ros的头文件后面，这样<code>#pragma pack(1)</code>就不会影响ros的结构体定义。</li>
+<li>在结构体定义后面加上<code>#pragma pack()</code>，还原内存对齐：<div class="code-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack(1)     <span class="comment">// 对齐长度 1 字节，即不对齐</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Protocol_s</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> start;</span><br><span class="line">    <span class="type">uint8_t</span> type;</span><br><span class="line">    <span class="type">uint8_t</span> buffer[<span class="number">29</span>];</span><br><span class="line">    <span class="type">uint8_t</span> end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> pack()    <span class="comment">// 还原内存对齐</span></span></span><br></pre></td></tr></table></figure></div></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>C/C++</tag>
+        <tag>ros</tag>
+        <tag>段错误</tag>
       </tags>
   </entry>
 </search>
