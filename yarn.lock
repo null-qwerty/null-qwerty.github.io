@@ -2663,7 +2663,7 @@ __metadata:
     hexo-theme-redefine: "npm:^2.8.5"
     hexo-wordcount: "npm:^6.0.1"
     meting: "npm:^2.0.1"
-    nodejieba: "npm:^2.6.0"
+    nodejieba: "npm:^2.5.0"
     pjax: "npm:^0.2.8"
     tailwindcss: "npm:^4.1.11"
   languageName: unknown
@@ -4046,7 +4046,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodejieba@npm:^2.6.0":
+"nodejieba@npm:^2.5.0":
   version: 2.6.0
   resolution: "nodejieba@npm:2.6.0"
   dependencies:
