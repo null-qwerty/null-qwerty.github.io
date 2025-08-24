@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --global user.name "null-qwerty"
           git config --global user.email "null-qwerty@outlook.com"
-          run: git config --global url.https://${{ secrets.GH_TOKEN }}@github.com/.insteadOf https://github.com/
+          git config --global url.https://${{ secrets.GH_TOKEN }}@github.com/.insteadOf https://github.com/
 
           export PATH=$PATH:./node_modules/.bin
           hexo deploy
