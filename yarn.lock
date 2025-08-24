@@ -221,7 +221,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abbrev@npm:1, abbrev@npm:^1.1.1":
+"abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
   checksum: 10c0/3f762677702acb24f65e813070e306c61fafe25d4b2583f9dfc935131f774863f3addd5741572ed576bd69cabe473c5af18e1e108b829cb7b6b4747884f726e6
@@ -547,7 +547,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bluebird@npm:^3.2.2, bluebird@npm:^3.5.1, bluebird@npm:^3.5.2, bluebird@npm:^3.5.5, bluebird@npm:^3.7.2":
+"bluebird@npm:^3.5.2, bluebird@npm:^3.5.5, bluebird@npm:^3.7.2":
   version: 3.7.2
   resolution: "bluebird@npm:3.7.2"
   checksum: 10c0/680de03adc54ff925eaa6c7bb9a47a0690e8b5de60f4792604aae8ed618c65e6b63a7893b57ca924beaf53eee69c5af4f8314148c08124c550fe1df1add897d2
@@ -806,7 +806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.0.0, chokidar@npm:^3.5.3":
+"chokidar@npm:^3.5.3":
   version: 3.6.0
   resolution: "chokidar@npm:3.6.0"
   dependencies:
@@ -1135,7 +1135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cuid@npm:^2.1.4":
+"cuid@npm:^2.1.8":
   version: 2.1.8
   resolution: "cuid@npm:2.1.8"
   checksum: 10c0/6514d247c6de3e5cd32f485821365f4816ee14b777841fa717d37b7a8f791f3cb268be9e37ca54b110f6f5f625e4f0af581c3226aa14f259790539ba20fdaf61
@@ -2373,7 +2373,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.1.10, graceful-fs@npm:^4.1.11, graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.3, graceful-fs@npm:^4.2.10, graceful-fs@npm:^4.2.2, graceful-fs@npm:^4.2.6":
+"graceful-fs@npm:^4.1.10, graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.2.10, graceful-fs@npm:^4.2.2, graceful-fs@npm:^4.2.6":
   version: 4.2.11
   resolution: "graceful-fs@npm:4.2.11"
   checksum: 10c0/386d011a553e02bc594ac2ca0bd6d9e4c22d7fa8cfbfc448a6d148c59ea881b092db9dbe3547ae4b88e55f1b01f7c4a2ecc53b310c042793e63aa44cf6c257f2
@@ -2483,7 +2483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-cli@npm:^4.3.0":
+"hexo-cli@npm:^4.3.2":
   version: 4.3.2
   resolution: "hexo-cli@npm:4.3.2"
   dependencies:
@@ -2526,28 +2526,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-front-matter@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "hexo-front-matter@npm:3.0.0"
+"hexo-front-matter@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "hexo-front-matter@npm:4.2.1"
   dependencies:
     js-yaml: "npm:^4.1.0"
-  checksum: 10c0/e70ca580e7403c69537ee7984179f08b7bfa40100c4c3719bfa07296be4c6cd1dff0d9f1228d7658c7494d1f539d010a8d0d68515060c8db6a450a77b7b817b7
+  checksum: 10c0/cbcee396172a410306ecae31a8c69d48577d42fd33f27d14495a9dd6d3deca172834ef5bb0df814e17d70a3f1fbe69005caa3e95adf04acfa8ff54161d4a995e
   languageName: node
   linkType: hard
 
-"hexo-fs@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "hexo-fs@npm:3.1.0"
-  dependencies:
-    bluebird: "npm:^3.5.1"
-    chokidar: "npm:^3.0.0"
-    graceful-fs: "npm:^4.1.11"
-    hexo-util: "npm:^2.0.0"
-  checksum: 10c0/a5e8c155b28962541c53017b8aaf490f59bec6be177ef540ca446ff50872fe32d7daeeb6f1d18b378b66e25a1395381c366329299c743be360861cd4db250321
-  languageName: node
-  linkType: hard
-
-"hexo-fs@npm:^4.0.0, hexo-fs@npm:^4.1.1":
+"hexo-fs@npm:^4.0.0, hexo-fs@npm:^4.1.1, hexo-fs@npm:^4.1.3":
   version: 4.1.3
   resolution: "hexo-fs@npm:4.1.3"
   dependencies:
@@ -2615,21 +2603,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-i18n@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "hexo-i18n@npm:1.0.0"
+"hexo-i18n@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "hexo-i18n@npm:2.0.0"
   dependencies:
-    sprintf-js: "npm:^1.0.3"
-  checksum: 10c0/7542a576a612eaeb1952f3c6dcd2a2049c663e2b95331bdd0947bf49db5151f47a62cca3fac05b0ccbfc598035220e8863774ef221b0f92e707c27f25d32dd09
-  languageName: node
-  linkType: hard
-
-"hexo-log@npm:^3.0.0, hexo-log@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "hexo-log@npm:3.2.0"
-  dependencies:
-    picocolors: "npm:^1.0.0"
-  checksum: 10c0/37767ce5b99801966f7b87c9e62eb5a859900c005c50a381640a86d07982356a19b8c1542401ebb94863f2a80b26519571bf82ded563d5dc5f1786903ac439de
+    sprintf-js: "npm:^1.1.2"
+  checksum: 10c0/2d98066b738271e44c240f703cb18ce39bbd249a7c79a266131115f7ac8fa0a5964c17dd4a075d1b0ef8720152aa843bd0a9ba3ae5ac9117205d8476b99e8057
   languageName: node
   linkType: hard
 
@@ -2701,7 +2680,7 @@ __metadata:
   resolution: "hexo-site@workspace:."
   dependencies:
     aplayer: "npm:^1.10.1"
-    hexo: "npm:^6.3.0"
+    hexo: "npm:^7.3.0"
     hexo-all-minifier: "npm:^0.5.7"
     hexo-deployer-git: "npm:^4.0.0"
     hexo-filter-mathjax: "npm:^0.9.0"
@@ -2739,7 +2718,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-util@npm:^2.0.0, hexo-util@npm:^2.1.0, hexo-util@npm:^2.7.0":
+"hexo-util@npm:^2.1.0, hexo-util@npm:^2.7.0":
   version: 2.7.0
   resolution: "hexo-util@npm:2.7.0"
   dependencies:
@@ -2777,23 +2756,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "hexo@npm:6.3.0"
+"hexo@npm:^7.3.0":
+  version: 7.3.0
+  resolution: "hexo@npm:7.3.0"
   dependencies:
-    abbrev: "npm:^1.1.1"
+    abbrev: "npm:^2.0.0"
     archy: "npm:^1.0.0"
     bluebird: "npm:^3.7.2"
-    hexo-cli: "npm:^4.3.0"
-    hexo-front-matter: "npm:^3.0.0"
-    hexo-fs: "npm:^3.1.0"
-    hexo-i18n: "npm:^1.0.0"
-    hexo-log: "npm:^3.2.0"
-    hexo-util: "npm:^2.7.0"
+    hexo-cli: "npm:^4.3.2"
+    hexo-front-matter: "npm:^4.2.1"
+    hexo-fs: "npm:^4.1.3"
+    hexo-i18n: "npm:^2.0.0"
+    hexo-log: "npm:^4.0.1"
+    hexo-util: "npm:^3.3.0"
     js-yaml: "npm:^4.1.0"
     js-yaml-js-types: "npm:^1.0.0"
     micromatch: "npm:^4.0.4"
-    moize: "npm:^6.1.0"
+    moize: "npm:^6.1.6"
     moment: "npm:^2.29.1"
     moment-timezone: "npm:^0.5.34"
     nunjucks: "npm:^3.2.3"
@@ -2804,10 +2783,10 @@ __metadata:
     text-table: "npm:^0.2.0"
     tildify: "npm:^2.0.0"
     titlecase: "npm:^1.1.3"
-    warehouse: "npm:^4.0.2"
+    warehouse: "npm:^5.0.1"
   bin:
     hexo: bin/hexo
-  checksum: 10c0/0850943feef7ea3f19252887d2d29275c1f8e5dc24db6ed5840abf18d3e7123e02f7532afc2fa91798d346f98198a52b689ffc846ebafd7ab9e16cb27b510e05
+  checksum: 10c0/db41379b9f10ebd183677a43874dc170b215c8d368a603f594e463fd3fb03d37110958daa66e1f80ba66641c15fe08a8c2fc5a2289c1875e6a47f02645a2e228
   languageName: node
   linkType: hard
 
@@ -3974,7 +3953,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moize@npm:^6.1.0":
+"moize@npm:^6.1.6":
   version: 6.1.6
   resolution: "moize@npm:6.1.6"
   dependencies:
@@ -4947,7 +4926,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rfdc@npm:^1.1.4":
+"rfdc@npm:^1.3.0":
   version: 1.4.1
   resolution: "rfdc@npm:1.4.1"
   checksum: 10c0/4614e4292356cafade0b6031527eea9bc90f2372a22c012313be1dcc69a3b90c7338158b414539be863fa95bfcb2ddcd0587be696841af4e6679d85e62c060c7
@@ -5324,7 +5303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sprintf-js@npm:^1.0.3, sprintf-js@npm:^1.1.3":
+"sprintf-js@npm:^1.1.2, sprintf-js@npm:^1.1.3":
   version: 1.1.3
   resolution: "sprintf-js@npm:1.1.3"
   checksum: 10c0/09270dc4f30d479e666aee820eacd9e464215cdff53848b443964202bf4051490538e5dd1b42e1a65cf7296916ca17640aebf63dae9812749c7542ee5f288dec
@@ -5966,19 +5945,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"warehouse@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "warehouse@npm:4.0.2"
+"warehouse@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "warehouse@npm:5.0.1"
   dependencies:
-    bluebird: "npm:^3.2.2"
-    cuid: "npm:^2.1.4"
-    graceful-fs: "npm:^4.1.3"
-    hexo-log: "npm:^3.0.0"
+    bluebird: "npm:^3.7.2"
+    cuid: "npm:^2.1.8"
+    graceful-fs: "npm:^4.2.10"
+    hexo-log: "npm:^4.0.1"
     is-plain-object: "npm:^5.0.0"
     jsonparse: "npm:^1.3.1"
-    rfdc: "npm:^1.1.4"
+    rfdc: "npm:^1.3.0"
     through2: "npm:^4.0.2"
-  checksum: 10c0/6d14ede90ddf66910adf6bbcc3465d2df5b240832a187031d75c74392c8c809e37d09e1a9aa8b329c1096b8cde5b560d233bc1cbc07f3c2418f913b9b8572f0c
+  checksum: 10c0/a4fb2047e3c2e32ec31487e4c1c241c5d3ca2de29991271246c2aefd3c081fcc50bcbc50ef7f1611e5828364f744cedbaf785bce2c2091c964c86f06c9c9e6cf
   languageName: node
   linkType: hard
 
