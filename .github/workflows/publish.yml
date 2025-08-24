@@ -36,4 +36,6 @@ jobs:
           hexo clean
           hexo generate
       - name: Deploy to GitHub Pages
-        run: hexo deploy
+        run: |
+          export PATH=$PATH:./node_modules/.bin
+          hexo deploy
