@@ -20,7 +20,7 @@ jobs:
       - name: Change to yarn v4
         run: |
           corepack enable
-          corepack install yarn
+          corepack install --global yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build site
