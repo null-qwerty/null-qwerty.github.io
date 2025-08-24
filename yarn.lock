@@ -2647,6 +2647,7 @@ __metadata:
     aplayer: "npm:^1.10.1"
     hexo: "npm:^7.3.0"
     hexo-all-minifier: "npm:^0.5.7"
+    hexo-cli: "npm:^4.3.2"
     hexo-deployer-git: "npm:^4.0.0"
     hexo-filter-mathjax: "npm:^0.9.0"
     hexo-generator-archive: "npm:^2.0.0"
