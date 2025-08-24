@@ -25,8 +25,7 @@ jobs:
           corepack install --global yarn
       - name: Install dependencies
         run: |
-          yarn config set -H enableImmutableInstalls false
-          yarn install
+          yarn install --frozen-lockfile
       - name: Build site
         run: |
           hexo clean

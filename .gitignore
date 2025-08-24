@@ -9,4 +9,3 @@ _multiconfig.yml
 
 .github/dependabot.yml
 .yarn
-yarn.lock
