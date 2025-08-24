@@ -6,7 +6,7 @@ on:
       - source
 
 jobs:
-  prepare:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source branch
@@ -17,10 +17,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22'
+      - name: Change to yarn v4
+        run: |
+          corepack enable
+          corepack install yarn
       - name: Install dependencies
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
+        run: yarn install --frozen-lockfile
       - name: Build site
         run: |
           hexo clean
