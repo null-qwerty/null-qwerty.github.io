@@ -19,10 +19,14 @@ jobs:
           node-version: '22'
       - name: Change to yarn v4
         run: |
+          npm uninstall -g  yarn pnpm
+          npm install -g corepack
           corepack enable
           corepack install --global yarn
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: |
+          yarn set version $(yarn -v)
+          yarn install
       - name: Build site
         run: |
           hexo clean
