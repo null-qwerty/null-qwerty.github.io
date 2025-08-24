@@ -104,7 +104,7 @@ cmake ..
 
 ![CubeMX 工程静态分析](https://images.null-qwerty.work/blog/cubemx工程静态分析.png)
 
-clangd 的配置可以看{% post_link 'vscode-配置-clangd' '这里' %}。
+clangd 的配置可以看{% post_link 'vscode-配置-clangd-和-clang-format' '这里' %}。
 
 在根目录创建 `.JLinkScripts` 文件，内容如下：
 ```
