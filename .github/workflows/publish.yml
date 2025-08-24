@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: source
-      - name: Install build tools
-        run: sudo apt-get install -y build-essential python3 g++
+      - name: Install build dependencies
+        run: sudo apt-get update && sudo apt-get install -y build-essential
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '22'
       - name: Change to yarn v4
         run: |
           npm uninstall -g  yarn pnpm
@@ -27,7 +27,9 @@ jobs:
           corepack install --global yarn
       - name: Install dependencies
         run: |
-          yarn install --frozen-lockfile --inline-builds
+          yarn install --inline-builds
+      - name: Verify nodejieba
+        run: node -e "require('nodejieba')"
       - name: Build site
         run: |
           hexo clean
