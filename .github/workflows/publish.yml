@@ -17,9 +17,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22'
-          cache: 'yarn'
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        uses: borales/actions-yarn
+        with:
+          cmd: install
       - name: Build site
         run: |
           hexo clean
