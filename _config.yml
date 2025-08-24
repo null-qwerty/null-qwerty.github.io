@@ -101,6 +101,10 @@ theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+
+geploy_sync:
+  
+
 deploy:
   type: 'git'
   repo: 'git@github.com:null-qwerty/null-qwerty.github.io.git'
