@@ -2663,7 +2663,7 @@ __metadata:
     hexo-theme-redefine: "npm:^2.8.5"
     hexo-wordcount: "npm:^6.0.1"
     meting: "npm:^2.0.1"
-    nodejieba: "npm:^2.5.0"
+    nodejieba: "npm:2.5.2"
     pjax: "npm:^0.2.8"
     tailwindcss: "npm:^4.1.11"
   languageName: unknown
@@ -4046,13 +4046,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodejieba@npm:^2.5.0":
-  version: 2.6.0
-  resolution: "nodejieba@npm:2.6.0"
+"nodejieba@npm:2.5.2":
+  version: 2.5.2
+  resolution: "nodejieba@npm:2.5.2"
   dependencies:
     "@mapbox/node-pre-gyp": "npm:^1.0.4"
     node-addon-api: "npm:^3.0.2"
-  checksum: 10c0/c8d72f1b31928133836c451f18885304eafeff8c72b2015f99d2eedf9be03c2a37e95768456d6812acab5f16206f741cc2bc6f68d88f7fed22d241a5ca19e318
+  checksum: 10c0/6d81cf134a86f10ce90076d84b8d2702f15357d0e05b3805c8e190ddddb7fc3860e75c1ed8a38f8353b8eb35a2d1fb9068e57d8ffbc1a06f536f6582b24c8853
   languageName: node
   linkType: hard
 
