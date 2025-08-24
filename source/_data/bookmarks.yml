@@ -1,0 +1,131 @@
+# - category: 分类名称
+#   icon: fa-folder # 分类的图标，使用 FontAwesome 图标
+#   items:
+#     - name: 书签名称
+#       link: 链接地址 # 从 url 改为 link
+#       description: 书签描述
+#       image: 图标链接 # 从 icon 改为 image，用于显示网站图标
+
+- category: 博客技术支持/tech support for blog
+  icon: fa-code
+  items:
+    - name: Hexo
+      link: https://hexo.io/
+      description: 快速、简洁且高效的博客框架
+      image: https://hexo.io/icon/favicon-196x196.png
+    
+    - name: Hexo-thame-redefine
+      link: https://redefine-docs.ohevan.com/introduction
+      description: 简洁、快速、纯粹的 Hexo 主题
+      image: https://evan.beee.top/projects/hexo-theme-redefine/statics/logos/logo.webp
+
+    - name: 一言
+      link: https://hitokoto.cn/
+      description: 首页副标题支持！
+      image: https://hitokoto.cn/favicon.ico
+
+- category: 工具/tools
+  icon: fa-tools
+  items:
+    - name: Google
+      link: https://www.google.com/
+      description: Google is your best friend!
+      image: https://www.google.com/favicon.ico
+
+    - name: z-library
+      link: https://z-library.sk
+      description: 电子书下载
+      image: https://z-library.sk/favicon.svg
+
+    - name: saucenao
+      link: https://saucenao.com/
+      description: 以图搜图
+      image: https://saucenao.com/favicon.ico
+    
+    - name: aria2
+      link: https://aria2.github.io/
+      description: 轻量级多协议命令行下载工具
+      image: https://aria2.github.io/favicon.png
+    
+    - name: ariaNg
+      link: https://ariang.mayswind.net/
+      description: aria2 的 Web 界面
+
+- category: GPT
+  icon: fa-robot
+  items:
+    - name: ChatGPT
+      link: https://chat.openai.com
+      description: OpenAI 的 AI 对话助手
+      image: https://chat.openai.com/favicon.ico
+    
+    - name: Claude
+      link: https://www.anthropic.com/
+      description: Anthropic 的 AI 对话助手
+      image: https://www.anthropic.com/favicon.ico
+
+- category: 学习/learning
+  icon: fa-book
+  items:
+    - name: cppreference.com
+      link: https://en.cppreference.com/w/
+      description: C++ reference
+      image: https://en.cppreference.com/favicon.ico
+  
+    - name: C++ Standard
+      link: https://timsong-cpp.github.io/cppwp/
+      description: C++ Standard
+      image: https://timsong-cpp.github.io/cppwp/icon.png
+    
+    - name: ROS Wiki
+      link: https://wiki.ros.org/
+      description: ROS Wiki
+      image: https://wiki.ros.org/custom/favicon.ico
+
+- category: ACGN
+  icon: fa-tv
+  items:
+    - name: 番组计划
+      link: https://www.bangumi.tv/
+      description: 今天看什么捏~
+      image: https://bangumi.tv/img/favicon.ico
+    
+    - name: 花火学园
+      link: https://www.sayhanabi.net/index.php
+      description: 花火学园
+      image: https://www.sayhanabi.net/favicon.ico
+
+    - name: 绯月 ScarletMoon
+      link: https://bbs.kfpromax.com/index.php
+      description: 绯月论坛
+      image: https://bbs.kfpromax.com/favicon.ico
+
+    - name: ErogameScape -エロゲー批評空間-
+      link: https://erogamescape.dyndns.org/
+      description: 批评空间（日文）
+      image: https://erogamescape.dyndns.org/favicon.ico
+
+    - name: 蜜柑计划
+      link: https://mikanani.me/
+      description: 番剧下载
+      image: https://mikanani.me/favicon.ico
+
+    - name: 动漫花园
+      link: https://share.dmhy.org/
+      description: 资源下载
+      image: https://share.dmhy.org/favicon.ico
+    
+    - name: Tokyo Toshokan
+      link: https://www.tokyotosho.info/
+      description: 东京图书馆，资源下载（需要翻墙）
+      image: https://www.tokyotosho.info/favicon.ico
+
+    - name: 射手网（伪）
+      link: https://secure.assrt.net/
+      description: 字幕下载
+      image: https://secure.assrt.net/favicon.ico
+
+    - name: anitabi
+      link: https://anitabi.cn/
+      description: 巡礼地图
+      image: https://anitabi.cn/favicon.ico

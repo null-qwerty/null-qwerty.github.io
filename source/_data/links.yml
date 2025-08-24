@@ -1,0 +1,18 @@
+# - links_category: 分类名
+#   has_thumbnail: 是否有预览图（true/false)
+#   list: 
+#   - name: 名字
+#     link: 链接
+#     description: 描述
+#     avatar: 头像
+#     thumbnail: 预览图（has_thumbnail 为 true 时才需要）
+ 
+# - ......
+ 
+- links_category: friends
+  has_thumbnail: false
+  list:
+  - name: sakbin
+    link: https://sakbin.top/
+    description: 小彬彬的博客
+    avatar: https://sakbin.top/images/avatar.jpg
