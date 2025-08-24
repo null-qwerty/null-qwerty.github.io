@@ -37,10 +37,8 @@ jobs:
           hexo generate
       - name: Deploy to GitHub Pages
         run: |
-          git config --global init.defaultBranch main
           git config --global user.name "null-qwerty"
           git config --global user.email "null-qwerty@outlook.com"
-          git config --global user.password ${{ secrets.GH_TOKEN }}
 
           export PATH=$PATH:./node_modules/.bin
           hexo deploy
