@@ -35,7 +35,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/node-pre-gyp@npm:^1.0.4":
+"@mapbox/node-pre-gyp@npm:^1.0.10":
   version: 1.0.11
   resolution: "@mapbox/node-pre-gyp@npm:1.0.11"
   dependencies:
@@ -2663,7 +2663,7 @@ __metadata:
     hexo-theme-redefine: "npm:^2.8.5"
     hexo-wordcount: "npm:^6.0.1"
     meting: "npm:^2.0.1"
-    nodejieba: "npm:^2.6.0"
+    nodejieba: "npm:^3.5.2"
     pjax: "npm:^0.2.8"
     tailwindcss: "npm:^4.1.11"
   languageName: unknown
@@ -4003,12 +4003,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:^3.0.2":
-  version: 3.2.1
-  resolution: "node-addon-api@npm:3.2.1"
+"node-addon-api@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "node-addon-api@npm:5.1.0"
   dependencies:
     node-gyp: "npm:latest"
-  checksum: 10c0/41f21c9d12318875a2c429befd06070ce367065a3ef02952cfd4ea17ef69fa14012732f510b82b226e99c254da8d671847ea018cad785f839a5366e02dd56302
+  checksum: 10c0/0eb269786124ba6fad9df8007a149e03c199b3e5a3038125dfb3e747c2d5113d406a4e33f4de1ea600aa2339be1f137d55eba1a73ee34e5fff06c52a5c296d1d
   languageName: node
   linkType: hard
 
@@ -4046,13 +4046,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodejieba@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "nodejieba@npm:2.6.0"
+"nodejieba@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "nodejieba@npm:3.5.2"
   dependencies:
-    "@mapbox/node-pre-gyp": "npm:^1.0.4"
-    node-addon-api: "npm:^3.0.2"
-  checksum: 10c0/c8d72f1b31928133836c451f18885304eafeff8c72b2015f99d2eedf9be03c2a37e95768456d6812acab5f16206f741cc2bc6f68d88f7fed22d241a5ca19e318
+    "@mapbox/node-pre-gyp": "npm:^1.0.10"
+    node-addon-api: "npm:^5.1.0"
+  checksum: 10c0/eaa03ac7288d639c98877ed9a1568b6fe652d9622bda71ed90e36117f94dd555204f08e918ed785b8c803b341b94653eef2a62ba461bca12147402e52aeacec7
   languageName: node
   linkType: hard
 
