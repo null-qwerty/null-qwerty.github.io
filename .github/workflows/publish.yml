@@ -25,6 +25,7 @@ jobs:
           corepack install --global yarn
       - name: Install dependencies
         run: |
+          yarn config set -H enableImmutableInstalls false
           yarn install
       - name: Build site
         run: |
