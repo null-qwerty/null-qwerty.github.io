@@ -374,6 +374,7 @@ comment:
       recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
       turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
       reaction: false # Waline reaction. See https://waline.js.org/reference/client/props.html#reaction
+      login: force
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:
       clientID:  # GitHub Application Client ID
@@ -502,3 +503,4 @@ developer:
   # Whether to enable developer mode (only for developers who want to modify the theme source code, not for ordinary users)
   enable: true
 # DEVELOPER MODE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
