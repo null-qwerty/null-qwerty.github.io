@@ -501,7 +501,8 @@ cdn:
 # Docs: https://redefine-docs.ohevan.com/developer
 developer:
   # Whether to enable developer mode (only for developers who want to modify the theme source code, not for ordinary users)
-  enable: true
+  enable: false
 # DEVELOPER MODE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 
