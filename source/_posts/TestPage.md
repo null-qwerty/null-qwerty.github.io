@@ -40,10 +40,10 @@ var meting_api='https://api.null-qwerty.work/Meting?server=:server&type=:type&id
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
   var hls = new Hls();
-  hls.loadSource('https://videos.null-qwerty.work/test/index.m3u8');
+  hls.loadSource('https://cdn.jsdelivr.net/gh/null-qwerty/videos@main/test/index.m3u8');
   hls.attachMedia(video);
 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-  video.src = 'https://videos.null-qwerty.work/test/index.m3u8';
+  video.src = 'https://cdn.jsdelivr.net/gh/null-qwerty/videos@main/test/index.m3u8';
 }
 </script>
 
