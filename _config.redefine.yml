@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: https://cdn.jsdelivr.net/gh/null-qwerty/images@main//blog/avatar.jpg # /images/redefine-favicon.svg
+  favicon: https://cdn.jsdelivr.net/gh/null-qwerty/images@main/blog/avatar.jpg # /images/redefine-favicon.svg
   # Site logo
   logo:
   # Site avatar
-  avatar: https://cdn.jsdelivr.net/gh/null-qwerty/images@main//blog/avatar.jpg  # /images/redefine-avatar.svg
+  avatar: https://cdn.jsdelivr.net/gh/null-qwerty/images@main/blog/avatar.jpg  # /images/redefine-avatar.svg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -99,7 +99,7 @@ global:
   # Whether to enable open graph
   open_graph:
     enable: true
-    image: https://cdn.jsdelivr.net/gh/null-qwerty/images@main//blog/avatar.jpg  # default og:image
+    image: https://cdn.jsdelivr.net/gh/null-qwerty/images@main/blog/avatar.jpg  # default og:image
     description: 个人博客
   # Google Analytics
   google_analytics:
@@ -131,8 +131,8 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: https://cdn.jsdelivr.net/gh/null-qwerty/images@main//blog/bg.webp # light mode
-    dark: https://cdn.jsdelivr.net/gh/null-qwerty/images@main//blog/bg.webp # dark mode
+    light: https://cdn.jsdelivr.net/gh/null-qwerty/images@main/blog/bg.webp # light mode
+    dark: https://cdn.jsdelivr.net/gh/null-qwerty/images@main/blog/bg.webp # dark mode
   # Home banner title
   title: null-qwerty's blog
   # Home banner subtitle
@@ -503,6 +503,7 @@ developer:
   # Whether to enable developer mode (only for developers who want to modify the theme source code, not for ordinary users)
   enable: false
 # DEVELOPER MODE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
 
 
 
