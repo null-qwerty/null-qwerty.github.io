@@ -36,5 +36,5 @@
     "pjax": "^0.2.8",
     "tailwindcss": "^4.1.11"
   },
-  "packageManager": "yarn@4.9.3"
+  "packageManager": "yarn@4.13.0"
 }
